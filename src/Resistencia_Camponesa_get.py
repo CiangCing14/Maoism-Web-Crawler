@@ -82,6 +82,15 @@ if len(dr)==0:
            'category':h.split(sp)[1].split('</div>')[0].split('<span>')[1].split('</span>')[0]if(sp:='<div class="tax__container post-info entry-meta">')in h else None,
            'source':hl[a]
           }
+        t2=''
+        t4=h['text'].split('(')
+        for z in range(len(t4)):
+            if z==0:
+                t2=t4[z]
+            else:
+                url=t4[z].split(')')[0]
+                t2='%s(%s)%s'%(t2,'%s%s'%(l2,url)if('/'in url)and('http'not in url)else url,')'.join(t4[z].split(')')[1:]))
+        h['text']=t2
         if h['publish time'].split('T')[0]<d:break
         if not os.path.exists(pa:='JSON-src/%s.json'%h['publish time']):
             print(h)

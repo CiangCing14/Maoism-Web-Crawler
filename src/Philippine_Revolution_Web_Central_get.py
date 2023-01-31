@@ -89,6 +89,15 @@ if len(dr)==0:
            'categories':[b.split('<')[0]for b in h.split(sp)[1].split('</div>')[0].split('rel="tag">')[1:]]if(sp:='<div class="article__categories">')in h else None,
            'source':hl[a]
           }
+        t2=''
+        t4=h['text'].split('(')
+        for z in range(len(t4)):
+            if z==0:
+                t2=t4[z]
+            else:
+                url=t4[z].split(')')[0]
+                t2='%s(%s)%s'%(t2,'%s%s'%(l2,url)if('/'in url)and('http'not in url)else url,')'.join(t4[z].split(')')[1:]))
+        h['text']=t2
         dd=h['publish time']
         if dd<d:break
         if not os.path.exists(pa:='JSON-src/%s.json'%h['publish time']):

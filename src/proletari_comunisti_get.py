@@ -4,6 +4,7 @@ import urllib.parse,markdown
 import rg
 
 l='https://proletaricomunisti.blogspot.com/'
+l2='https://proletaricomunisti.blogspot.com'
 d=str(datetime.today()-timedelta(days=1)).split(' ')[0]
 hl=[]
 ul=l
@@ -44,6 +45,15 @@ if len(dr)==0:
            'text':hp.handle(h.split("<div class='post-header'>")[1].split("<div class='post-footer'>")[0]).strip(),
            'source':hl[a]
           }
+        t2=''
+        t4=h['text'].split('(')
+        for z in range(len(t4)):
+            if z==0:
+                t2=t4[z]
+            else:
+                url=t4[z].split(')')[0]
+                t2='%s(%s)%s'%(t2,'%s%s'%(l2,url)if('/'in url)and('http'not in url)else url,')'.join(t4[z].split(')')[1:]))
+        h['text']=t2
         if h['time'].split('T')[0]<d:break
         if not os.path.exists(pa:='JSON-src/%s.json'%h['time']):
             print(h)

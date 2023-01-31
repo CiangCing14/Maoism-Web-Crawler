@@ -49,6 +49,15 @@ if len(dr)==0:
            'categories':[y.split('<a  href="')[1].split('>')[1].split('<')[0]for y in h2.split('<ul class="td-category">')[1].split('</ul>')[0].split('<li class="entry-category">')[1:]],
            'source':hl[a]
           }
+        t2=''
+        t4=h['text'].split('(')
+        for z in range(len(t4)):
+            if z==0:
+                t2=t4[z]
+            else:
+                url=t4[z].split(')')[0]
+                t2='%s(%s)%s'%(t2,'%s%s'%(l2,url)if('/'in url)and('http'not in url)else url,')'.join(t4[z].split(')')[1:]))
+        h['text']=t2
         if h['publish time'].split('T')[0]<d:break
         if not os.path.exists(pa:='JSON-src/%s.json'%h['publish time']):
             print(h)

@@ -41,6 +41,15 @@ if len(dr)==0:
            'text':')'.join(hp.handle(h.split('<div class="pf-content">')[1].split('<!--.entry-content-->')[0]).strip().split('![Print Friendly, PDF &\nEmail]')[1].split(')')[1:]),
            'source':hl[a]
           }
+        t2=''
+        t4=h['text'].split('(')
+        for z in range(len(t4)):
+            if z==0:
+                t2=t4[z]
+            else:
+                url=t4[z].split(')')[0]
+                t2='%s(%s)%s'%(t2,'%s%s'%(l2,url)if('/'in url)and('http'not in url)else url,')'.join(t4[z].split(')')[1:]))
+        h['text']=t2
         if h['time'].split('T')[0]<d:break
         if not os.path.exists(pa:='JSON-src/%s.json'%h['time']):
             print(h)

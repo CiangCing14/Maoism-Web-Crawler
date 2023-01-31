@@ -51,6 +51,15 @@ if len(dr)==0:
            'text':hp.handle(h.split('<header class="entry-header mh-clearfix">')[1].split('</header>')[1]).strip(),
            'source':hl[a]
           }
+        t2=''
+        t4=h['text'].split('(')
+        for z in range(len(t4)):
+            if z==0:
+                t2=t4[z]
+            else:
+                url=t4[z].split(')')[0]
+                t2='%s(%s)%s'%(t2,'%s%s'%(l2,url)if('/'in url)and('http'not in url)else url,')'.join(t4[z].split(')')[1:]))
+        h['text']=t2
         dd=h['time']
         if ed:
             if ed!=dd:

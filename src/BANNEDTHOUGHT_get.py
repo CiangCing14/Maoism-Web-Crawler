@@ -16,6 +16,7 @@ def english2date(a):
     return'-'.join([y,str(mo).rjust(2).replace(' ','0'),dd.rjust(2).replace(' ','0')])
 
 l='https://www.bannedthought.net/RecentPostings.htm'
+l2='https://www.bannedthought.net'
 d=str(datetime.today()-timedelta(days=1)).split(' ')[0]
 hp=html2text.HTML2Text()
 hl=[]
@@ -55,6 +56,15 @@ if len(dr)==0:
                                 'https://www.bannedthought.net/%s'%u if'http'!=(u:=t2[c].split(')')[0])[:4]else u,
                                 ')'.join(t2[c].split(')')[1:]))
         h['text']=t3
+        t2=''
+        t4=h['text'].split('(')
+        for z in range(len(t4)):
+            if z==0:
+                t2=t4[z]
+            else:
+                url=t4[z].split(')')[0]
+                t2='%s(%s)%s'%(t2,'%s%s'%(l2,url)if('/'in url)and('http'not in url)else url,')'.join(t4[z].split(')')[1:]))
+        h['text']=t2
         dd=h['time']
         if ed:
             if ed!=dd:
