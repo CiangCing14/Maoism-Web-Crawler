@@ -2,7 +2,7 @@ html2text
 opencv-python
 markdown
 requests
-googletrans
+translators
 playwright
 PyPDF2
 docx

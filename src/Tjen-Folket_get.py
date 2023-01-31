@@ -43,13 +43,14 @@ with sync_playwright()as playwright:
             if not os.path.exists('test.txt'):f=open('test.txt','w+');f.write(h);f.close()
             h2=h
             h='<div class="pdfprnt-buttons pdfprnt-buttons-post pdfprnt-top-right">'.join('>'.join(h.split('<article data-scroll="')[1].split('>')[1:]).split('<div class="pdfprnt-buttons pdfprnt-buttons-post pdfprnt-top-right">')[:-1])
+            im=[html.unescape(b.split('src="')[1].split('"')[0].split('?')[0])for b in h.split('<img')[1:]]
             h={'title':h2.split('<meta property="og:title" content="')[1].split('"')[0],
                'description':h2.split('<meta property="og:description" content="')[1].split('"')[0],
                'publish time':h2.split('<meta property="article:published_time" content="')[1].split('"')[0],
                'modified time':h2.split('<meta property="article:modified_time" content="')[1].split('"')[0],
                'author':'Tjen Folket Media',
-               'images':[html.unescape(b.split('src="')[1].split('"')[0].split('?')[0])for b in h.split('<img')[1:]],
-               'text':hp.handle('</div>'.join(h.split('<div class="pdfprnt-buttons pdfprnt-buttons-post pdfprnt-top-right">')[1].split('</div>')[1:])),
+               'images':im,
+               'text':hp.handle('<p><img src="%s" width="800px" /></p>%s'%(im[0],'</div>'.join(h.split('<div class="pdfprnt-buttons pdfprnt-buttons-post pdfprnt-top-right">')[1].split('</div>')[1:]))),
                'tags':[y.split('<')[0].strip()for y in h.split(sp)[1].split('</section>')[0].split('rel="tag" data-wpel-link="internal">')[1:]]if(sp:='<section class="post-tags">')in h else None,
                'category':h2.split(sp)[1].split('rel="category tag" data-wpel-link="internal">')[1].split('<')[0]if(sp:='<div class="meta-category">')in h2 else None,
                'source':hl[a]
