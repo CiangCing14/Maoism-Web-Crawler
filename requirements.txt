@@ -1,8 +1,5 @@
-datetime
-os
-sys
 html2text
-cv2
+python-opencv
 re
 urllib
 json
