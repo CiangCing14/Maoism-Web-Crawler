@@ -184,4 +184,4 @@ if not os.path.exists('index_chinese.md'):
     f=open('index_chinese.md','w+');f.write(fmd);f.close()
 if not os.path.exists('index_chinese.htm'):
     f=open('index_chinese.md','r');fmd=f.read();f.close()
-    f=open('index_chinese.htm','w+');f.write(markdown.markdown(fmd));f.close()
+    f=open('index_chinese.htm','w+');f.write(markdown.markdown(fmd).replace('<img alt=""','<img alt="" width="800px"'));f.close()
