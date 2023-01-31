@@ -1,14 +1,8 @@
 html2text
 python-opencv
-urllib
-json
 markdown
-html
 requests
-importlib
-shutil
 googletrans
-dateutil
 playwright
 PyPDF2
 docx
