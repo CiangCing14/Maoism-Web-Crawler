@@ -121,7 +121,7 @@ for y in range(len(des)):
         ksl=len(ks)
         nz=0
         for a in ks:
-            mt[a]=trans(a,de=des[y],sr='en')if des[y]!='en'else a
+            mt[a]=trans(a,de=des[y],sr='en')if(des[y]!='en')else a
             print(nz+1,'/',ksl)
             nz+=1
         nec=[]
@@ -168,6 +168,7 @@ for y in range(len(des)):
             if'description'in n['meta']:print('翻譯簡介。');n['meta']['description']=trans(n['meta']['description'],de=des[y],sr=src)
             nk=list(n['meta'].keys())
             for b in nk:
+                if mt[b]==b:continue
                 n['meta'][mt[b]]=n['meta'][b]
                 del n['meta'][b]
             nec.append(n)
