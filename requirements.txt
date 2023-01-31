@@ -1,5 +1,5 @@
 html2text
-python-opencv
+opencv-python
 markdown
 requests
 googletrans
