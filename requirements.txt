@@ -1,11 +1,9 @@
 html2text
 python-opencv
-re
 urllib
 json
 markdown
 html
-time
 requests
 importlib
 shutil
