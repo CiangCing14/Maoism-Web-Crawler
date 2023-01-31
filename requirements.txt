@@ -7,7 +7,6 @@ re
 urllib
 json
 markdown
-rg
 html
 time
 requests
