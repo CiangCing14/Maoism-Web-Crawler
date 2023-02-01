@@ -214,6 +214,15 @@ if not os.path.exists(ds):
         shutil.move(a,'%s/%s'%(ds,a))
     for a in l2:
         shutil.copyfile(a,'%s/%s'%(ds,a))
+    for a in os.walk('%s/HTMs'%ds):
+        for b in a[2]:
+            f=open(pa:='%s/%s'%(a[0],b),'r');t=f.read();f.close()
+            if'<html>'not in t:t='<html>\n<body>\n%s\n</body>\n</html>'%t
+            os.remove(pa)
+            f=open(pa.replace(':','-').replace('+','-'),'w+');f.write(t);f.close()
+    for a in os.walk('%s/MDs'%ds):
+        for b in a[2]:
+            os.rename('%s/%s'%(a[0],b),'%s/%s'%(a[0],b.replace(':','-').replace('+','-')))
 if not os.path.exists(pa:='%s/MD5s.txt'%ds):
     md5s=[]
     for a in os.walk('%s/MDs'%(ds)):
