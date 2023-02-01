@@ -219,10 +219,10 @@ if not os.path.exists(ds):
             f=open(pa:='%s/%s'%(a[0],b),'r');t=f.read();f.close()
             if'<html>'not in t:t='<html>\n<body>\n%s\n</body>\n</html>'%t
             os.remove(pa)
-            f=open(pa.replace(':','-').replace('+','-'),'w+');f.write(t);f.close()
+            f=open('%s%s'%(pa.replace(':','-').replace('+','-'),'.bak'if pa[4:]!='.bak'else''),'w+');f.write(t);f.close()
     for a in os.walk('%s/MDs'%ds):
         for b in a[2]:
-            os.rename('%s/%s'%(a[0],b),'%s/%s'%(a[0],b.replace(':','-').replace('+','-')))
+            os.rename('%s/%s'%(a[0],b),'%s/%s%s'%(a[0],b.replace(':','-').replace('+','-'),'.bak'if pa[4:]!='.bak'else''))
 if not os.path.exists(pa:='%s/MD5s.txt'%ds):
     md5s=[]
     for a in os.walk('%s/MDs'%(ds)):
