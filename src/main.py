@@ -185,7 +185,7 @@ for y in range(len(des)):
             if'description'in n['meta']:print('翻譯簡介。');n['meta']['description']=trans(n['meta']['description'],de=des[y],sr=src)
             nk=list(n['meta'].keys())
             for b in nk:
-                n['meta'][mt[b]]=n['meta'][b].title()
+                n['meta'][mt[b].title()]=n['meta'][b]
                 del n['meta'][b]
             nec.append(n)
         mds=[]
@@ -223,10 +223,10 @@ if not os.path.exists(ds):
             f=open(pa:='%s/%s'%(a[0],b),'r');t=f.read();f.close()
             if'<html>'not in t:t='<html>\n<body>\n%s\n</body>\n</html>'%t
             os.remove(pa)
-            f=open('%s%s'%(pa.replace(':','-').replace('+','-'),'.bak'if pa[4:]!='.bak'else''),'w+');f.write(t);f.close()
+            f=open('%s%s'%(pa.replace(':','-').replace('+','-'),'.bak'if pa[-4:]!='.bak'else''),'w+');f.write(t);f.close()
     for a in os.walk('%s/MDs'%ds):
         for b in a[2]:
-            os.rename('%s/%s'%(a[0],b),'%s/%s%s'%(a[0],b.replace(':','-').replace('+','-'),'.bak'if pa[4:]!='.bak'else''))
+            os.rename('%s/%s'%(a[0],b),'%s/%s%s'%(a[0],b.replace(':','-').replace('+','-'),'.bak'if pa[-4:]!='.bak'else''))
 if not os.path.exists(pa:='%s/MD5s.txt'%ds):
     md5s=[]
     for a in os.walk('%s/MDs'%(ds)):
