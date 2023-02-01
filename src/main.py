@@ -1,5 +1,9 @@
-import os,sys,importlib,shutil,time,markdown,re
+import os,sys,importlib,shutil,time,markdown,re,datetime,hashlib
 import translators.server as tss
+
+ds='/home/a/CiangCing14.github.io/Maoism-Datasets/%s'%str(datetime.date.today())
+pds='/home/a/CiangCing14.github.io/Maoism-Datasets/%s'%str(datetime.date.today()+datetime.timedelta(days=-1))
+ud='/home/a/CiangCing14.github.io'
 
 ps=[]
 for a in os.walk(sys.path[0]):
@@ -61,6 +65,15 @@ for a in os.walk('src'):
     if not a[2]:
         try:os.removedirs(a[0])
         except:pass
+if os.path.exists(pds):
+    f=open('%s/MD5s.txt'%pds,'r');md5s=f.read().split('\n');f.close()
+    for a in os.walk('MDs'):
+        for b in a[2]:
+            f=open(pa:='%s/%s'%(a[0],b),'rb');t=f.read();f.close()
+            t=hashlib.md5(t).hexdigest()
+            if t in md5s:
+                os.remove(pa)
+                os.remove('HTMs/%s.htm'%b[:-3])
 aft=['chinese','english']
 if not os.path.exists('index.htm'):
     ht=''
@@ -168,8 +181,7 @@ for y in range(len(des)):
             if'description'in n['meta']:print('翻譯簡介。');n['meta']['description']=trans(n['meta']['description'],de=des[y],sr=src)
             nk=list(n['meta'].keys())
             for b in nk:
-                if mt[b]==b:continue
-                n['meta'][mt[b]]=n['meta'][b]
+                n['meta'][mt[b]]=n['meta'][b].title()
                 del n['meta'][b]
             nec.append(n)
         mds=[]
@@ -183,12 +195,31 @@ for y in range(len(des)):
 %s
 
 News Source: %s'''%(a['title'],
-                     '\n\n'.join(['%s：%s'%(b,a['meta'][b])for b in a['meta'].keys()]),
-                     a['text'],
-                     a['source'])
+                    '\n\n'.join(['%s: %s'%(b,a['meta'][b])for b in a['meta'].keys()]),
+                    a['text'],
+                    a['source'])
             mds.append(md)
         fmd='\n\n<!--NEWS-->\n\n'.join(mds)
         f=open('index_%s.md'%aft[y],'w+');f.write(re.sub('\\n[ ]+([#]+)[ ]+','\\n\\1 ',fmd.replace('这是给予的(','](').replace('! ','!')));f.close()
     if not os.path.exists('index_%s.htm'%aft[y]):
         f=open('index_%s.md'%aft[y],'r');fmd=f.read();f.close()
         f=open('index_%s.htm'%aft[y],'w+');f.write('<html><body><img src="Head_Image.jpg" width="640px" /><h1>Marxism-Leninism-Maoism News</h1><h1>马列毛主义新闻</h1><p>Please select your language 请选择你的语言:</p><p><a href="index.htm">Origin</a> | %s</p>%s</body></html>'%(' | '.join(['<a href="index_%s.htm">%s</a>'%(a,a.title())for a in aft]),markdown.markdown(fmd).replace('<img alt=""','<img alt="" width="800px"')));f.close()
+l=['HTMs','MDs','src','ConvertedIMGs','Images','index.md','index.htm']
+l2=['Head_Image.jpg']
+if not os.path.exists(ds):
+    os.makedirs(ds)
+    l.extend(['index_%s.md'%a for a in aft])
+    l.extend(['index_%s.htm'%a for a in aft])
+    for a in l:
+        shutil.move(a,'%s/%s'%(ds,a))
+    for a in l2:
+        shutil.copyfile(a,'%s/%s'%(ds,a))
+if not os.path.exists(pa:='%s/MD5s.txt'%ds):
+    md5s=[]
+    for a in os.walk('%s/MDs'%(ds)):
+        for b in a[2]:
+            f=open('%s/%s'%(a[0],b),'rb');t=f.read();f.close()
+            t=hashlib.md5(t).hexdigest()
+            md5s.append(t)
+    f=open(pa,'w+');f.write('\n'.join(md5s));f.close()
+    os.system("cd %s&&git add .&&git commit -m 'Add files via upload'&&git push"%ud)
