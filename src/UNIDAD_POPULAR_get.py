@@ -17,7 +17,7 @@ d=str(datetime.today()-timedelta(days=1)).split(' ')[0]
 hl=[]
 if not os.path.exists('000000.list'):
     for a in range(5):
-        h=rg.rget('%s%d'%(l,a+1)).text
+        h=rg.valid('%s%d'%(l,a+1),'<div id="content-wrapper">').text
         f=open('test.htm','w+');f.write(h);f.close()
         h=h.split('<div id="content-wrapper">')[1].split('<div data-hook="feed-pagination-container" style="display:block">')[0]
         h=[b.split('<a href="')[1].split('"')[0]for b in h.split('<div data-id="')[1:]if'<a href="'in b]
@@ -42,7 +42,7 @@ if len(dr)==0:
     hp=html2text.HTML2Text()
     n=0
     for a in range(len(hl)):
-        h=rg.rget(hl[a]).text
+        h=rg.valid(hl[a],'<article class="blog-post-page-font">').text
         if not os.path.exists('test.txt'):f=open('test.txt','w+');f.write(h);f.close()
         h2=h.split('<article class="blog-post-page-font">')[1].split('</article>')[0]
         h3='>'.join(h.split('<div id="post-footer"')[1].split('>')[1:])

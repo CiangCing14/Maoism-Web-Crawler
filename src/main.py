@@ -74,7 +74,10 @@ if os.path.exists(pds):
             if t in md5s:
                 print('清除已經抓取過的新聞：%s。'%b[:-3])
                 os.remove(pa)
-                os.remove('HTMs/%s.htm'%b[:-3])
+                for z in os.walk('HTMs'):
+                    for v in z[2]:
+                        if v[:-11]==b[:-10]:
+                            os.remove('%s/%s'%(z[0],v))
 aft=['chinese','english']
 if not os.path.exists('index.htm'):
     ht=''

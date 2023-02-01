@@ -185,6 +185,7 @@ with sync_playwright()as playwright:
         for b in a[2]:
             if b[-4:]in['.gif','.jpg','.png','.bmp']or b[-5:]=='.webp':
                 if not os.path.exists(b):continue
+                if b=='Head_Image.jpg':continue
                 os.rename(b,'Images/%s'%b)
                 print(b,'移動完畢。')
     for a in os.walk('Images'):
