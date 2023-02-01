@@ -93,7 +93,7 @@ if len(dr)==0:
                 t2=t4[z]
             else:
                 url=t4[z].split(')')[0]
-                t2='%s(%s)%s'%(t2,'%s%s'%(l2,url)if('/'in url)and('http'not in url)else url,')'.join(t4[z].split(')')[1:]))
+                t2='%s(%s)%s'%(t2,'%s%s'%(l2,url)if(url[0]in['/','.'])and('http'not in url)else url,')'.join(t4[z].split(')')[1:]))
         h['text']=t2
         for z in range(len(h['images'])):
             if h['images'][z][:4]!='http'and(':'not in h['images'][z]):
