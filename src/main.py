@@ -72,6 +72,7 @@ if os.path.exists(pds):
             f=open(pa:='%s/%s'%(a[0],b),'rb');t=f.read();f.close()
             t=hashlib.md5(t).hexdigest()
             if t in md5s:
+                print('清除已經抓取過的新聞：%s。'%b[:-3])
                 os.remove(pa)
                 os.remove('HTMs/%s.htm'%b[:-3])
 aft=['chinese','english']
