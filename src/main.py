@@ -1,4 +1,4 @@
-import os,sys,importlib,shutil,time,markdown,re,datetime,hashlib
+import os,sys,importlib,shutil,time,markdown,re,datetime,hashlib,markdown2odt
 import translators.server as tss
 
 ds='/home/a/CiangCing14.github.io/Maoism-Datasets/%s'%str(datetime.date.today())
@@ -90,7 +90,7 @@ if not os.path.exists('index.htm'):
             n+=1
     ht=ht.replace('<img alt="" src="../Images','<img alt="" src="Images')
     ht=ht.replace('<img alt="" src="../ConvertedIMGs','<img alt="" src="ConvertedIMGs')
-    f=open('index.htm','w+');f.write('<html><head><style>%s</style></head><body><img src="Head_Image.jpg" /><h1>Marxism-Leninism-Maoism News</h1><h1>马列毛主义新闻</h1><p>Please select your language 请选择你的语言:</p><p><a href="index.htm">Origin</a> | %s</p>%s</body></html>'%('img{height: auto; width: auto\9; width:100%;}',' | '.join(['<a href="index_%s.htm">%s</a>'%(a,a.title())for a in aft]),ht));f.close()
+    f=open('index.htm','w+');f.write('<html><head><style>%s</style></head><body><img src="Head_Image.jpg" /><h1>Marxism-Leninism-Maoism News</h1><h1>马列毛主义新闻</h1><p><a href="index.pdf">[This lan. PDF]</a><a href="index.odt">[This lan. ODT]</a></p><p>Please select your language 请选择你的语言:</p><p><a href="index.htm">Origin</a> | %s</p>%s</body></html>'%('img{height: auto; width: auto\9; width:100%;}',' | '.join(['<a href="index_%s.htm">%s</a>'%(a,a.title())for a in aft]),ht));f.close()
 if not os.path.exists('index.md'):
     ht=''
     n=0
@@ -102,6 +102,10 @@ if not os.path.exists('index.md'):
             n+=1
     ht=ht.replace('(../Images/','(Images/').replace('(../ConvertedIMGs/','(ConvertedIMGs/')
     f=open('index.md','w+');f.write(ht);f.close()
+if not os.path.exists('index.odt'):
+    markdown2odt.run('index.md','Origin')
+if not os.path.exists('index.pdf'):
+    os.system('soffice --headless --convert-to pdf index.odt')
 def trans_cycle(t,de,sr):
     time.sleep(1)
     return trans(t,de,sr)
@@ -110,6 +114,7 @@ def trans(t,de='zh',sr='auto'):
     except tss.TranslatorError:return t
     else:return trans_cycle(t,de,sr)
 des=['zh','en']
+lans={'chinese':'中文','english':'English'}
 for y in range(len(des)):
     if not os.path.exists('index_%s.md'%aft[y]):
         f=open('index.md','r');t=f.read();f.close()
@@ -206,13 +211,19 @@ News Source: %s'''%(a['title'],
         f=open('index_%s.md'%aft[y],'w+');f.write(re.sub('\\n[ ]+([#]+)[ ]+','\\n\\1 ',fmd.replace('这是给予的(','](').replace('! ','!')));f.close()
     if not os.path.exists('index_%s.htm'%aft[y]):
         f=open('index_%s.md'%aft[y],'r');fmd=f.read();f.close()
-        f=open('index_%s.htm'%aft[y],'w+');f.write('<html><head><style>%s</style></head><body><img src="Head_Image.jpg" /><h1>Marxism-Leninism-Maoism News</h1><h1>马列毛主义新闻</h1><p>Please select your language 请选择你的语言:</p><p><a href="index.htm">Origin</a> | %s</p>%s</body></html>'%('img{height: auto; width: auto\9; width:100%;}',' | '.join(['<a href="index_%s.htm">%s</a>'%(a,a.title())for a in aft]),markdown.markdown(fmd)));f.close()
-l=['HTMs','MDs','src','ConvertedIMGs','Images','index.md','index.htm']
+        f=open('index_%s.htm'%aft[y],'w+');f.write('<html><head><style>%s</style></head><body><img src="Head_Image.jpg" /><h1>Marxism-Leninism-Maoism News</h1><h1>马列毛主义新闻</h1><p><a href="index_%s.pdf">[This lan. PDF]</a><a href="index_%s.odt">[This lan. ODT]</a></p><p>Please select your language 请选择你的语言:</p><p><a href="index.htm">Origin</a> | %s</p>%s</body></html>'%('img{height: auto; width: auto\9; width:100%;}',aft[y],aft[y],' | '.join(['<a href="index_%s.htm">%s</a>'%(a,a.title())for a in aft]),markdown.markdown(fmd)));f.close()
+    if not os.path.exists('index_%s.odt'%aft[y]):
+        markdown2odt.run('index_%s.md'%aft[y],lans[aft[y]])
+    if not os.path.exists('index_%s.pdf'%aft[y]):
+        os.system('soffice --headless --convert-to pdf %s'%('index_%s.odt'%aft[y]))
+l=['HTMs','MDs','__pycache__','src','ConvertedIMGs','Images','index.md','index.htm','index.odt','index.pdf']
 l2=['Head_Image.jpg']
 if not os.path.exists(ds):
     os.makedirs(ds)
     l.extend(['index_%s.md'%a for a in aft])
     l.extend(['index_%s.htm'%a for a in aft])
+    l.extend(['index_%s.odt'%a for a in aft])
+    l.extend(['index_%s.pdf'%a for a in aft])
     for a in l:
         shutil.move(a,'%s/%s'%(ds,a))
     for a in l2:
