@@ -16,7 +16,7 @@ d=str(datetime.today()-timedelta(days=1)).split(' ')[0]
 hl=[]
 if not os.path.exists('000000.list'):
     for a in range(5):
-        h=rg.rget('%s%d'%(l,a+1)).text.split('<div id="main-content" class="mh-loop mh-content" role="main">')[1].split('<div class="mh-loop-pagination mh-clearfix">')[0]
+        h=rg.valid('%s%d'%(l,a+1),'<div id="main-content" class="mh-loop mh-content" role="main">').text.split('<div id="main-content" class="mh-loop mh-content" role="main">')[1].split('<div class="mh-loop-pagination mh-clearfix">')[0]
         h=[b.split('<a href="')[1].split('"')[0]for b in h.split('<article class="mh-loop-item mh-clearfix post-')[1:]]
         hl.extend(h)
         f=open('%s.list'%(str(a).rjust(6).replace(' ','0')),'w+');f.write(repr(h));f.close()

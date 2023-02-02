@@ -10,7 +10,7 @@ hl=[]
 ul=l
 if not os.path.exists('000000.list'):
     for a in range(5):
-        ps=rg.rget(ul).text
+        ps=rg.valid(ul,"<main class='main-container' id='main' role='main' tabindex='-1'>").text
         f=open('test.txt','w+');f.write(ps);f.close()
         h=ps.split("<main class='main-container' id='main' role='main' tabindex='-1'>")[1].split("<div class='blog-pager container' id='blog-pager'>")[0]
         hz=[]

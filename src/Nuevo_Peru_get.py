@@ -10,7 +10,7 @@ hl=[]
 ul=l
 if not os.path.exists('000000.list'):
     for a in range(5):
-        ps=rg.rget(ul).text
+        ps=rg.valid(ul,"<a class='timestamp-link' href='").text
         f=open('test.txt','w+');f.write(ps);f.close()
         h=ps.split("<div class='blog-posts hfeed'>")[1].split("<div class='blog-pager' id='blog-pager'>")[0]
         hz=[]

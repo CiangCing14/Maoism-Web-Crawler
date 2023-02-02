@@ -34,6 +34,7 @@ if len(dr)==0:
     n=0
     for a in range(len(hl)):
         h=rg.rget(hl[a]).text
+        if'/category/'in hl[a]:continue
         if not os.path.exists('test.txt'):f=open('test.txt','w+');f.write(h);f.close()
         h2=h
         h=h.split('<div class="entry-content">')[1].split('<div id="jp-post-flair"')[0]
