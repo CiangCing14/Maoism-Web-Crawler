@@ -90,8 +90,7 @@ if not os.path.exists('index.htm'):
             n+=1
     ht=ht.replace('<img alt="" src="../Images','<img alt="" src="Images')
     ht=ht.replace('<img alt="" src="../ConvertedIMGs','<img alt="" src="ConvertedIMGs')
-    ht=ht.replace('<img alt=""','<img alt="" width="800px"')
-    f=open('index.htm','w+');f.write('<html><body><img src="Head_Image.jpg" width="640px" /><h1>Marxism-Leninism-Maoism News</h1><h1>马列毛主义新闻</h1><p>Please select your language 请选择你的语言:</p><p><a href="index.htm">Origin</a> | %s</p>%s</body></html>'%(' | '.join(['<a href="index_%s.htm">%s</a>'%(a,a.title())for a in aft]),ht));f.close()
+    f=open('index.htm','w+');f.write('<html><head><style>%s</style></head><body><img src="Head_Image.jpg" /><h1>Marxism-Leninism-Maoism News</h1><h1>马列毛主义新闻</h1><p>Please select your language 请选择你的语言:</p><p><a href="index.htm">Origin</a> | %s</p>%s</body></html>'%('img{height: auto; width: auto\9; width:100%;}',' | '.join(['<a href="index_%s.htm">%s</a>'%(a,a.title())for a in aft]),ht));f.close()
 if not os.path.exists('index.md'):
     ht=''
     n=0
@@ -207,7 +206,7 @@ News Source: %s'''%(a['title'],
         f=open('index_%s.md'%aft[y],'w+');f.write(re.sub('\\n[ ]+([#]+)[ ]+','\\n\\1 ',fmd.replace('这是给予的(','](').replace('! ','!')));f.close()
     if not os.path.exists('index_%s.htm'%aft[y]):
         f=open('index_%s.md'%aft[y],'r');fmd=f.read();f.close()
-        f=open('index_%s.htm'%aft[y],'w+');f.write('<html><body><img src="Head_Image.jpg" width="640px" /><h1>Marxism-Leninism-Maoism News</h1><h1>马列毛主义新闻</h1><p>Please select your language 请选择你的语言:</p><p><a href="index.htm">Origin</a> | %s</p>%s</body></html>'%(' | '.join(['<a href="index_%s.htm">%s</a>'%(a,a.title())for a in aft]),markdown.markdown(fmd).replace('<img alt=""','<img alt="" width="800px"')));f.close()
+        f=open('index_%s.htm'%aft[y],'w+');f.write('<html><head><style>%s</style></head><body><img src="Head_Image.jpg" /><h1>Marxism-Leninism-Maoism News</h1><h1>马列毛主义新闻</h1><p>Please select your language 请选择你的语言:</p><p><a href="index.htm">Origin</a> | %s</p>%s</body></html>'%('img{height: auto; width: auto\9; width:100%;}',' | '.join(['<a href="index_%s.htm">%s</a>'%(a,a.title())for a in aft]),markdown.markdown(fmd)));f.close()
 l=['HTMs','MDs','src','ConvertedIMGs','Images','index.md','index.htm']
 l2=['Head_Image.jpg']
 if not os.path.exists(ds):
@@ -221,7 +220,7 @@ if not os.path.exists(ds):
     for a in os.walk('%s/HTMs'%ds):
         for b in a[2]:
             f=open(pa:='%s/%s'%(a[0],b),'r');t=f.read();f.close()
-            if'<html>'not in t:t='<html>\n<body>\n%s\n</body>\n</html>'%t
+            if'<html>'not in t:t='<html>\n<head><style>%s</style></head>\n<body>\n%s\n</body>\n</html>'%('img{height: auto; width: auto\9; width:100%;}',t)
             os.remove(pa)
             f=open('%s%s'%(pa.replace(':','-').replace('+','-'),'.bak'if pa[-4:]!='.bak'else''),'w+');f.write(t);f.close()
     for a in os.walk('%s/MDs'%ds):
