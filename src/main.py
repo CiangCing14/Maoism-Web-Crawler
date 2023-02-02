@@ -187,6 +187,7 @@ for y in range(len(des)):
             n['title']=trans(n['title'],de=des[y],sr=src)
             n['meta']=ne[a]['meta']
             if'description'in n['meta']:print('翻譯簡介。');n['meta']['description']=trans(n['meta']['description'],de=des[y],sr=src)
+            if'head description'in n['meta']:print('翻譯頭部簡介。');n['meta']['head description']=trans(n['meta']['head description'],de=des[y],sr=src)
             nk=list(n['meta'].keys())
             for b in nk:
                 n['meta'][mt[b].title()]=n['meta'][b]
