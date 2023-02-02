@@ -53,7 +53,7 @@ def run(mdf,lan):
     t=t.replace('&hellip;','…')
     t=t.replace('&nbsp;',' ')
     t=t.replace('%LAN%',lan)
-    dt=str(datetime.date.today()+datetime.timedelta(days=-1)).split('T')[0].split(' ')[0].split('-')
+    dt=str(datetime.date.today()).split('T')[0].split(' ')[0].split('-')
     t=t.replace('%YY%',dt[0])
     t=t.replace('%MO%',dt[1].rjust(2).replace(' ','0'))
     t=t.replace('%DA%',dt[2].rjust(2).replace(' ','0'))
