@@ -1,4 +1,4 @@
-import os,sys,importlib,shutil,time,markdown,re,datetime,hashlib,markdown2odt
+import os,sys,importlib,shutil,time,markdown,re,datetime,hashlib,markdown2odt,pyttsx3
 import translators.server as tss
 
 ds='/home/a/CiangCing14.github.io/Maoism-Datasets/%s'%str(datetime.date.today())
@@ -106,6 +106,8 @@ if not os.path.exists('index.odt'):
     markdown2odt.run('index.md','Origin')
 if not os.path.exists('index.pdf'):
     os.system('soffice --headless --convert-to pdf index.odt')
+if not os.path.exists('index.txt'):
+    os.system('soffice --headless --convert-to txt index.odt')
 def trans_cycle(t,de,sr):
     time.sleep(1)
     return trans(t,de,sr)
@@ -226,7 +228,8 @@ if not os.path.exists(ds):
     l.extend(['index_%s.odt'%a for a in aft])
     l.extend(['index_%s.pdf'%a for a in aft])
     for a in l:
-        shutil.move(a,'%s/%s'%(ds,a))
+        if os.path.exists(a):
+            shutil.move(a,'%s/%s'%(ds,a))
     for a in l2:
         shutil.copyfile(a,'%s/%s'%(ds,a))
     for a in os.walk('%s/HTMs'%ds):
