@@ -106,8 +106,6 @@ if not os.path.exists('index.odt'):
     markdown2odt.run('index.md','Origin')
 if not os.path.exists('index.pdf'):
     os.system('soffice --headless --convert-to pdf index.odt')
-if not os.path.exists('index.txt'):
-    os.system('soffice --headless --convert-to txt index.odt')
 def trans_cycle(t,de,sr):
     time.sleep(1)
     return trans(t,de,sr)
