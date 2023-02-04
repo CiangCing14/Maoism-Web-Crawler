@@ -69,6 +69,7 @@ for a in os.walk('JSON-src'):
         imgs.extend(h['images'])
 for a in imgs:
     if not os.path.exists(pa:='Images/%s'%urllib.parse.unquote(a).split('/')[-1].split('?')[0]):
+        if'file:///'in a:continue
         im=rg.rget(a,st=True,to=10).content
         f=open(pa,'wb+');f.write(im);f.close()
         print(pa,'下載完畢。')
