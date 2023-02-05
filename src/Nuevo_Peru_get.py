@@ -3,8 +3,8 @@ import os,sys,html2text,cv2,re,json
 import urllib.parse,json,markdown
 import rg
 
-l='http://vnd-peru.blogspot.com/'
-l2='http://vnd-peru.blogspot.com'
+l='https://vnd-peru.blogspot.com/'
+l2='https://vnd-peru.blogspot.com'
 d=str(datetime.today()-timedelta(days=1)).split(' ')[0]
 hl=[]
 ul=l
