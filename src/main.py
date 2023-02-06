@@ -141,6 +141,7 @@ def trans_cycle(t,de,sr):
 def trans(t,de='zh',sr='auto'):
     try:return tss.google(t,sr,de)
     except tss.TranslatorError:return t
+    except IndexError:print(t);return t
     else:return trans_cycle(t,de,sr)
 des=['zh','en']
 lans={'chinese':'中文','english':'English'}

@@ -72,7 +72,7 @@ imgs=[]
 for a in os.walk('JSON-src'):
     for b in a[2]:
         f=open('JSON-src/%s'%b,'r');h=eval(f.read());f.close()
-        imgs.append([h['time'],h['images']])
+        imgs.append([h['time'].replace(':','-').replace('+','-'),h['images']])
 for a in imgs:
     for z in a[1]:
         if not os.path.exists(pa:='Images/%s/%s'%(a[0],urllib.parse.unquote(z).split('/')[-1].split('?')[0])):
@@ -109,7 +109,7 @@ for a in os.walk('JSON-src'):
                 t2=ht[z]
             else:
                 url=ht[z].split(')')[0]
-                t2='%s%s%s)%s'%(t2,htc[z-1],url.replace('\n','').replace('/'.join(url.replace('\n','').split('/')[:-1]),('../Images/%s'%h['time']if'.webp'not in url else'../ConvertedIMGs/%s'%h['time']).split('?')[0]).replace('.webp','.png').split('?')[0],')'.join(ht[z].split(')')[1:]))
+                t2='%s%s%s)%s'%(t2,htc[z-1],url.replace('\n','').replace('/'.join(url.replace('\n','').split('/')[:-1]),('../Images/%s'%h['time'].replace(':','-').replace('+','-')if'.webp'not in url else'../ConvertedIMGs/%s'%h['time'].replace(':','-').replace('+','-')).split('?')[0]).replace('.webp','.png').split('?')[0],')'.join(ht[z].split(')')[1:]))
         t3=t2
         t='''# %s
 
