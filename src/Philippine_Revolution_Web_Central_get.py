@@ -15,7 +15,7 @@ m2=int(d.split('-')[1])
 if y1!=y2 or m1!=m2:
     y=y1-y2
     if y==0:
-        tl=['%d/%s'%(y1,str(m1-a).rjust(2).replace(' ','0'))for a in range(m1-m2)]
+        tl=['%d/%s'%(y1,str(m1-a).rjust(2).replace(' ','0'))for a in range(m1-m2+1)]
     else:
         tl=['%d/%s'%(y1,str(m1-a).rjust(2).replace(' ','0'))for a in range(m1)]
         for a in range(y-1):
@@ -89,6 +89,7 @@ if len(dr)==0:
            'categories':[b.split('<')[0]for b in h.split(sp)[1].split('</div>')[0].split('rel="tag">')[1:]]if(sp:='<div class="article__categories">')in h else None,
            'source':hl[a]
           }
+        h['text']='\n\n'.join([z.replace('\n','').strip()for z in h['text'].split('\n\n')if z])
         t2=''
         t4=h['text'].split('(')
         for z in range(len(t4)):
@@ -110,18 +111,24 @@ imgs=[]
 for a in os.walk('JSON-src'):
     for b in a[2]:
         f=open('JSON-src/%s'%b,'r');h=eval(f.read());f.close()
-        imgs.extend(h['images'])
+        imgs.append([h['publish time'],h['images']])
 for a in imgs:
-    if not os.path.exists(pa:='Images/%s'%urllib.parse.unquote(a).split('/')[-1].split('?')[0]):
-        im=rg.rget(a,st=True).content
-        f=open(pa,'wb+');f.write(im);f.close()
-        print(pa,'下載完畢。')
-    else:print(pa,'已經完成下載。')
+    for z in a[1]:
+        if not os.path.exists(pa:='Images/%s/%s'%(a[0],urllib.parse.unquote(z).split('/')[-1].split('?')[0])):
+            if not os.path.exists(pa2:='/'.join(pa.split('/')[:-1])):
+                os.makedirs(pa2)
+            try:im=rg.rget(z,st=True).content
+            except:continue
+            f=open(pa,'wb+');f.write(im);f.close()
+            print(pa,'下載完畢。')
+        else:print(pa,'已經完成下載。')
 if not os.path.exists('ConvertedIMGs'):os.mkdir('ConvertedIMGs')
 for a in os.walk('Images'):
     for b in a[2]:
         if'.webp'==b[-5:]:
-            if not os.path.exists(pa:='ConvertedIMGs/%s'%b.replace('.webp','.png')):
+            if not os.path.exists(pa:='%s/%s'%(a[0].replace('/Images/','/ConvertedIMGs/'),b.replace('.webp','.png'))):
+                if not os.path.exists(pa2:='/'.join(pa.split('/')[:-1])):
+                    os.makedirs(pa2)
                 im=cv2.imread('%s/%s'%(a[0],b))
                 cv2.imwrite(pa,im)
                 print(pa,'轉換完畢。')
@@ -141,7 +148,7 @@ for a in os.walk('JSON-src'):
                 t2=ht[z]
             else:
                 url=ht[z].split(')')[0]
-                t2='%s%s%s)%s'%(t2,htc[z-1],url.replace('\n','').replace('/'.join(url.replace('\n','').split('/')[:-1]),('../Images'if'.webp'not in url else'../ConvertedIMGs').split('?')[0]).replace('.webp','.png').split('?')[0],')'.join(ht[z].split(')')[1:]))
+                t2='%s%s%s)%s'%(t2,htc[z-1],url.replace('\n','').replace('/'.join(url.replace('\n','').split('/')[:-1]),('../Images/%s'%h['publish time']if'.webp'not in url else'../ConvertedIMGs/%s'%h['publish time']).split('?')[0]).replace('.webp','.png').split('?')[0],')'.join(ht[z].split(')')[1:]))
         t3=t2
         t='''# %s
 

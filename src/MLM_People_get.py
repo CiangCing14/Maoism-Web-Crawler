@@ -43,6 +43,7 @@ if len(dr)==0:
            'text':hl[a][1],
            'source':hl[a][2]
           }
+        h['text']='\n\n'.join([z.replace('\n','').strip()for z in h['text'].split('\n\n')if z])
         t2=''
         t4=h['text'].split('(')
         for z in range(len(t4)):

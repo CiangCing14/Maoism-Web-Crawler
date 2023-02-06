@@ -1,4 +1,5 @@
 import os,sys,importlib,shutil,time,markdown,re,datetime,hashlib,markdown2odt,pyttsx3
+import urllib.parse
 import translators.server as tss
 
 ds='/home/a/CiangCing14.github.io/Maoism-Datasets/%s'%str(datetime.date.today())
@@ -52,15 +53,29 @@ for a in os.walk('src'):
     for b in a[2]:
         pa='%s/%s'%(a[0],b)
         if('Images'in a[0])and b1:
-            os.rename(pa,'Images/%s'%b)
+            pn=a[0].split('/Images/')[0].split('/')[-1]
+            pd=a[0].split('/Images/')[1]
+            pa2='Images/%s/%s'%(pn,pd)
+            if not os.path.exists(pa2):
+                os.makedirs(pa2)
+            os.rename(pa,'%s/%s'%(pa2,b))
         elif('ConvertedIMGs'in a[0])and b2:
-            os.rename(pa,'ConvertedIMGs/%s'%b)
+            pn=a[0].split('/ConvertedIMGs/')[0].split('/')[-1]
+            pd=a[0].split('/ConvertedIMGs/')[1]
+            pa2='ConvertedIMGs/%s/%s'%(pn,pd)
+            if not os.path.exists(pa2):
+                os.makedirs(pa2)
+            os.rename(pa,'%s/%s'%(pa2,b))
         elif('HTMs'in a[0])and b3:
+            pn=a[0].split('/HTMs')[0].split('/')[-1]
             n1+=1
-            os.rename(pa,'HTMs/%s-%s.htm'%(b[:-4],str(n1).rjust(6).replace(' ','0')))
+            f=open(pa,'r');tt=f.read();f.close()
+            f=open('HTMs/%s-%s.htm'%(b[:-4],str(n1).rjust(6).replace(' ','0')),'w+');f.write(tt.replace('../Images','../Images/%s'%pn).replace('../ConvertedIMGs','../ConvertedIMGs/%s'%pn));f.close()
         elif('MDs'in a[0])and b4:
+            pn=a[0].split('/MDs')[0].split('/')[-1]
             n2+=1
-            os.rename(pa,'MDs/%s-%s.md'%(b[:-3],str(n2).rjust(6).replace(' ','0')))
+            f=open(pa,'r');tt=f.read();f.close()
+            f=open('MDs/%s-%s.md'%(b[:-3],str(n2).rjust(6).replace(' ','0')),'w+');f.write(tt.replace('../Images','../Images/%s'%pn).replace('../ConvertedIMGs','../ConvertedIMGs/%s'%pn));f.close()
 for a in os.walk('src'):
     if not a[2]:
         try:os.removedirs(a[0])
@@ -86,10 +101,17 @@ if not os.path.exists('index.htm'):
         a[2].sort()
         for b in a[2]:
             f=open('%s/%s'%(a[0],b),'r');t=f.read();f.close()
+            t=t.split('\n')
+            tn=[]
+            nn=0
+            for o in t:
+                tn.append(o if nn==0 else o.replace('h1','h2'))
+                nn+=1
+            t='\n'.join(tn)
             ht='%s%s%s'%(ht,'\n\n<!--NEWS-->\n\n'if n!=0 else'',t)
             n+=1
-    ht=ht.replace('<img alt="" src="../Images','<img alt="" src="Images')
-    ht=ht.replace('<img alt="" src="../ConvertedIMGs','<img alt="" src="ConvertedIMGs')
+    ht=ht.replace('src="../Images','src="Images')
+    ht=ht.replace('src="../ConvertedIMGs','src="ConvertedIMGs')
     f=open('index.htm','w+');f.write('<html><head><style>%s</style></head><body><img src="Head_Image.jpg" /><h1>Marxism-Leninism-Maoism News</h1><h1>马列毛主义新闻</h1><p><a href="index.pdf">[This lan. PDF]</a><a href="index.odt">[This lan. ODT]</a></p><p>Please select your language 请选择你的语言:</p><p><a href="index.htm">Origin</a> | %s</p>%s</body></html>'%('img{height: auto; width: auto\9; width:100%;}',' | '.join(['<a href="index_%s.htm">%s</a>'%(a,a.title())for a in aft]),ht));f.close()
 if not os.path.exists('index.md'):
     ht=''
@@ -98,6 +120,13 @@ if not os.path.exists('index.md'):
         a[2].sort()
         for b in a[2]:
             f=open('%s/%s'%(a[0],b),'r');t=f.read();f.close()
+            t=t.split('\n\n')
+            tn=[]
+            nn=0
+            for o in t:
+                tn.append((o if nn==0 else o.replace('# ','## ')).replace('\n',' '))
+                nn+=1
+            t='\n\n'.join(tn).strip()
             ht='%s%s%s'%(ht,'\n\n<!--NEWS-->\n\n'if n!=0 else'',t)
             n+=1
     ht=ht.replace('(../Images/','(Images/').replace('(../ConvertedIMGs/','(ConvertedIMGs/')
@@ -205,7 +234,7 @@ for y in range(len(des)):
 
 News Source: %s'''%(a['title'],
                     '\n\n'.join(['%s: %s'%(b,a['meta'][b])for b in a['meta'].keys()]),
-                    a['text'],
+                    re.sub('\\n####(\S)','\\n#### \\1',a['text']),
                     a['source'])
             mds.append(md)
         fmd='\n\n<!--NEWS-->\n\n'.join(mds)

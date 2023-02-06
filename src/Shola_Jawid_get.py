@@ -109,6 +109,7 @@ with sync_playwright()as playwright:
                    'images':[],
                    'text':'\n'.join(h.split('\n')[1:]),
                    'source':hl[a]}
+                h['text']='\n\n'.join([z.replace('\n','').strip()for z in h['text'].split('\n\n')if z])
                 os.remove('temp.pdf')
                 if h['time']=='None':
                     h['time']=str(n2).rjust(ll).replace(' ','0')
@@ -134,12 +135,13 @@ with sync_playwright()as playwright:
                         nn+=1
                 t=hp.handle(h).strip()
                 h={'title':t.split('\n')[0].replace('#','').replace('**','').strip(),
-                   'time':'%s-01-01T00:00:00'%(str(2000-n).rjust(4).replace(' ','0')),
+                   'time':'%s-01-01T00:00:00+04:30'%(str(2000-n).rjust(4).replace(' ','0')),
                    'author':h2.split('<meta name="author" content="')[1].split('"')[0],
                    'images':[html.unescape(b.split('src="')[1].split('"')[0].split('?')[0])for b in t.split('<img')[1:]],
                    'text':'\n'.join(t.split('\n')[1:]).strip(),
                    'source':hl[a]
                   }
+                h['text']='\n\n'.join([z.replace('\n','').strip()for z in h['text'].split('\n\n')if z])
                 n+=1
             elif hl[a][-5:]=='.docx'or hl[a][-4:]in('.doc','.dot'):
                 af='.docx'if hl[a][-5:]=='.docx'else hl[a][-4:]
@@ -155,12 +157,13 @@ with sync_playwright()as playwright:
                 f=open('temp.htm','r');h2=f.read().strip();f.close()
                 t=hp.handle(h2).strip()
                 h={'title':t.split('\n')[0].replace('#','').replace('**','').strip(),
-                   'time':str(md['created']).replace(' ','T')if af=='.docx'else'%s-01-01T00:00:00'%(str(2000-n).rjust(4).replace(' ','0')),
+                   'time':str(md['created']).replace(' ','T')if af=='.docx'else'%s-01-01T00:00:00+04:30'%(str(2000-n).rjust(4).replace(' ','0')),
                    'author':str(md['author'])if af=='.docx'else'Unknown',
                    'images':[html.unescape(b.split('src="')[1].split('"')[0].split('?')[0])for b in h2.split('<img')[1:]],
                    'text':'\n'.join(t.split('\n')[1:]).strip(),
                    'source':hl[a]
                   }
+                h['text']='\n\n'.join([z.replace('\n','').strip()for z in h['text'].split('\n\n')if z])
                 print(h)
                 os.remove('temp%s'%af)
                 os.remove('temp.htm')
@@ -181,17 +184,27 @@ with sync_playwright()as playwright:
             else:print(h['time'],'已經完成下載。')
     if not os.path.exists('Images'):os.mkdir('Images')
     imgs=[]
-    for a in os.walk(sys.path[0]):
+    for a in os.walk('JSON-src'):
         for b in a[2]:
-            if b[-4:]in['.gif','.jpg','.png','.bmp']or b[-5:]=='.webp':
-                if not os.path.exists(b):continue
-                if b=='Head_Image.jpg':continue
-                os.rename(b,'Images/%s'%b)
-                print(b,'移動完畢。')
+            f=open('JSON-src/%s'%b,'r');h=eval(f.read());f.close()
+            imgs.append([h['time'],h['images']])
+    for a in imgs:
+        for z in a[1]:
+            if not os.path.exists(pa:='Images/%s/%s'%(a[0],urllib.parse.unquote(z).split('/')[-1].split('?')[0])):
+                if not os.path.exists(pa2:='/'.join(pa.split('/')[:-1])):
+                    os.makedirs(pa2)
+                try:im=rg.rget(z,st=True).content
+                except:continue
+                f=open(pa,'wb+');f.write(im);f.close()
+                print(pa,'下載完畢。')
+            else:print(pa,'已經完成下載。')
+    if not os.path.exists('ConvertedIMGs'):os.mkdir('ConvertedIMGs')
     for a in os.walk('Images'):
         for b in a[2]:
             if'.webp'==b[-5:]:
-                if not os.path.exists(pa:='ConvertedIMGs/%s'%b.replace('.webp','.png')):
+                if not os.path.exists(pa:='%s/%s'%(a[0].replace('/Images/','/ConvertedIMGs/'),b.replace('.webp','.png'))):
+                    if not os.path.exists(pa2:='/'.join(pa.split('/')[:-1])):
+                        os.makedirs(pa2)
                     im=cv2.imread('%s/%s'%(a[0],b))
                     cv2.imwrite(pa,im)
                     print(pa,'轉換完畢。')
@@ -211,7 +224,7 @@ with sync_playwright()as playwright:
                     t2=ht[z]
                 else:
                     url=ht[z].split(')')[0]
-                    t2='%s%s%s)%s'%(t2,htc[z-1],url.replace('\n','').replace('/'.join(url.replace('\n','').split('/')[:-1]),('../Images'if'.webp'not in url else'../ConvertedIMGs').split('?')[0]).replace('.webp','.png').split('?')[0],')'.join(ht[z].split(')')[1:]))
+                    t2='%s%s%s)%s'%(t2,htc[z-1],url.replace('\n','').replace('/'.join(url.replace('\n','').split('/')[:-1]),('../Images/%s'%h['time']if'.webp'not in url else'../ConvertedIMGs/%s'%h['time']).split('?')[0]).replace('.webp','.png').split('?')[0],')'.join(ht[z].split(')')[1:]))
             t3=t2
             t4=h['title']
             if t4[:2]=='![':

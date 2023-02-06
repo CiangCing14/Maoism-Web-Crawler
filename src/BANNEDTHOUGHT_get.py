@@ -45,6 +45,7 @@ if len(dr)==0:
            'text':' — '.join(h.split(' — ')[1:]),
            'source':l
           }
+        h['text']='\n\n'.join([z.replace('\n','').strip()for z in h['text'].split('\n\n')if z])
         ht=h['text']
         t2=ht.split('](')
         t3=''
@@ -69,7 +70,7 @@ if len(dr)==0:
         if ed:
             if ed!=dd:
                 n=0
-        h['time']='%sT%s:00:00'%(h['time'],str(99-n).rjust(2).replace(' ','0'))
+        h['time']='%sT%s:00:00-04:00'%(h['time'],str(99-n).rjust(2).replace(' ','0'))
         ed=dd
         if dd<d:break
         if not os.path.exists(pa:='JSON-src/%s.json'%h['time']):

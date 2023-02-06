@@ -7,7 +7,10 @@ def run(mdf,lan):
     f=open('sample/content.xml','r');te=f.read();f.close()
     f=open(mdf,'r');t=f.read();f.close()
     t=markdown.markdown(t)
-    t=t.replace('<h1>','<text:h text:style-name="P5" text:outline-level="1"><text:span text:style-name="T2">').replace('</h1>','</text:span></text:h>')
+    t=t.replace('<h1>','<text:h text:style-name="P9" text:outline-level="1"><text:span text:style-name="T3">').replace('</h1>','</text:span></text:h>')
+    t=t.replace('<h2>','<text:h text:style-name="P10" text:outline-level="2"><text:span text:style-name="T3">').replace('</h2>','</text:span></text:h>')
+    t=t.replace('<h3>','<text:h text:style-name="P11" text:outline-level="3"><text:span text:style-name="T3">').replace('</h3>','</text:span></text:h>')
+    t=t.replace('<h4>','<text:h text:style-name="P12" text:outline-level="4"><text:span text:style-name="T3">').replace('</h4>','</text:span></text:h>')
     t=t.replace('<p>','<text:p text:style-name="P4">').replace('</p>','</text:p>')
     t=t.split('<a href="')
     tt=''
@@ -17,7 +20,7 @@ def run(mdf,lan):
             url=t[a].split('"')[0]
             tt='%s<text:a xlink:type="simple" xlink:href="%s" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link">%s</text:a>%s'%(tt,url,'>'.join(t[a].split('</a>')[0].split('>')[1:]),t[a].split('</a>')[1])
     t=tt
-    t=t.split('<img alt="" src="')
+    t=t.split('<img')
     tt=''
     def gett(a):
         ty={'png':'png','jpg':'jpeg','jpeg':'jpeg','bmp':'bmp','gif':'gif'}
@@ -29,7 +32,7 @@ def run(mdf,lan):
     for a in range(len(t)):
         if a==0:tt=t[a]
         else:
-            url=t[a].split('"')[0]
+            url=t[a].split('src="')[1].split('"')[0]
             try:
                 im=Image.open(urllib.parse.unquote(url))
                 wt=6.9236
@@ -38,7 +41,7 @@ def run(mdf,lan):
                 ht=h0/w0*wt
                 tt='%s<draw:frame draw:style-name="fr1" draw:name="Image%d" text:anchor-type="as-char" svg:width="%sin" svg:height="%sin" draw:z-index="0"><draw:image xlink:href="../%s" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" draw:mime-type="image/%s"/></draw:frame>'%(tt,a+1,str(round(wt,6)),str(round(ht,6)),url,gett(url))
             except:pass
-            aft='"'.join(t[a].split('"')[1:])
+            aft='"'.join(t[a].split('src="')[1].split('"')[1:])
             if aft[:3]==' />':aft=aft[3:]
             else:raise TypeError
             tt='%s%s'%(tt,aft)
@@ -48,7 +51,7 @@ def run(mdf,lan):
     t=t.replace('<hr />','<text:p text:style-name="Horizontal_20_Line"/>')
     t=t.replace('<blockquote>','<text:p text:style-name="Quotations">').replace('</blockquote>','</text:p>')
     t=t.replace('>','>\n').strip()
-    t='%s\n<text:p><text:soft-page-break/></text:p>%s\n%s'%(te.split('<text:p text:style-name="P2"/><text:h text:style-name="P5" text:outline-level="1"><text:soft-page-break/>#<text:span text:style-name="T2">新闻标题</text:span>')[0],t,'</office:text></office:body>%s'%te.split('</office:text></office:body>')[1])
+    t='%s\n<text:p><text:soft-page-break/></text:p>%s\n%s'%(te.split('<text:p text:style-name="P2"/><text:h text:style-name="P9" text:outline-level="1"><text:soft-page-break/>#<text:span text:style-name="T2">新闻标题</text:span>')[0],t,'</office:text></office:body>%s'%te.split('</office:text></office:body>')[1])
     t=t.replace('<https：//prensachiripilko.blogspot.com/>','https://prensachiripilko.blogspot.com/').replace('<text:p text:style-name="P7">','')
     t=t.replace('&hellip;','…')
     t=t.replace('&nbsp;',' ')
