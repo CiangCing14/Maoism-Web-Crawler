@@ -268,6 +268,9 @@ if not os.path.exists(ds):
     for a in os.walk('%s/MDs'%ds):
         for b in a[2]:
             os.rename('%s/%s'%(a[0],b),'%s/%s%s'%(a[0],b.replace(':','-').replace('+','-'),'.bak'if pa[-4:]!='.bak'else''))
+    for a in os.walk('%s/src'%ds):
+        for b in a[2]:
+            os.rename('%s/%s'%(a[0],b),'%s/%s%s'%(a[0],b.replace(':','-').replace('+','-'),'.bak'if pa[-4:]!='.bak'else''))
 if not os.path.exists(pa:='%s/MD5s.txt'%ds):
     md5s=[]
     for a in os.walk('%s/MDs'%(ds)):
