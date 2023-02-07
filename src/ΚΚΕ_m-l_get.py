@@ -94,8 +94,11 @@ if len(dr)==0:
             if z==0:
                 t2=t4[z]
             else:
-                url=t4[z].split(')')[0]
-                t2='%s(%s)%s'%(t2,'%s%s'%(l2,url)if(url[0]in['/','.'])and('http'not in url)else url,')'.join(t4[z].split(')')[1:]))
+                if')'in t4[z]:
+                    url=t4[z].split(')')[0];hc=True
+                else:
+                    url=t4[z];hc=False
+                t2='%s(%s%s%s'%(t2,'%s%s'%(l2,url)if(url[0]in['/','.'])and('http'not in url)else url,')'if hc else'',')'.join(t4[z].split(')')[1:]))
         h['text']=t2
         for z in range(len(h['images'])):
             if h['images'][z][:4]!='http'and(':'not in h['images'][z]):
@@ -132,7 +135,7 @@ if not os.path.exists('ConvertedIMGs'):os.mkdir('ConvertedIMGs')
 for a in os.walk('Images'):
     for b in a[2]:
         if'.webp'==b[-5:]:
-            if not os.path.exists(pa:='%s/%s'%(a[0].replace('/Images/','/ConvertedIMGs/'),b.replace('.webp','.png'))):
+            if not os.path.exists(pa:='%s/%s'%(a[0].replace('Images','ConvertedIMGs'),b.replace('.webp','.png'))):
                 if not os.path.exists(pa2:='/'.join(pa.split('/')[:-1])):
                     os.makedirs(pa2)
                 im=cv2.imread('%s/%s'%(a[0],b))

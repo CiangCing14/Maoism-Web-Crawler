@@ -202,7 +202,7 @@ with sync_playwright()as playwright:
     for a in os.walk('Images'):
         for b in a[2]:
             if'.webp'==b[-5:]:
-                if not os.path.exists(pa:='%s/%s'%(a[0].replace('/Images/','/ConvertedIMGs/'),b.replace('.webp','.png'))):
+                if not os.path.exists(pa:='%s/%s'%(a[0].replace('Images','ConvertedIMGs'),b.replace('.webp','.png'))):
                     if not os.path.exists(pa2:='/'.join(pa.split('/')[:-1])):
                         os.makedirs(pa2)
                     im=cv2.imread('%s/%s'%(a[0],b))

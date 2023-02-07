@@ -1,12 +1,13 @@
-import markdown,cv2,datetime
+import markdown,cv2,datetime,re
 from PIL import Image
 import urllib.parse,shutil,os
+import html
 def run(mdf,lan):
     if os.path.exists('sample2'):shutil.rmtree('sample2')
     shutil.copytree('sample','sample2')
     f=open('sample/content.xml','r');te=f.read();f.close()
     f=open(mdf,'r');t=f.read();f.close()
-    t=markdown.markdown(t)
+    t=markdown.markdown(t.replace('<http','(http'))
     t=t.replace('<h1>','<text:h text:style-name="P9" text:outline-level="1"><text:span text:style-name="T3">').replace('</h1>','</text:span></text:h>')
     t=t.replace('<h2>','<text:h text:style-name="P10" text:outline-level="2"><text:span text:style-name="T3">').replace('</h2>','</text:span></text:h>')
     t=t.replace('<h3>','<text:h text:style-name="P11" text:outline-level="3"><text:span text:style-name="T3">').replace('</h3>','</text:span></text:h>')
@@ -17,7 +18,7 @@ def run(mdf,lan):
     for a in range(len(t)):
         if a==0:tt=t[a]
         else:
-            url=t[a].split('"')[0]
+            url=t[a].split('"')[0].split('?')[0]
             tt='%s<text:a xlink:type="simple" xlink:href="%s" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link">%s</text:a>%s'%(tt,url,'>'.join(t[a].split('</a>')[0].split('>')[1:]),t[a].split('</a>')[1])
     t=tt
     t=t.split('<img')
@@ -53,13 +54,13 @@ def run(mdf,lan):
     t=t.replace('>','>\n').strip()
     t='%s\n<text:p><text:soft-page-break/></text:p>%s\n%s'%(te.split('<text:p text:style-name="P2"/><text:h text:style-name="P9" text:outline-level="1"><text:soft-page-break/>#<text:span text:style-name="T2">新闻标题</text:span>')[0],t,'</office:text></office:body>%s'%te.split('</office:text></office:body>')[1])
     t=t.replace('<https：//prensachiripilko.blogspot.com/>','https://prensachiripilko.blogspot.com/').replace('<text:p text:style-name="P7">','')
-    t=t.replace('&hellip;','…')
-    t=t.replace('&nbsp;',' ')
+    t=html.unescape(t)
     t=t.replace('%LAN%',lan)
     dt=str(datetime.date.today()).split('T')[0].split(' ')[0].split('-')
     t=t.replace('%YY%',dt[0])
     t=t.replace('%MO%',dt[1].rjust(2).replace(' ','0'))
     t=t.replace('%DA%',dt[2].rjust(2).replace(' ','0'))
+    t=t.replace(' & ',' &amp; ')
     f=open('sample2/content.xml','w+');f.write(t);f.close()
     os.system('cd sample2;7z a a.zip .')
     shutil.move('sample2/a.zip','%s.odt'%'.'.join(mdf.split('.')[:-1]))

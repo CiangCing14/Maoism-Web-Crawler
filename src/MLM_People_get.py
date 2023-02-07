@@ -50,8 +50,11 @@ if len(dr)==0:
             if z==0:
                 t2=t4[z]
             else:
-                url=t4[z].split(')')[0]
-                t2='%s(%s)%s'%(t2,'%s%s'%(l2,url)if(url[0]in['/','.'])and('http'not in url)else url,')'.join(t4[z].split(')')[1:]))
+                if')'in t4[z]:
+                    url=t4[z].split(')')[0];hc=True
+                else:
+                    url=t4[z];hc=False
+                t2='%s(%s%s%s'%(t2,'%s%s'%(l2,url)if(url[0]in['/','.'])and('http'not in url)else url,')'if hc else'',')'.join(t4[z].split(')')[1:]))
         h['text']=t2
         if h['time'].split('T')[0]<d:break
         if not os.path.exists(pa:='JSON-src/%s.json'%h['time']):

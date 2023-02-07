@@ -145,6 +145,9 @@ def trans(t,de='zh',sr='auto'):
     else:return trans_cycle(t,de,sr)
 des=['zh','en']
 lans={'chinese':'中文','english':'English'}
+fa=['jpg','png','bmp','gif','webp','jpeg']
+fa.extend([e.upper()for e in fa])
+fa=['.%s'%e for e in fa]
 for y in range(len(des)):
     if not os.path.exists('index_%s.md'%aft[y]):
         f=open('index.md','r');t=f.read();f.close()
@@ -194,23 +197,35 @@ for y in range(len(des)):
             print([len(b)for b in ft])
             ftl=len(ft)
             for b in range(ftl):
-                ft[b]=[[c.split(')')[0],c.split(')')[1]]if')'in c else c for c in ft[b].split('(')]
+                ft[b]=[c.split(')')for c in ft[b].split('(')]
             for b in range(ftl):
                 if b==0:
                     print('第%d個新聞開始翻譯。'%(a+1))
                 ftbl=len(ft[b])
                 for c in range(ftbl):
-                    if isinstance(ft[b][c],str):
-                        ft[b][c]=trans(ft[b][c],de=des[y],sr=src)if ft[b][c]else''
-                    else:
-                        ft[b][c][1]=trans(ft[b][c][1],de=des[y],sr=src)if ft[b][c][1]else''
-                        ft[b][c]=')'.join(ft[b][c])
+                    ftbcl=len(ft[b][c])
+                    for d in range(ftbcl):
+                        print('ftbc: ',d+1,'/',ftbcl)
+                        if not ft[b][c][d]:continue
+                        if ft[b][c][d][0]in['/','.']:continue
+                        if('http://'in ft[b][c][d])or('https://'in ft[b][c][d]):
+                            if ft[b][c][d][:7]=='http://':continue
+                            elif ft[b][c][d][:8]=='https://':continue
+                        con=False
+                        for e in fa:
+                            if e in ft[b][c][d]:
+                                if ft[b][c][d][-len(e):]==e:
+                                    con=True
+                        if con:continue
+                        if not re.search('\w',ft[b][c][d]):continue
+                        ft[b][c][d]=trans(ft[b][c][d],de=des[y],sr=src)
+                    ft[b][c]=')'.join(ft[b][c])
                     print('ftb: ',c+1,'/',ftbl)
                 ft[b]='('.join(ft[b])
                 print('ft: ',b+1,'/',ftl)
             ft='\n'.join(ft).replace(']（图片/','](Images/').replace('）',')').replace('！','!').replace('【','[').replace('】',']').replace('（','(')
             n={}
-            n['text']=ft
+            n['text']='\n\n'.join([e.strip().replace('\n','').replace('＃','#')for e in ft.split('\n\n')])
             n['source']=ne[a]['source']
             n['title']=ne[a]['title']
             print('翻譯標題。')
@@ -235,7 +250,7 @@ for y in range(len(des)):
 
 News Source: %s'''%(a['title'],
                     '\n\n'.join(['%s: %s'%(b,a['meta'][b])for b in a['meta'].keys()]),
-                    re.sub('\\n####(\S)','\\n#### \\1',a['text']),
+                    a['text'],
                     a['source'])
             mds.append(md)
         fmd='\n\n<!--NEWS-->\n\n'.join(mds)
