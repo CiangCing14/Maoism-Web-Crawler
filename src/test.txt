@@ -1,0 +1,4155 @@
+<!DOCTYPE html>
+<html class='v2' dir='ltr' lang='en'>
+<head>
+<link href='https://www.blogger.com/static/v1/widgets/2975350028-css_bundle_v2.css' rel='stylesheet' type='text/css'/>
+<meta content='width=1100' name='viewport'/>
+<meta content='text/html; charset=UTF-8' http-equiv='Content-Type'/>
+<meta content='blogger' name='generator'/>
+<link href='https://maoistroad.blogspot.com/favicon.ico' rel='icon' type='image/x-icon'/>
+<link href='https://maoistroad.blogspot.com/' rel='canonical'/>
+<link rel="alternate" type="application/atom+xml" title="maoistroad - Atom" href="https://maoistroad.blogspot.com/feeds/posts/default" />
+<link rel="alternate" type="application/rss+xml" title="maoistroad - RSS" href="https://maoistroad.blogspot.com/feeds/posts/default?alt=rss" />
+<link rel="service.post" type="application/atom+xml" title="maoistroad - Atom" href="https://www.blogger.com/feeds/7106337660494808516/posts/default" />
+<!--Can't find substitution for tag [blog.ieCssRetrofitLinks]-->
+<meta content='https://maoistroad.blogspot.com/' property='og:url'/>
+<meta content='maoistroad' property='og:title'/>
+<meta content='' property='og:description'/>
+<title>maoistroad</title>
+<style id='page-skin-1' type='text/css'><!--
+/*-----------------------------------------------
+Blogger Template Style
+Name:     Picture Window
+Designer: Blogger
+URL:      www.blogger.com
+----------------------------------------------- */
+/* Content
+----------------------------------------------- */
+body {
+font: normal normal 15px Arial, Tahoma, Helvetica, FreeSans, sans-serif;
+color: #333333;
+background: #990000 none no-repeat scroll center center;
+}
+html body .region-inner {
+min-width: 0;
+max-width: 100%;
+width: auto;
+}
+.content-outer {
+font-size: 90%;
+}
+a:link {
+text-decoration:none;
+color: #993333;
+}
+a:visited {
+text-decoration:none;
+color: #cc6666;
+}
+a:hover {
+text-decoration:underline;
+color: #ff3243;
+}
+.content-outer {
+background: transparent none repeat scroll top left;
+-moz-border-radius: 0;
+-webkit-border-radius: 0;
+-goog-ms-border-radius: 0;
+border-radius: 0;
+-moz-box-shadow: 0 0 0 rgba(0, 0, 0, .15);
+-webkit-box-shadow: 0 0 0 rgba(0, 0, 0, .15);
+-goog-ms-box-shadow: 0 0 0 rgba(0, 0, 0, .15);
+box-shadow: 0 0 0 rgba(0, 0, 0, .15);
+margin: 20px auto;
+}
+.content-inner {
+padding: 0;
+}
+/* Header
+----------------------------------------------- */
+.header-outer {
+background: transparent none repeat-x scroll top left;
+_background-image: none;
+color: #ffffff;
+-moz-border-radius: 0;
+-webkit-border-radius: 0;
+-goog-ms-border-radius: 0;
+border-radius: 0;
+}
+.Header img, .Header #header-inner {
+-moz-border-radius: 0;
+-webkit-border-radius: 0;
+-goog-ms-border-radius: 0;
+border-radius: 0;
+}
+.header-inner .Header .titlewrapper,
+.header-inner .Header .descriptionwrapper {
+padding-left: 0;
+padding-right: 0;
+}
+.Header h1 {
+font: normal normal 36px Arial, Tahoma, Helvetica, FreeSans, sans-serif;
+text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+.Header h1 a {
+color: #ffffff;
+}
+.Header .description {
+font-size: 130%;
+}
+/* Tabs
+----------------------------------------------- */
+.tabs-inner {
+margin: .5em 20px 0;
+padding: 0;
+}
+.tabs-inner .section {
+margin: 0;
+}
+.tabs-inner .widget ul {
+padding: 0;
+background: transparent none repeat scroll bottom;
+-moz-border-radius: 0;
+-webkit-border-radius: 0;
+-goog-ms-border-radius: 0;
+border-radius: 0;
+}
+.tabs-inner .widget li {
+border: none;
+}
+.tabs-inner .widget li a {
+display: inline-block;
+padding: .5em 1em;
+margin-right: .25em;
+color: #ffffff;
+font: normal normal 15px Arial, Tahoma, Helvetica, FreeSans, sans-serif;
+-moz-border-radius: 10px 10px 0 0;
+-webkit-border-top-left-radius: 10px;
+-webkit-border-top-right-radius: 10px;
+-goog-ms-border-radius: 10px 10px 0 0;
+border-radius: 10px 10px 0 0;
+background: transparent url(https://resources.blogblog.com/blogblog/data/1kt/transparent/black50.png) repeat scroll top left;
+border-right: 1px solid transparent;
+}
+.tabs-inner .widget li:first-child a {
+padding-left: 1.25em;
+-moz-border-radius-topleft: 10px;
+-moz-border-radius-bottomleft: 0;
+-webkit-border-top-left-radius: 10px;
+-webkit-border-bottom-left-radius: 0;
+-goog-ms-border-top-left-radius: 10px;
+-goog-ms-border-bottom-left-radius: 0;
+border-top-left-radius: 10px;
+border-bottom-left-radius: 0;
+}
+.tabs-inner .widget li.selected a,
+.tabs-inner .widget li a:hover {
+position: relative;
+z-index: 1;
+background: transparent url(https://resources.blogblog.com/blogblog/data/1kt/transparent/white80.png) repeat scroll bottom;
+color: #336699;
+-moz-box-shadow: 0 0 3px rgba(0, 0, 0, .15);
+-webkit-box-shadow: 0 0 3px rgba(0, 0, 0, .15);
+-goog-ms-box-shadow: 0 0 3px rgba(0, 0, 0, .15);
+box-shadow: 0 0 3px rgba(0, 0, 0, .15);
+}
+/* Headings
+----------------------------------------------- */
+h2 {
+font: bold normal 13px Arial, Tahoma, Helvetica, FreeSans, sans-serif;
+text-transform: uppercase;
+color: #888888;
+margin: .5em 0;
+}
+/* Main
+----------------------------------------------- */
+.main-outer {
+background: transparent url(https://resources.blogblog.com/blogblog/data/1kt/transparent/white80.png) repeat scroll top left;
+-moz-border-radius: 20px 20px 0 0;
+-webkit-border-top-left-radius: 20px;
+-webkit-border-top-right-radius: 20px;
+-webkit-border-bottom-left-radius: 0;
+-webkit-border-bottom-right-radius: 0;
+-goog-ms-border-radius: 20px 20px 0 0;
+border-radius: 20px 20px 0 0;
+-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, .15);
+-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .15);
+-goog-ms-box-shadow: 0 1px 3px rgba(0, 0, 0, .15);
+box-shadow: 0 1px 3px rgba(0, 0, 0, .15);
+}
+.main-inner {
+padding: 15px 20px 20px;
+}
+.main-inner .column-center-inner {
+padding: 0 0;
+}
+.main-inner .column-left-inner {
+padding-left: 0;
+}
+.main-inner .column-right-inner {
+padding-right: 0;
+}
+/* Posts
+----------------------------------------------- */
+h3.post-title {
+margin: 0;
+font: normal normal 18px Arial, Tahoma, Helvetica, FreeSans, sans-serif;
+}
+.comments h4 {
+margin: 1em 0 0;
+font: normal normal 18px Arial, Tahoma, Helvetica, FreeSans, sans-serif;
+}
+.date-header span {
+color: #333333;
+}
+.post-outer {
+background-color: #ffffff;
+border: solid 1px #dddddd;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+border-radius: 5px;
+-goog-ms-border-radius: 5px;
+padding: 15px 20px;
+margin: 0 -20px 20px;
+}
+.post-body {
+line-height: 1.4;
+font-size: 110%;
+position: relative;
+}
+.post-header {
+margin: 0 0 1.5em;
+color: #999999;
+line-height: 1.6;
+}
+.post-footer {
+margin: .5em 0 0;
+color: #999999;
+line-height: 1.6;
+}
+#blog-pager {
+font-size: 140%
+}
+#comments .comment-author {
+padding-top: 1.5em;
+border-top: dashed 1px #ccc;
+border-top: dashed 1px rgba(128, 128, 128, .5);
+background-position: 0 1.5em;
+}
+#comments .comment-author:first-child {
+padding-top: 0;
+border-top: none;
+}
+.avatar-image-container {
+margin: .2em 0 0;
+}
+/* Comments
+----------------------------------------------- */
+.comments .comments-content .icon.blog-author {
+background-repeat: no-repeat;
+background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEgAACxIB0t1+/AAAAAd0SU1FB9sLFwMeCjjhcOMAAAD+SURBVDjLtZSvTgNBEIe/WRRnm3U8RC1neQdsm1zSBIU9VVF1FkUguQQsD9ITmD7ECZIJSE4OZo9stoVjC/zc7ky+zH9hXwVwDpTAWWLrgS3QAe8AZgaAJI5zYAmc8r0G4AHYHQKVwII8PZrZFsBFkeRCABYiMh9BRUhnSkPTNCtVXYXURi1FpBDgArj8QU1eVXUzfnjv7yP7kwu1mYrkWlU33vs1QNu2qU8pwN0UpKoqokjWwCztrMuBhEhmh8bD5UDqur75asbcX0BGUB9/HAMB+r32hznJgXy2v0sGLBcyAJ1EK3LFcbo1s91JeLwAbwGYu7TP/3ZGfnXYPgAVNngtqatUNgAAAABJRU5ErkJggg==);
+}
+.comments .comments-content .loadmore a {
+border-top: 1px solid #ff3243;
+border-bottom: 1px solid #ff3243;
+}
+.comments .continue {
+border-top: 2px solid #ff3243;
+}
+/* Widgets
+----------------------------------------------- */
+.widget ul, .widget #ArchiveList ul.flat {
+padding: 0;
+list-style: none;
+}
+.widget ul li, .widget #ArchiveList ul.flat li {
+border-top: dashed 1px #ccc;
+border-top: dashed 1px rgba(128, 128, 128, .5);
+}
+.widget ul li:first-child, .widget #ArchiveList ul.flat li:first-child {
+border-top: none;
+}
+.widget .post-body ul {
+list-style: disc;
+}
+.widget .post-body ul li {
+border: none;
+}
+/* Footer
+----------------------------------------------- */
+.footer-outer {
+color:#cccccc;
+background: transparent url(https://resources.blogblog.com/blogblog/data/1kt/transparent/black50.png) repeat scroll top left;
+-moz-border-radius: 0 0 20px 20px;
+-webkit-border-top-left-radius: 0;
+-webkit-border-top-right-radius: 0;
+-webkit-border-bottom-left-radius: 20px;
+-webkit-border-bottom-right-radius: 20px;
+-goog-ms-border-radius: 0 0 20px 20px;
+border-radius: 0 0 20px 20px;
+-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, .15);
+-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .15);
+-goog-ms-box-shadow: 0 1px 3px rgba(0, 0, 0, .15);
+box-shadow: 0 1px 3px rgba(0, 0, 0, .15);
+}
+.footer-inner {
+padding: 10px 20px 20px;
+}
+.footer-outer a {
+color: #ee98a1;
+}
+.footer-outer a:visited {
+color: #ee7f77;
+}
+.footer-outer a:hover {
+color: #ff3243;
+}
+.footer-outer .widget h2 {
+color: #aaaaaa;
+}
+/* Mobile
+----------------------------------------------- */
+html body.mobile {
+height: auto;
+}
+html body.mobile {
+min-height: 480px;
+background-size: 100% auto;
+}
+.mobile .body-fauxcolumn-outer {
+background: transparent none repeat scroll top left;
+}
+html .mobile .mobile-date-outer, html .mobile .blog-pager {
+border-bottom: none;
+background: transparent url(https://resources.blogblog.com/blogblog/data/1kt/transparent/white80.png) repeat scroll top left;
+margin-bottom: 10px;
+}
+.mobile .date-outer {
+background: transparent url(https://resources.blogblog.com/blogblog/data/1kt/transparent/white80.png) repeat scroll top left;
+}
+.mobile .header-outer, .mobile .main-outer,
+.mobile .post-outer, .mobile .footer-outer {
+-moz-border-radius: 0;
+-webkit-border-radius: 0;
+-goog-ms-border-radius: 0;
+border-radius: 0;
+}
+.mobile .content-outer,
+.mobile .main-outer,
+.mobile .post-outer {
+background: inherit;
+border: none;
+}
+.mobile .content-outer {
+font-size: 100%;
+}
+.mobile-link-button {
+background-color: #993333;
+}
+.mobile-link-button a:link, .mobile-link-button a:visited {
+color: #ffffff;
+}
+.mobile-index-contents {
+color: #333333;
+}
+.mobile .tabs-inner .PageList .widget-content {
+background: transparent url(https://resources.blogblog.com/blogblog/data/1kt/transparent/white80.png) repeat scroll bottom;
+color: #336699;
+}
+.mobile .tabs-inner .PageList .widget-content .pagelist-arrow {
+border-left: 1px solid transparent;
+}
+
+--></style>
+<style id='template-skin-1' type='text/css'><!--
+body {
+min-width: 960px;
+}
+.content-outer, .content-fauxcolumn-outer, .region-inner {
+min-width: 960px;
+max-width: 960px;
+_width: 960px;
+}
+.main-inner .columns {
+padding-left: 0;
+padding-right: 310px;
+}
+.main-inner .fauxcolumn-center-outer {
+left: 0;
+right: 310px;
+/* IE6 does not respect left and right together */
+_width: expression(this.parentNode.offsetWidth -
+parseInt("0") -
+parseInt("310px") + 'px');
+}
+.main-inner .fauxcolumn-left-outer {
+width: 0;
+}
+.main-inner .fauxcolumn-right-outer {
+width: 310px;
+}
+.main-inner .column-left-outer {
+width: 0;
+right: 100%;
+margin-left: -0;
+}
+.main-inner .column-right-outer {
+width: 310px;
+margin-right: -310px;
+}
+#layout {
+min-width: 0;
+}
+#layout .content-outer {
+min-width: 0;
+width: 800px;
+}
+#layout .region-inner {
+min-width: 0;
+width: auto;
+}
+body#layout div.add_widget {
+padding: 8px;
+}
+body#layout div.add_widget a {
+margin-left: 32px;
+}
+--></style>
+<link href='https://www.blogger.com/dyn-css/authorization.css?targetBlogID=7106337660494808516&amp;zx=bfcd0240-eb72-496f-9907-16e966e77659' media='none' onload='if(media!=&#39;all&#39;)media=&#39;all&#39;' rel='stylesheet'/><noscript><link href='https://www.blogger.com/dyn-css/authorization.css?targetBlogID=7106337660494808516&amp;zx=bfcd0240-eb72-496f-9907-16e966e77659' rel='stylesheet'/></noscript>
+<meta name='google-adsense-platform-account' content='ca-host-pub-1556223355139109'/>
+<meta name='google-adsense-platform-domain' content='blogspot.com'/>
+
+</head>
+<body class='loading variant-open'>
+<div class='navbar section' id='navbar' name='Navbar'><div class='widget Navbar' data-version='1' id='Navbar1'><script type="text/javascript">
+    function setAttributeOnload(object, attribute, val) {
+      if(window.addEventListener) {
+        window.addEventListener('load',
+          function(){ object[attribute] = val; }, false);
+      } else {
+        window.attachEvent('onload', function(){ object[attribute] = val; });
+      }
+    }
+  </script>
+<div id="navbar-iframe-container"></div>
+<script type="text/javascript" src="https://apis.google.com/js/platform.js"></script>
+<script type="text/javascript">
+      gapi.load("gapi.iframes:gapi.iframes.style.bubble", function() {
+        if (gapi.iframes && gapi.iframes.getContext) {
+          gapi.iframes.getContext().openChild({
+              url: 'https://www.blogger.com/navbar.g?targetBlogID\x3d7106337660494808516\x26blogName\x3dmaoistroad\x26publishMode\x3dPUBLISH_MODE_BLOGSPOT\x26navbarType\x3dLIGHT\x26layoutType\x3dLAYOUTS\x26searchRoot\x3dhttps://maoistroad.blogspot.com/search\x26blogLocale\x3den\x26v\x3d2\x26homepageUrl\x3dhttps://maoistroad.blogspot.com/\x26vt\x3d8295336301608707329',
+              where: document.getElementById("navbar-iframe-container"),
+              id: "navbar-iframe"
+          });
+        }
+      });
+    </script><script type="text/javascript">
+(function() {
+var script = document.createElement('script');
+script.type = 'text/javascript';
+script.src = '//pagead2.googlesyndication.com/pagead/js/google_top_exp.js';
+var head = document.getElementsByTagName('head')[0];
+if (head) {
+head.appendChild(script);
+}})();
+</script>
+</div></div>
+<div itemscope='itemscope' itemtype='http://schema.org/Blog' style='display: none;'>
+<meta content='maoistroad' itemprop='name'/>
+</div>
+<div class='body-fauxcolumns'>
+<div class='fauxcolumn-outer body-fauxcolumn-outer'>
+<div class='cap-top'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+<div class='fauxborder-left'>
+<div class='fauxborder-right'></div>
+<div class='fauxcolumn-inner'>
+</div>
+</div>
+<div class='cap-bottom'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+</div>
+</div>
+<div class='content'>
+<div class='content-fauxcolumns'>
+<div class='fauxcolumn-outer content-fauxcolumn-outer'>
+<div class='cap-top'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+<div class='fauxborder-left'>
+<div class='fauxborder-right'></div>
+<div class='fauxcolumn-inner'>
+</div>
+</div>
+<div class='cap-bottom'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+</div>
+</div>
+<div class='content-outer'>
+<div class='content-cap-top cap-top'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+<div class='fauxborder-left content-fauxborder-left'>
+<div class='fauxborder-right content-fauxborder-right'></div>
+<div class='content-inner'>
+<header>
+<div class='header-outer'>
+<div class='header-cap-top cap-top'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+<div class='fauxborder-left header-fauxborder-left'>
+<div class='fauxborder-right header-fauxborder-right'></div>
+<div class='region-inner header-inner'>
+<div class='header section' id='header' name='Header'><div class='widget Header' data-version='1' id='Header1'>
+<div id='header-inner'>
+<a href='https://maoistroad.blogspot.com/' style='display: block'>
+<img alt="maoistroad" height="300px; " id="Header1_headerimg" src="//1.bp.blogspot.com/-ASfvbcNbOWo/TnhZd3-fdRI/AAAAAAAAACY/3QerWu7NU10/s1600/MRBlogheadwebok.jpg" style="display: block" width="960px; ">
+</a>
+</div>
+</div></div>
+</div>
+</div>
+<div class='header-cap-bottom cap-bottom'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+</div>
+</header>
+<div class='tabs-outer'>
+<div class='tabs-cap-top cap-top'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+<div class='fauxborder-left tabs-fauxborder-left'>
+<div class='fauxborder-right tabs-fauxborder-right'></div>
+<div class='region-inner tabs-inner'>
+<div class='tabs no-items section' id='crosscol' name='Cross-Column'></div>
+<div class='tabs no-items section' id='crosscol-overflow' name='Cross-Column 2'></div>
+</div>
+</div>
+<div class='tabs-cap-bottom cap-bottom'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+</div>
+<div class='main-outer'>
+<div class='main-cap-top cap-top'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+<div class='fauxborder-left main-fauxborder-left'>
+<div class='fauxborder-right main-fauxborder-right'></div>
+<div class='region-inner main-inner'>
+<div class='columns fauxcolumns'>
+<div class='fauxcolumn-outer fauxcolumn-center-outer'>
+<div class='cap-top'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+<div class='fauxborder-left'>
+<div class='fauxborder-right'></div>
+<div class='fauxcolumn-inner'>
+</div>
+</div>
+<div class='cap-bottom'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+</div>
+<div class='fauxcolumn-outer fauxcolumn-left-outer'>
+<div class='cap-top'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+<div class='fauxborder-left'>
+<div class='fauxborder-right'></div>
+<div class='fauxcolumn-inner'>
+</div>
+</div>
+<div class='cap-bottom'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+</div>
+<div class='fauxcolumn-outer fauxcolumn-right-outer'>
+<div class='cap-top'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+<div class='fauxborder-left'>
+<div class='fauxborder-right'></div>
+<div class='fauxcolumn-inner'>
+</div>
+</div>
+<div class='cap-bottom'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+</div>
+<!-- corrects IE6 width calculation -->
+<div class='columns-inner'>
+<div class='column-center-outer'>
+<div class='column-center-inner'>
+<div class='main section' id='main' name='Main'><div class='widget Blog' data-version='1' id='Blog1'>
+<div class='blog-posts hfeed'>
+
+          <div class="date-outer">
+        
+<h2 class='date-header'><span>Tuesday, February 7, 2023</span></h2>
+
+          <div class="date-posts">
+        
+<div class='post-outer'>
+<div class='post hentry uncustomized-post-template' itemprop='blogPost' itemscope='itemscope' itemtype='http://schema.org/BlogPosting'>
+<meta content='7106337660494808516' itemprop='blogId'/>
+<meta content='4839982639776108502' itemprop='postId'/>
+<a name='4839982639776108502'></a>
+<h3 class='post-title entry-title' itemprop='name'>
+<a href='https://maoistroad.blogspot.com/2023/02/turkey-urgent-call-for-help-we-stand.html'>Turkey -  URGENT CALL FOR HELP!  WE STAND WITH OUR PEOPLE IN THE EARTHQUAKE ZONE</a>
+</h3>
+<div class='post-header'>
+<div class='post-header-line-1'></div>
+</div>
+<div class='post-body entry-content' id='post-body-4839982639776108502' itemprop='description articleBody'>
+<p>&nbsp;</p><p class="western" lang="de-DE" style="margin-left: 0cm; margin-top: 0.21cm; text-indent: 0cm;">
+<span style="font-size: x-small;"><span lang="en-GB">The 7.7
+magnitude earthquake that struck in Pazarcık district of Maraş at
+around 04:20 on Monday morning, February 6, was felt in Maraş, as
+well as Malatya, Mardin, Bingöl, Elazığ, Siirt, Sivas, Van, Muş,
+Bitlis, Hakkari, Adana, Osmaniye, Batman, Urfa, Kilis, Diyarbakır,
+Antep, Hatay, northern Syria and Rojava provinces. The earthquake
+caused extensive damage and loss</span></span><span style="font-size: x-small;"><span style="letter-spacing: 2.0pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">of
+life. According to the latest official statements, thousands of
+people lost their lives in the Turkish Kurdistan region alone, while
+around 6,000 people were injured. In addition to the destruction of
+many houses, buildings and hospitals, airports and roads have also
+been severely damaged, and with the addition of winter conditions,
+rescue efforts are becoming even more difficult. In addition, as the
+aftershocks continue, new earthquakes are occurring and there are
+still many people under the rubble. Rescue and relief teams have not
+yet reached many areas, and the people continue rescue efforts with
+their own strength. Therefore, it is a reality that the number of
+people killed and injured is much higher than the official figures.</span></span></p>
+<p class="western" lang="de-DE" style="margin-left: 0cm; margin-top: 0.21cm; text-indent: 0cm;">
+<span style="font-size: x-small;"><span lang="en-GB">However,</span></span><span style="font-size: x-small;"><span style="letter-spacing: 2.0pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">the</span></span><span style="font-size: x-small;"><span style="letter-spacing: 2.0pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">information</span></span><span style="font-size: x-small;"><span style="letter-spacing: 2.0pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">provided</span></span><span style="font-size: x-small;"><span style="letter-spacing: 2.0pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">in</span></span><span style="font-size: x-small;"><span style="letter-spacing: 2.0pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">the</span></span><span style="font-size: x-small;"><span style="letter-spacing: 2.0pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">media</span></span><span style="font-size: x-small;"><span style="letter-spacing: 2.0pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">is</span></span><span style="font-size: x-small;"><span style="letter-spacing: 2.0pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">only</span></span><span style="font-size: x-small;"><span style="letter-spacing: 2.0pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">within</span></span><span style="font-size: x-small;"><span style="letter-spacing: 2.0pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">the</span></span><span style="font-size: x-small;"><span style="letter-spacing: 2.0pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">borders</span></span><span style="font-size: x-small;"><span style="letter-spacing: 2.0pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">of</span></span><span style="font-size: x-small;"><span style="letter-spacing: 2.0pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">Turkey.</span></span><span style="font-size: x-small;"><span style="letter-spacing: 2.0pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">Moreover,
+hundreds of</span></span><span style="font-size: x-small;"><span style="letter-spacing: 2.0pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">people</span></span><span style="font-size: x-small;"><span style="letter-spacing: 1.0pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">have</span></span><span style="font-size: x-small;"><span style="letter-spacing: 1.0pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">lost</span></span><span style="font-size: x-small;"><span style="letter-spacing: 1.0pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">their</span></span><span style="font-size: x-small;"><span style="letter-spacing: 1.0pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">lives</span></span><span style="font-size: x-small;"><span style="letter-spacing: 1.0pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">and</span></span><span style="font-size: x-small;"><span style="letter-spacing: 1.0pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">thousands</span></span><span style="font-size: x-small;"><span style="letter-spacing: 1.0pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">of</span></span><span style="font-size: x-small;"><span style="letter-spacing: 1.0pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">others</span></span><span style="font-size: x-small;"><span style="letter-spacing: 1.0pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">have</span></span><span style="font-size: x-small;"><span style="letter-spacing: 1.0pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">been</span></span><span style="font-size: x-small;"><span style="letter-spacing: 1.0pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">wounded</span></span><span style="font-size: x-small;"><span style="letter-spacing: 1.0pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">in</span></span><span style="font-size: x-small;"><span style="letter-spacing: 1.0pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">northern</span></span><span style="font-size: x-small;"><span style="letter-spacing: 1.0pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">Syria</span></span><span style="font-size: x-small;"><span style="letter-spacing: 1.0pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">and</span></span><span style="font-size: x-small;"><span style="letter-spacing: 1.0pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">the</span></span><span style="font-size: x-small;"><span style="letter-spacing: 4.0pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">Rojava</span></span><span style="font-size: x-small;"><span style="letter-spacing: 4.0pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">region...</span></span><span style="font-size: x-small;"><span style="letter-spacing: 4.0pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">The
+fact</span></span><span style="font-size: x-small;"><span style="letter-spacing: 4.0pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">that</span></span><span style="font-size: x-small;"><span style="letter-spacing: 4.0pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">it</span></span><span style="font-size: x-small;"><span style="letter-spacing: 4.0pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">is</span></span><span style="font-size: x-small;"><span style="letter-spacing: 4.0pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">a</span></span><span style="font-size: x-small;"><span style="letter-spacing: 4.0pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">cross-border</span></span><span style="font-size: x-small;"><span style="letter-spacing: 4.0pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">and</span></span><span style="font-size: x-small;"><span style="letter-spacing: 4.0pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">war</span></span><span style="font-size: x-small;"><span style="letter-spacing: 4.0pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">zone</span></span><span style="font-size: x-small;"><span style="letter-spacing: 4.0pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">and</span></span><span style="font-size: x-small;"><span style="letter-spacing: 4.0pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">the</span></span><span style="font-size: x-small;"><span style="letter-spacing: 4.0pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">difficult</span></span><span style="font-size: x-small;"><span style="letter-spacing: 4.0pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">weather
+conditions</span></span><span style="font-size: x-small;"><span style="letter-spacing: 2.0pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">make</span></span><span style="font-size: x-small;"><span style="letter-spacing: 2.0pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">the
+problem in the area even bigger...</span></span></p>
+<p class="western" lang="de-DE" style="margin-left: 0cm; margin-top: 0.21cm; text-indent: 0cm;">
+<span style="font-size: x-small;"><span lang="en-GB">As ATİK,
+Yeni Kadın and YDG; first of all, while conveying our get well
+wishes to our people, we express our condolences to the relatives of
+those who lost their lives, we wish a speedy recovery to our injured
+people and we declare that we are with </span></span><span style="font-size: x-small;"><span style="letter-spacing: -0.1pt;"><span lang="en-GB">them.</span></span></span></p>
+<p align="left" class="western" lang="de-DE" style="margin-left: 0cm; margin-top: 0.21cm; text-indent: 0cm;">
+<span style="font-size: x-small;"><span lang="en-GB">We</span></span><span style="font-size: x-small;"><span style="letter-spacing: 2.0pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">know</span></span><span style="font-size: x-small;"><span style="letter-spacing: 2.0pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">that;</span></span><span style="font-size: x-small;"><span style="letter-spacing: 2.0pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">fascists</span></span><span style="font-size: x-small;"><span style="letter-spacing: 2.0pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">who</span></span><span style="font-size: x-small;"><span style="letter-spacing: 2.0pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">destroy</span></span><span style="font-size: x-small;"><span style="letter-spacing: 2.0pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">nature</span></span><span style="font-size: x-small;"><span style="letter-spacing: 2.0pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">with</span></span><span style="font-size: x-small;"><span style="letter-spacing: 2.0pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">fixed</span></span><span style="font-size: x-small;"><span style="letter-spacing: 2.0pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">rent</span></span><span style="font-size: x-small;"><span style="letter-spacing: 2.0pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">policies</span></span><span style="font-size: x-small;"><span style="letter-spacing: 2.0pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">that</span></span><span style="font-size: x-small;"><span style="letter-spacing: 2.0pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">serve</span></span><span style="font-size: x-small;"><span style="letter-spacing: 2.0pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">their</span></span><span style="font-size: x-small;"><span style="letter-spacing: 2.0pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">own</span></span><span style="font-size: x-small;"><span style="letter-spacing: 2.0pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">interests</span></span><span style="font-size: x-small;"><span style="letter-spacing: 2.0pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">by
+increasing exploitation.</span></span><span style="font-size: x-small;"><span style="letter-spacing: -0.1pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">R.T.</span></span><span style="font-size: x-small;"><span style="letter-spacing: -0.1pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">Erdogan,</span></span><span style="font-size: x-small;"><span style="letter-spacing: -0.2pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">the</span></span><span style="font-size: x-small;"><span style="letter-spacing: -0.1pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">current</span></span><span style="font-size: x-small;"><span style="letter-spacing: -0.1pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">representative</span></span><span style="font-size: x-small;"><span style="letter-spacing: -0.1pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">of</span></span><span style="font-size: x-small;"><span style="letter-spacing: -0.2pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">the</span></span><span style="font-size: x-small;"><span style="letter-spacing: -0.1pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">Turkish</span></span><span style="font-size: x-small;"><span style="letter-spacing: -0.2pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">state,</span></span><span style="font-size: x-small;"><span style="letter-spacing: -0.2pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">and</span></span><span style="font-size: x-small;"><span style="letter-spacing: -0.2pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">his</span></span><span style="font-size: x-small;"><span style="letter-spacing: -0.2pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">cohorts,</span></span><span style="font-size: x-small;"><span style="letter-spacing: -0.1pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">the</span></span><span style="font-size: x-small;"><span style="letter-spacing: -0.1pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">AKP</span></span><span style="font-size: x-small;"><span style="letter-spacing: -0.1pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">+</span></span><span style="font-size: x-small;"><span style="letter-spacing: -0.2pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">MHP</span></span><span style="font-size: x-small;"><span style="letter-spacing: -0.1pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">government,</span></span><span style="font-size: x-small;"><span style="letter-spacing: -0.1pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">will
+again shed crocodile tears in the face of the catastrophe our people
+are experiencing</span></span><span style="font-size: x-small;"><span style="letter-spacing: -0.2pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">today</span></span><span style="font-size: x-small;"><span style="letter-spacing: -0.1pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">and</span></span><span style="font-size: x-small;"><span style="letter-spacing: -0.1pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">will</span></span><span style="font-size: x-small;"><span style="letter-spacing: -0.1pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">say</span></span><span style="font-size: x-small;"><span style="letter-spacing: -0.1pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">that
+their</span></span><span style="font-size: x-small;"><span style="letter-spacing: -0.1pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">pain</span></span><span style="font-size: x-small;"><span style="letter-spacing: -0.1pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">is</span></span><span style="font-size: x-small;"><span style="letter-spacing: -0.1pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span style="letter-spacing: -0.1pt;"><span lang="en-GB">great.</span></span></span></p>
+<p class="western" lang="de-DE" style="margin-left: 0cm; margin-top: 0.21cm; text-indent: 0cm;">
+<span style="font-size: x-small;"><span lang="en-GB">Our people
+living in Kurdistan, which the Turkish fascism only thinks of during
+election periods, have been ignored</span></span><span style="font-size: x-small;"><span style="letter-spacing: 2.0pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">for
+years with policies of annihilation and denial, and their vital
+resources have been deliberately destroyed by war policies. Although</span></span><span style="font-size: x-small;"><span style="letter-spacing: 1.8pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">Turkey</span></span><span style="font-size: x-small;"><span style="letter-spacing: 1.8pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">is</span></span><span style="font-size: x-small;"><span style="letter-spacing: 1.8pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">an</span></span><span style="font-size: x-small;"><span style="letter-spacing: 1.8pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">earthquake</span></span><span style="font-size: x-small;"><span style="letter-spacing: 1.8pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">zone,</span></span><span style="font-size: x-small;"><span style="letter-spacing: 1.9pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">instead</span></span><span style="font-size: x-small;"><span style="letter-spacing: 1.8pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">of</span></span><span style="font-size: x-small;"><span style="letter-spacing: 1.8pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">building</span></span><span style="font-size: x-small;"><span style="letter-spacing: 1.8pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">earthquake-resistant
+buildings,</span></span><span style="font-size: x-small;"><span style="letter-spacing: 4.0pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">those</span></span><span style="font-size: x-small;"><span style="letter-spacing: 4.0pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">who</span></span><span style="font-size: x-small;"><span style="letter-spacing: 4.0pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">invite</span></span><span style="font-size: x-small;"><span style="letter-spacing: 4.0pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">disasters
+with</span></span><span style="font-size: x-small;"><span style="letter-spacing: 4.0pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">the</span></span><span style="font-size: x-small;"><span style="letter-spacing: 4.0pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">zoning</span></span><span style="font-size: x-small;"><span style="letter-spacing: 4.0pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">policies</span></span><span style="font-size: x-small;"><span style="letter-spacing: 4.0pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">carried</span></span><span style="font-size: x-small;"><span style="letter-spacing: 4.0pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">out</span></span><span style="font-size: x-small;"><span style="letter-spacing: 4.0pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">under</span></span><span style="font-size: x-small;"><span style="letter-spacing: 4.0pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">the</span></span><span style="font-size: x-small;"><span style="letter-spacing: 4.0pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">name</span></span><span style="font-size: x-small;"><span style="letter-spacing: 4.0pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">of</span></span><span style="font-size: x-small;"><span style="letter-spacing: 4.0pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">"urban
+transformation" aiming at the interests of those in power, with
+buildings built at gigantic heights, are trying to dampen the
+reactions of the people by shedding crocodile tears after the
+disasters.</span></span></p>
+<p class="western" lang="de-DE" style="margin-left: 0cm; margin-top: 0.21cm; text-indent: 0cm;">
+<span style="font-size: x-small;"><span lang="en-GB">But</span></span><span style="font-size: x-small;"><span style="letter-spacing: 1.5pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">in</span></span><span style="font-size: x-small;"><span style="letter-spacing: 1.5pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">vain...</span></span><span style="font-size: x-small;"><span style="letter-spacing: 1.5pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">They</span></span><span style="font-size: x-small;"><span style="letter-spacing: 1.5pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">are</span></span><span style="font-size: x-small;"><span style="letter-spacing: 1.5pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">no</span></span><span style="font-size: x-small;"><span style="letter-spacing: 1.5pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">longer</span></span><span style="font-size: x-small;"><span style="letter-spacing: 1.6pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">able</span></span><span style="font-size: x-small;"><span style="letter-spacing: 1.5pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">to</span></span><span style="font-size: x-small;"><span style="letter-spacing: 1.5pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">hide</span></span><span style="font-size: x-small;"><span style="letter-spacing: 1.5pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">the</span></span><span style="font-size: x-small;"><span style="letter-spacing: 1.6pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">fact</span></span><span style="font-size: x-small;"><span style="letter-spacing: 1.5pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">that</span></span><span style="font-size: x-small;"><span style="letter-spacing: 1.5pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">the</span></span><span style="font-size: x-small;"><span style="letter-spacing: 1.5pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">magnitude</span></span><span style="font-size: x-small;"><span style="letter-spacing: 1.6pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">of</span></span><span style="font-size: x-small;"><span style="letter-spacing: 1.6pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">the</span></span><span style="font-size: x-small;"><span style="letter-spacing: 1.5pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">victimization</span></span><span style="font-size: x-small;"><span style="letter-spacing: 1.5pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">in</span></span><span style="font-size: x-small;"><span style="letter-spacing: 1.5pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">natural</span></span><span style="font-size: x-small;"><span style="letter-spacing: 0.6pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">disasters</span></span><span style="font-size: x-small;"><span style="letter-spacing: 2.0pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">is
+not</span></span><span style="font-size: x-small;"><span style="letter-spacing: 2.0pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">natural,</span></span><span style="font-size: x-small;"><span style="letter-spacing: 2.0pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">and</span></span><span style="font-size: x-small;"><span style="letter-spacing: 2.0pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">that</span></span><span style="font-size: x-small;"><span style="letter-spacing: 2.0pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">the</span></span><span style="font-size: x-small;"><span style="letter-spacing: 2.0pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">only</span></span><span style="font-size: x-small;"><span style="letter-spacing: 2.0pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">ones</span></span><span style="font-size: x-small;"><span style="letter-spacing: 2.0pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">responsible</span></span><span style="font-size: x-small;"><span style="letter-spacing: 2.0pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">are</span></span><span style="font-size: x-small;"><span style="letter-spacing: 2.0pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">the</span></span><span style="font-size: x-small;"><span style="letter-spacing: 2.0pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">state</span></span><span style="font-size: x-small;"><span style="letter-spacing: 2.0pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">authorities</span></span><span style="font-size: x-small;"><span style="letter-spacing: 2.0pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">and</span></span><span style="font-size: x-small;"><span style="letter-spacing: 2.0pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">their</span></span><span style="font-size: x-small;"><span style="letter-spacing: 2.0pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">interest
+policies.</span></span></p>
+<h1 class="western" lang="de-DE" style="margin-left: 0cm; margin-top: 0.21cm;">
+<span style="font-size: x-small;"><span lang="en-GB">Let's</span></span><span style="font-size: x-small;"><span style="letter-spacing: -0.5pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">grow</span></span><span style="font-size: x-small;"><span style="letter-spacing: -0.4pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">solidarity</span></span><span style="font-size: x-small;"><span style="letter-spacing: -0.1pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">with</span></span><span style="font-size: x-small;"><span style="letter-spacing: -0.3pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">the</span></span><span style="font-size: x-small;"><span style="letter-spacing: -0.1pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">victims</span></span><span style="font-size: x-small;"><span style="letter-spacing: -0.1pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">of</span></span><span style="font-size: x-small;"><span style="letter-spacing: -0.1pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">the</span></span><span style="font-size: x-small;"><span style="letter-spacing: -0.2pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span style="letter-spacing: -0.1pt;"><span lang="en-GB">earthquake!</span></span></span></h1>
+<p class="western" lang="de-DE" style="margin-left: 0cm; margin-top: 0.21cm; text-indent: 0cm;">
+<span style="font-size: x-small;"><span lang="en-GB">As the
+Confederation of Workers form Turkey in Europe (ATIK), New Women
+(Yeni Kadın), New Democratic Youth (Yeni Demokratik Gençlik), we
+have started a donation campaign to show solidarity with the victims
+of the earthquake both in</span></span><span style="font-size: x-small;"><span style="letter-spacing: 4.0pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">Turkish
+Kurdistan and in Rojava and to deliver the campaign directly to the
+people.</span></span></p>
+<p class="western" lang="de-DE" style="margin-left: 0cm; margin-top: 0.21cm; text-indent: 0cm;"><a name="Let's grow solidarity with the victims o"></a>
+<span style="font-size: x-small;"><span lang="en-GB">We call on
+all our people, local and migrant democratic forces, especially all
+our organizations operating in European geographies, to mobilize in
+the face of this disaster, to join and strengthen the campaign. Let's
+bandage the wounds of our people affected by the earthquake together
+with the donations you send to the bank account number we have
+published </span></span><span style="font-size: x-small;"><span style="letter-spacing: -0.1pt;"><span lang="en-GB">below!</span></span></span></p>
+<h1 class="western" lang="de-DE" style="margin-left: 0cm; margin-top: 0.21cm;">
+<span style="font-size: x-small;"><span lang="en-GB">State</span></span><span style="font-size: x-small;"><span style="letter-spacing: -0.2pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">Policies</span></span><span style="font-size: x-small;"><span style="letter-spacing: -0.2pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">Kill,</span></span><span style="font-size: x-small;"><span style="letter-spacing: -0.1pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">Not</span></span><span style="font-size: x-small;"><span style="letter-spacing: -0.1pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span style="letter-spacing: -0.1pt;"><span lang="en-GB">Earthquakes!</span></span></span></h1>
+<p align="left" class="western" lang="de-DE" style="margin-left: 0cm; margin-top: 0.21cm; text-indent: 0cm;">
+<span style="font-size: x-small;"><span lang="en-GB"><b>Open</b></span></span><span style="font-size: x-small;"><span style="letter-spacing: -0.4pt;"><span lang="en-GB"><b>
+</b></span></span></span><span style="font-size: x-small;"><span lang="en-GB"><b>the</b></span></span><span style="font-size: x-small;"><span style="letter-spacing: -0.3pt;"><span lang="en-GB"><b>
+</b></span></span></span><span style="font-size: x-small;"><span lang="en-GB"><b>Borders</b></span></span><span style="font-size: x-small;"><span style="letter-spacing: -0.1pt;"><span lang="en-GB"><b>
+</b></span></span></span><span style="font-size: x-small;"><span lang="en-GB"><b>for</b></span></span><span style="font-size: x-small;"><span style="letter-spacing: -0.1pt;"><span lang="en-GB"><b>
+</b></span></span></span><span style="font-size: x-small;"><span lang="en-GB"><b>Solidarity</b></span></span><span style="font-size: x-small;"><span style="letter-spacing: -0.3pt;"><span lang="en-GB"><b>
+</b></span></span></span><span style="font-size: x-small;"><span lang="en-GB"><b>with</b></span></span><span style="font-size: x-small;"><span style="letter-spacing: -0.1pt;"><span lang="en-GB"><b>
+</b></span></span></span><span style="font-size: x-small;"><span lang="en-GB"><b>Rojava</b></span></span><span style="font-size: x-small;"><span style="letter-spacing: -0.1pt;"><span lang="en-GB"><b>
+</b></span></span></span><span style="font-size: x-small;"><span lang="en-GB"><b>Earthquake</b></span></span><span style="font-size: x-small;"><span style="letter-spacing: -0.1pt;"><span lang="en-GB"><b>
+Victims!</b></span></span></span></p>
+<p align="left" class="western" lang="en-GB" style="letter-spacing: -0.2pt; margin-left: 0cm; margin-top: 0.21cm; text-indent: 0cm;">
+<span style="font-size: x-small;">ATIK</span></p>
+<p align="left" class="western" lang="de-DE" style="margin-left: 0cm; margin-top: 0.21cm; text-indent: 0cm;">
+<span style="font-size: x-small;"><span lang="en-GB">NG</span></span><span style="font-size: x-small;"><span style="letter-spacing: -0.2pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">BANK</span></span><span style="font-size: x-small;"><span style="letter-spacing: -0.3pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">N.V.</span></span><span style="font-size: x-small;"><span style="letter-spacing: -0.2pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span style="letter-spacing: -0.1pt;"><span lang="en-GB">AMSTERDAM</span></span></span></p>
+<p class="western" lang="de-DE" style="margin-left: 0cm; margin-top: 0.21cm; text-indent: 0cm;">
+&#8220;<span style="font-size: x-small;"><span lang="en-GB">Spende</span></span><span style="font-size: x-small;"><span style="letter-spacing: -0.7pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span style="letter-spacing: -0.1pt;"><span lang="en-GB">Erdbeben2023&#8221;</span></span></span></p>
+<p align="left" class="western" lang="de-DE" style="margin-left: 0cm; margin-top: 0.21cm; text-indent: 0cm;"><a name="State Policies Kill, Not Earthquakes!"></a>
+<span style="font-size: x-small;"><span lang="en-GB">IBAN:</span></span><span style="font-size: x-small;"><span style="letter-spacing: -0.6pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">NL08</span></span><span style="font-size: x-small;"><span style="letter-spacing: -0.5pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">INGB000</span></span><span style="font-size: x-small;"><span style="letter-spacing: -0.6pt;"><span lang="en-GB">
+</span></span></span><span style="font-size: x-small;"><span lang="en-GB">6068972
+BIC / SWIFT: INGBNL2A</span></span></p>
+<p class="western" lang="en-GB" style="margin-left: 0cm; text-indent: 0cm;">&nbsp;<span style="font-size: small;"><b>New Democratic Youth</b></span></p>
+
+<span dir="ltr" id="Cornice2" style="background: #ffffff; border: none; float: left; padding: 0cm; width: 5.37cm;"><p class="western" lang="en-GB" style="margin-left: 0cm; text-indent: 0cm;">
+	<span style="font-size: medium;"><b>Confederation of Workers
+	form Turkey in Europe</b></span></p><p class="western" lang="en-GB" style="margin-left: 0cm; text-indent: 0cm;"><span style="font-size: medium;"><b>New Women</b></span></p></span><span dir="ltr" id="Cornice1" style="background: #ffffff; border: none; float: left; padding: 0cm; width: 3.39cm;">
+</span>
+
+<p></p>
+<div style='clear: both;'></div>
+</div>
+<div class='post-footer'>
+<div class='post-footer-line post-footer-line-1'>
+<span class='post-author vcard'>
+Posted by
+<span class='fn' itemprop='author' itemscope='itemscope' itemtype='http://schema.org/Person'>
+<meta content='https://www.blogger.com/profile/13169436834046789147' itemprop='url'/>
+<a class='g-profile' href='https://www.blogger.com/profile/13169436834046789147' rel='author' title='author profile'>
+<span itemprop='name'>maoistroad</span>
+</a>
+</span>
+</span>
+<span class='post-timestamp'>
+at
+<meta content='https://maoistroad.blogspot.com/2023/02/turkey-urgent-call-for-help-we-stand.html' itemprop='url'/>
+<a class='timestamp-link' href='https://maoistroad.blogspot.com/2023/02/turkey-urgent-call-for-help-we-stand.html' rel='bookmark' title='permanent link'><abbr class='published' itemprop='datePublished' title='2023-02-07T02:22:00-08:00'>2:22&#8239;AM</abbr></a>
+</span>
+<span class='post-comment-link'>
+<a class='comment-link' href='https://maoistroad.blogspot.com/2023/02/turkey-urgent-call-for-help-we-stand.html#comment-form' onclick=''>
+No comments:
+  </a>
+</span>
+<span class='post-icons'>
+<span class='item-control blog-admin pid-1628802168'>
+<a href='https://www.blogger.com/post-edit.g?blogID=7106337660494808516&postID=4839982639776108502&from=pencil' title='Edit Post'>
+<img alt='' class='icon-action' height='18' src='https://resources.blogblog.com/img/icon18_edit_allbkg.gif' width='18'/>
+</a>
+</span>
+</span>
+<div class='post-share-buttons goog-inline-block'>
+<a class='goog-inline-block share-button sb-email' href='https://www.blogger.com/share-post.g?blogID=7106337660494808516&postID=4839982639776108502&target=email' target='_blank' title='Email This'><span class='share-button-link-text'>Email This</span></a><a class='goog-inline-block share-button sb-blog' href='https://www.blogger.com/share-post.g?blogID=7106337660494808516&postID=4839982639776108502&target=blog' onclick='window.open(this.href, "_blank", "height=270,width=475"); return false;' target='_blank' title='BlogThis!'><span class='share-button-link-text'>BlogThis!</span></a><a class='goog-inline-block share-button sb-twitter' href='https://www.blogger.com/share-post.g?blogID=7106337660494808516&postID=4839982639776108502&target=twitter' target='_blank' title='Share to Twitter'><span class='share-button-link-text'>Share to Twitter</span></a><a class='goog-inline-block share-button sb-facebook' href='https://www.blogger.com/share-post.g?blogID=7106337660494808516&postID=4839982639776108502&target=facebook' onclick='window.open(this.href, "_blank", "height=430,width=640"); return false;' target='_blank' title='Share to Facebook'><span class='share-button-link-text'>Share to Facebook</span></a><a class='goog-inline-block share-button sb-pinterest' href='https://www.blogger.com/share-post.g?blogID=7106337660494808516&postID=4839982639776108502&target=pinterest' target='_blank' title='Share to Pinterest'><span class='share-button-link-text'>Share to Pinterest</span></a>
+</div>
+</div>
+<div class='post-footer-line post-footer-line-2'>
+<span class='post-labels'>
+</span>
+</div>
+<div class='post-footer-line post-footer-line-3'>
+<span class='post-location'>
+</span>
+</div>
+</div>
+</div>
+</div>
+
+          </div></div>
+        
+
+          <div class="date-outer">
+        
+<h2 class='date-header'><span>Monday, February 6, 2023</span></h2>
+
+          <div class="date-posts">
+        
+<div class='post-outer'>
+<div class='post hentry uncustomized-post-template' itemprop='blogPost' itemscope='itemscope' itemtype='http://schema.org/BlogPosting'>
+<meta content='7106337660494808516' itemprop='blogId'/>
+<meta content='6154318147238104466' itemprop='postId'/>
+<a name='6154318147238104466'></a>
+<h3 class='post-title entry-title' itemprop='name'>
+<a href='https://maoistroad.blogspot.com/2023/02/celebrate-50th-anniversary-of.html'>Celebrate the 50th anniversary of the foundation of the Party and the initiation of Maoist People's War - PBSP/Bangladesh</a>
+</h3>
+<div class='post-header'>
+<div class='post-header-line-1'></div>
+</div>
+<div class='post-body entry-content' id='post-body-6154318147238104466' itemprop='description articleBody'>
+<p style="line-height: 100%; margin-bottom: 0cm;"><a name="page3R_mcid1"></a><a name="page3R_mcid0"></a><a name="page3R_mcid2"></a><a name="page3R_mcid3"></a><a name="page3R_mcid4"></a><a name="page15R_mcid0"></a><a name="page15R_mcid1"></a> <span style="font-family: Times New Roman, serif;"><b><span style="font-size: medium;"><br>
+-- Central Committee,<br>
+Proletarian Party
+of Purbo Bangla (Purbo Banglar Shorbohara Party -
+PBSP/Bangladesh)<br>
+(March, 2021)</span></b><br>
+(Republished in revised and
+extended form by CC, June 2021)<br>&#160;</span></p><p style="line-height: 100%; margin-bottom: 0cm;"><span style="font-family: Times New Roman, serif;">Proletarian Party of Purbo
+Bangla (Purbo Banglar Shorbohara Party - PBSP) was founded 50<br>
+years
+ago, on June 3rd, 1971, with the leadership of the then leader and
+the founder of the<br>
+party, Comrade Siraj Sikder (SS). That was
+the period of Liberation War of East Bengal<br>
+against the national
+oppressor state of Pakistan. The then main bourgeois party Awami
+League<br>
+fled to india, leaving people helpless under the genocide
+of Pakistani genocide. Before that, at<br>
+the eve of genocide,
+their main leader Sheikh Mujibur Rahman surrendered to the
+Pakistanis.<br>
+Other leaders, exploiting the movement, struggle,
+sacrifice abd self-dedication of the people,<br>
+sold the country to
+India, for their own self-interest of power, while fleeing there.<br>
+At
+that time, Maoists, as a newly risen force, despite their various
+political and<br>
+sujective weaknesses, stuck out for the people in
+danger. Contrary to fake Indian-Awami<br>
+liberation war, they waged
+an actual/revolutionary war of liberation in various parts of
+the<br>
+country. Siraj Sikder, the founder of our party, in a
+situation of absence of power, organizing a<br>
+revolutionary army
+at Peyarabagan area in Barishal, created a short-lived liberated
+area. There<br>
+he founded the &quot;Proletarian Party&quot; on June
+3. Earlier during Pakistani rule, he founded &quot;East<br>
+Bengal
+Workers&#39; Movement&quot; as a preparatory organisation for founding a
+party of its kind. He<br>
+transformed it into the Shorbohara Party,
+a proletarian party, in the middle of the sound of<br>
+shelling of
+cannon in 1971.<br>
+As we are celebrating 50th anniversary of
+founding of the party today, we must<span></span></span></p>
+<div style='clear: both;'></div>
+</div>
+<div class='jump-link'>
+<a href='https://maoistroad.blogspot.com/2023/02/celebrate-50th-anniversary-of.html#more' title='Celebrate the 50th anniversary of the foundation of the Party and the initiation of Maoist People&#39;s War - PBSP/Bangladesh'>Read more &#187;</a>
+</div>
+<div class='post-footer'>
+<div class='post-footer-line post-footer-line-1'>
+<span class='post-author vcard'>
+Posted by
+<span class='fn' itemprop='author' itemscope='itemscope' itemtype='http://schema.org/Person'>
+<meta content='https://www.blogger.com/profile/13169436834046789147' itemprop='url'/>
+<a class='g-profile' href='https://www.blogger.com/profile/13169436834046789147' rel='author' title='author profile'>
+<span itemprop='name'>maoistroad</span>
+</a>
+</span>
+</span>
+<span class='post-timestamp'>
+at
+<meta content='https://maoistroad.blogspot.com/2023/02/celebrate-50th-anniversary-of.html' itemprop='url'/>
+<a class='timestamp-link' href='https://maoistroad.blogspot.com/2023/02/celebrate-50th-anniversary-of.html' rel='bookmark' title='permanent link'><abbr class='published' itemprop='datePublished' title='2023-02-06T02:13:00-08:00'>2:13&#8239;AM</abbr></a>
+</span>
+<span class='post-comment-link'>
+<a class='comment-link' href='https://maoistroad.blogspot.com/2023/02/celebrate-50th-anniversary-of.html#comment-form' onclick=''>
+No comments:
+  </a>
+</span>
+<span class='post-icons'>
+<span class='item-control blog-admin pid-1628802168'>
+<a href='https://www.blogger.com/post-edit.g?blogID=7106337660494808516&postID=6154318147238104466&from=pencil' title='Edit Post'>
+<img alt='' class='icon-action' height='18' src='https://resources.blogblog.com/img/icon18_edit_allbkg.gif' width='18'/>
+</a>
+</span>
+</span>
+<div class='post-share-buttons goog-inline-block'>
+<a class='goog-inline-block share-button sb-email' href='https://www.blogger.com/share-post.g?blogID=7106337660494808516&postID=6154318147238104466&target=email' target='_blank' title='Email This'><span class='share-button-link-text'>Email This</span></a><a class='goog-inline-block share-button sb-blog' href='https://www.blogger.com/share-post.g?blogID=7106337660494808516&postID=6154318147238104466&target=blog' onclick='window.open(this.href, "_blank", "height=270,width=475"); return false;' target='_blank' title='BlogThis!'><span class='share-button-link-text'>BlogThis!</span></a><a class='goog-inline-block share-button sb-twitter' href='https://www.blogger.com/share-post.g?blogID=7106337660494808516&postID=6154318147238104466&target=twitter' target='_blank' title='Share to Twitter'><span class='share-button-link-text'>Share to Twitter</span></a><a class='goog-inline-block share-button sb-facebook' href='https://www.blogger.com/share-post.g?blogID=7106337660494808516&postID=6154318147238104466&target=facebook' onclick='window.open(this.href, "_blank", "height=430,width=640"); return false;' target='_blank' title='Share to Facebook'><span class='share-button-link-text'>Share to Facebook</span></a><a class='goog-inline-block share-button sb-pinterest' href='https://www.blogger.com/share-post.g?blogID=7106337660494808516&postID=6154318147238104466&target=pinterest' target='_blank' title='Share to Pinterest'><span class='share-button-link-text'>Share to Pinterest</span></a>
+</div>
+</div>
+<div class='post-footer-line post-footer-line-2'>
+<span class='post-labels'>
+</span>
+</div>
+<div class='post-footer-line post-footer-line-3'>
+<span class='post-location'>
+</span>
+</div>
+</div>
+</div>
+</div>
+<div class='post-outer'>
+<div class='post hentry uncustomized-post-template' itemprop='blogPost' itemscope='itemscope' itemtype='http://schema.org/BlogPosting'>
+<meta content='https://anovademocracia.com.br/modules/mod_news_pro_gk5/cache/16750064344332_1destaque1.jpg' itemprop='image_url'/>
+<meta content='7106337660494808516' itemprop='blogId'/>
+<meta content='2579589275447090447' itemprop='postId'/>
+<a name='2579589275447090447'></a>
+<h3 class='post-title entry-title' itemprop='name'>
+<a href='https://maoistroad.blogspot.com/2023/02/brasil-denuncia-urgente-pm-executa.html'>  BRASIL: DENUNCIA URGENTE: PM executa chacina contra camponeses em Nova Mutum/RO (CEBRASPO) </a>
+</h3>
+<div class='post-header'>
+<div class='post-header-line-1'></div>
+</div>
+<div class='post-body entry-content' id='post-body-2579589275447090447' itemprop='description articleBody'>
+<br /><div class="post-header">
+<div class="post-header-line-1"></div>
+</div>
+
+<p>&nbsp;</p><h3 class="post-title entry-title" itemprop="name" style="background-color: white; color: red; font-family: Arial, Tahoma, Helvetica, FreeSans, sans-serif; font-size: 16px; font-stretch: normal; font-variant-east-asian: normal; font-variant-numeric: normal; line-height: normal; margin: 0px; position: relative;"><br /></h3><div class="post-header" style="background-color: white; font-family: Arial, Tahoma, Helvetica, FreeSans, sans-serif; font-size: 14px; line-height: 1.6; margin: 0px 0px 1em;"><div class="post-header-line-1"></div></div><p></p><p id="docs-internal-guid-d176985d-7fff-6915-87f1-7997d194ae52" style="line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt; text-align: center;"><span style="background-color: transparent; font-family: Arial; font-size: 11pt; font-variant-east-asian: normal; font-variant-numeric: normal; vertical-align: baseline; white-space: pre;">&nbsp;</span><img alt="" class="nspImage" height="210" src="https://anovademocracia.com.br/modules/mod_news_pro_gk5/cache/16750064344332_1destaque1.jpg" style="background: transparent; border-radius: 0px; border: 1px solid transparent; box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 0px; padding: 8px;" width="320" /></p><p dir="ltr" id="docs-internal-guid-d176985d-7fff-6915-87f1-7997d194ae52" style="line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt;"><span style="background-color: transparent; font-family: Arial; font-size: 11pt; font-variant-east-asian: normal; font-variant-numeric: normal; vertical-align: baseline; white-space: pre;">&nbsp;</span></p><p dir="ltr" id="docs-internal-guid-c95812b5-7fff-06ab-640a-03fc61889dce" style="line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt;"><span style="background-color: transparent; font-family: Arial; font-size: 11pt; font-variant-east-asian: normal; font-variant-numeric: normal; vertical-align: baseline; white-space: pre;">O CEBRASPO divulga nota da ABRAPO sobre recentes assassinatos e torturas de Camponeses pela polícia militar de Rondônia, que faz a segurança do grileiro de terras públicas &#8220;Galo Velho&#8221; com os recursos dos impostos que a população paga.&nbsp;</span></p><p dir="ltr" style="line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt;"><span style="background-color: transparent; font-family: Arial; font-size: 11pt; font-variant-east-asian: normal; font-variant-numeric: normal; vertical-align: baseline; white-space: pre;">Nós nos solidarizamos com as famílias e companheiros desses Camponeses e defendemos o direito sagrado à terra para quem nela trabalha, especialmente nesse momento em que a fome e o desemprego assolam o país. Entendemos e apoiamos todos aqueles que querem viver uma vida digna através de seu trabalho. As terras públicas no Brasil tem como destino constitucional a reforma agrária e não os interesses privados de grileiros, estes sim, ladrões de terras públicas. Repudiamos esses massacres contra o povo pobre do campo e as tentativas de criminalização.</span></p><p style="line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt;"><span style="background-color: transparent; font-family: Arial; font-size: 11pt; font-variant-east-asian: normal; font-variant-numeric: normal; vertical-align: baseline; white-space: pre;"><br /></span></p><p style="line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt;"></p><p style="line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt;"></p><p style="line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt;"></p><p style="line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt;"></p><p style="line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt;"></p><p style="line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt;"></p><p style="line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt;"></p><p style="line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt;"></p><p style="line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt;"></p><p style="line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt;"></p><div class="_aacl _aaco _aacu _aacx _aad7 _aade"><span style="font-family: arial;"><b>LCP DENUNCIA ASSASSINATO DE CAMPONESES EM NOVA MUTUM PARANÁ</b><br /><br />A
+ ABRAPO recebeu o comunicado da Liga dos Camponeses Pobres desmentindo 
+as alegações de tiroteio entre a LCP e as forças policiais durante 
+operação de reintegração de posse, e denunciando que foram realizadas 
+torturas e execuções sumárias de camponeses.<br /><br />Além disso, denuncia
+ a covarde matéria da Rede Globo, a qual incitou a repressão, evitou 
+mencionar a LCP e acusou os camponeses de &#8220;possíveis criminosos&#8221;.<br />Enquanto
+ isso, omitiu que a região faz parte de uma das diversas áreas griladas 
+pelo latifundiário Antônio Martins dos Santos, conhecido como Galo 
+Velho, investigado pelas polícias civil e federal, em conjunto com o 
+Ministério Público, pelo financiamento de pistoleiros na região para a 
+grilagem de terra e expulsão de camponeses.<br /><br />Importante que todos 
+os democratas se mobilizem para desmascarar os algozes do povo e 
+desmontar mais essa farsa, pela divulgação da denúncia realizada da LCP!</span></div>
+<div style='clear: both;'></div>
+</div>
+<div class='post-footer'>
+<div class='post-footer-line post-footer-line-1'>
+<span class='post-author vcard'>
+Posted by
+<span class='fn' itemprop='author' itemscope='itemscope' itemtype='http://schema.org/Person'>
+<meta content='https://www.blogger.com/profile/13169436834046789147' itemprop='url'/>
+<a class='g-profile' href='https://www.blogger.com/profile/13169436834046789147' rel='author' title='author profile'>
+<span itemprop='name'>maoistroad</span>
+</a>
+</span>
+</span>
+<span class='post-timestamp'>
+at
+<meta content='https://maoistroad.blogspot.com/2023/02/brasil-denuncia-urgente-pm-executa.html' itemprop='url'/>
+<a class='timestamp-link' href='https://maoistroad.blogspot.com/2023/02/brasil-denuncia-urgente-pm-executa.html' rel='bookmark' title='permanent link'><abbr class='published' itemprop='datePublished' title='2023-02-06T02:07:00-08:00'>2:07&#8239;AM</abbr></a>
+</span>
+<span class='post-comment-link'>
+<a class='comment-link' href='https://maoistroad.blogspot.com/2023/02/brasil-denuncia-urgente-pm-executa.html#comment-form' onclick=''>
+No comments:
+  </a>
+</span>
+<span class='post-icons'>
+<span class='item-control blog-admin pid-1628802168'>
+<a href='https://www.blogger.com/post-edit.g?blogID=7106337660494808516&postID=2579589275447090447&from=pencil' title='Edit Post'>
+<img alt='' class='icon-action' height='18' src='https://resources.blogblog.com/img/icon18_edit_allbkg.gif' width='18'/>
+</a>
+</span>
+</span>
+<div class='post-share-buttons goog-inline-block'>
+<a class='goog-inline-block share-button sb-email' href='https://www.blogger.com/share-post.g?blogID=7106337660494808516&postID=2579589275447090447&target=email' target='_blank' title='Email This'><span class='share-button-link-text'>Email This</span></a><a class='goog-inline-block share-button sb-blog' href='https://www.blogger.com/share-post.g?blogID=7106337660494808516&postID=2579589275447090447&target=blog' onclick='window.open(this.href, "_blank", "height=270,width=475"); return false;' target='_blank' title='BlogThis!'><span class='share-button-link-text'>BlogThis!</span></a><a class='goog-inline-block share-button sb-twitter' href='https://www.blogger.com/share-post.g?blogID=7106337660494808516&postID=2579589275447090447&target=twitter' target='_blank' title='Share to Twitter'><span class='share-button-link-text'>Share to Twitter</span></a><a class='goog-inline-block share-button sb-facebook' href='https://www.blogger.com/share-post.g?blogID=7106337660494808516&postID=2579589275447090447&target=facebook' onclick='window.open(this.href, "_blank", "height=430,width=640"); return false;' target='_blank' title='Share to Facebook'><span class='share-button-link-text'>Share to Facebook</span></a><a class='goog-inline-block share-button sb-pinterest' href='https://www.blogger.com/share-post.g?blogID=7106337660494808516&postID=2579589275447090447&target=pinterest' target='_blank' title='Share to Pinterest'><span class='share-button-link-text'>Share to Pinterest</span></a>
+</div>
+</div>
+<div class='post-footer-line post-footer-line-2'>
+<span class='post-labels'>
+</span>
+</div>
+<div class='post-footer-line post-footer-line-3'>
+<span class='post-location'>
+</span>
+</div>
+</div>
+</div>
+</div>
+
+          </div></div>
+        
+
+          <div class="date-outer">
+        
+<h2 class='date-header'><span>Thursday, February 2, 2023</span></h2>
+
+          <div class="date-posts">
+        
+<div class='post-outer'>
+<div class='post hentry uncustomized-post-template' itemprop='blogPost' itemscope='itemscope' itemtype='http://schema.org/BlogPosting'>
+<meta content='file:///C:/Users/user/AppData/Local/Temp/lu172642uy8du.tmp/lu172642uy8ea_tmp_615708885fed1fb1.jpg' itemprop='image_url'/>
+<meta content='7106337660494808516' itemprop='blogId'/>
+<meta content='4021015706664238031' itemprop='postId'/>
+<a name='4021015706664238031'></a>
+<h3 class='post-title entry-title' itemprop='name'>
+<a href='https://maoistroad.blogspot.com/2023/02/announcement-on-occasion-of-death.html'> Announcement on the occasion of the death comrade Farhad - CC/C(M)PAfghanistan</a>
+</h3>
+<div class='post-header'>
+<div class='post-header-line-1'></div>
+</div>
+<div class='post-body entry-content' id='post-body-4021015706664238031' itemprop='description articleBody'>
+<h1 align="right" class="western" dir="rtl">
+<span class="sd-abs-pos" style="left: -1.27cm; position: absolute; top: -1.27cm; width: 93px;"><img border="0" height="88" name="Picture 3" src="file:///C:/Users/user/AppData/Local/Temp/lu172642uy8du.tmp/lu172642uy8ea_tmp_615708885fed1fb1.jpg" width="93" />&nbsp;</span><span class="sd-abs-pos" style="left: 16.47cm; position: absolute; top: -1.22cm; width: 125px;">
+</span><br />
+
+</h1>
+<p align="center" style="background: #ffc000; letter-spacing: -0.5pt; line-height: 100%; margin-bottom: 0cm; margin-left: -1.27cm; margin-right: -1.22cm; text-indent: 1.27cm;">
+<span style="font-family: Calibri Light, serif;"><span style="font-size: x-large;"><span style="color: white;"><b>Announcement
+on the occasion of the death of Comrade</b></span><b> </b><span style="color: red;"><u><b>Farhad</b></u></span></span></span></p>
+<p align="center" dir="rtl" style="border-bottom: 1px solid #000000; border-left: none; border-right: none; border-top: none; line-height: 100%; margin-bottom: 0.28cm; padding-bottom: 0.04cm; padding-left: 0cm; padding-right: 0cm; padding-top: 0cm;">
+<span style="font-family: Microsoft PhagsPa, serif;"><span style="font-size: medium;">(1957
+&#8211; 2023)</span></span></p>
+<p align="justify" lang="en-GB" style="line-height: 100%; margin-bottom: 0.49cm; margin-top: 0.49cm;">
+<span style="font-family: Times New Roman, serif;"><span style="font-size: small;">The
+Central Committee of the C(M)PA with deep sorrow informs all cadres,
+members, supporters of the C(M)PA, other Afghan Maoists, and Maoist
+parties and organizations in other countries of the world of the news
+of the death of Comrade &#8220;Farhad&#8221;, a member of the second regional
+committee of the C(M)PA, that passed away due to a heart attack on
+Friday, January 27, 2023, at the age of 65.</span></span></p>
+<p align="justify" lang="en-GB" style="line-height: 100%; margin-bottom: 0.49cm; margin-top: 0.49cm;">
+<span style="font-family: Times New Roman, serif;"><span style="font-size: small;">Comrade
+&#8220;Farhad&#8221; was born in 1957 And by tolerating all the sufferings,
+hardness and difficulties completed the university with a bachelor's
+degree in 1980. During his studies, he joined the Shola-e Javid's
+defenders&#8217; group.</span></span></p>
+<p align="justify" lang="en-GB" style="line-height: 100%; margin-bottom: 0.49cm; margin-top: 0.49cm;">
+<span style="font-family: Times New Roman, serif;"><span style="font-size: small;">Comrade
+&#8220;Farhad&#8221; started his struggles against the effete regime of the
+royal family in his youth, and after the disgraceful Saur coup of
+1357 SH (April Coup, April 27&#8211;28, 1978) and following it on
+December 1979 with the naked Invasion of the Russian
+social-imperialist forces on Afghanistan and their occupation of the
+country, He rose up to serious opposition against 7<sup>th</sup> Saur
+coup plotters and continued their political, national-democratic and
+revolutionary activities.</span></span></p>
+<p align="justify" lang="en-GB" style="line-height: 100%; margin-bottom: 0.49cm; margin-top: 0.49cm;">
+<span style="font-family: Times New Roman, serif;"><span style="font-size: small;">Comrade
+Farhad was chased in 1981 and settled in his hometown which was under
+the control of Mujahideen parties and left the country in 1982 and
+fled to Iran. during his struggles was in close contact with one of
+his comrades at &#8220;The Revolutionary Union of Afghanistan Workers&#8221;
+and regularly cooperated with him.</span></span></p>
+<p align="justify" lang="en-GB" style="line-height: 100%; margin-bottom: 0.49cm; margin-top: 0.49cm;">
+<span style="font-family: Times New Roman, serif;"><span style="font-size: small;">After
+the occupation of Afghanistan on October 7, 2001, by the imperialist
+occupiers led by the occupying US imperialism, he rose up against the
+unbridled imperialist occupiers and their puppet regime and began its
+regular struggles.</span></span></p>
+<p align="justify" lang="en-GB" style="line-height: 100%; margin-bottom: 0.49cm; margin-top: 0.49cm;">
+<span style="font-family: Times New Roman, serif;"><span style="font-size: small;">When
+the process of unification of the communist movement
+(Marxist-Leninist-Maoist) started in 2002, supported it, and after
+the approval of the program and constitution of the C(M)PA on May 1,
+2004, confirmed it and accepted the membership of the party.</span></span></p>
+<p align="justify" lang="en-GB" style="line-height: 100%; margin-bottom: 0.49cm; margin-top: 0.49cm;">
+<span style="font-family: Times New Roman, serif;"><span style="font-size: small;">In
+2008, he became a member of Regional Committee Number 15, and in
+2009, he took responsibility for the Cultural Committee of Regional
+Committee Number 15 and advanced this position well since 2011. when
+the ideological-political struggle between the C(M)PA and the
+Revolutionary Communist Party of America (RCP) intensified in 2011,
+he firmly supported the position of the C(M)PA, and called the
+&#8216;&#8216;Avakian's new syntheses&#8217;&#8217; humanistic and revisionist and
+rejected it.</span></span></p>
+<p align="justify" lang="en-GB" style="line-height: 100%; margin-bottom: 0.49cm; margin-top: 0.49cm;">
+<span style="font-family: Times New Roman, serif;"><span style="font-size: small;">When
+the seminar of the party against the post-Marxist-Leninist-Maoist
+line proposed in the manifesto and constitution of the Revolutionary
+Communist Party of America was held in the region, Comrade Farhad
+along with other comrades of the regional committee took
+responsibility for the security of the seminar and until the end of
+the seminar, this duty carried out well.</span></span></p>
+<p align="justify" lang="en-GB" style="line-height: 100%; margin-bottom: 0.49cm; margin-top: 0.49cm;">
+<span style="font-family: Times New Roman, serif;"><span style="font-size: small;">In
+2014, he could not participate in the second congress of the party
+due to his illness, but with his message, he fully supported the
+process of the second congress of the C(M)PA.</span></span></p>
+<p align="justify" lang="en-GB" style="line-height: 100%; margin-bottom: 0.49cm; margin-top: 0.49cm;">
+<span style="font-family: Times New Roman, serif;"><span style="font-size: small;">After
+the successful processing of the second All-party congress, comrade
+Farhad became a member of the regional committee number (02). He
+carried this responsibility well since 2019. when the issue of the
+Qatar peace process was raised in 2019, Comrade Farhad took a
+decisive and principled stance against the Taliban at the level of
+regional number two.</span></span></p>
+<p align="justify" lang="en-GB" style="line-height: 100%; margin-bottom: 0.49cm; margin-top: 0.49cm;">
+<span style="font-family: Times New Roman, serif;"><span style="font-size: small;">After
+Comrade Zia's death, he gave the youth fighting morale and always
+reminded them that the young generation should fill the empty places
+of the old comrades and advised the comrades that new blood should
+flow in the veins of the party.</span></span></p>
+<p align="justify" lang="en-GB" style="line-height: 100%; margin-bottom: 0.49cm; margin-top: 0.49cm;">
+<span style="font-family: Times New Roman, serif;"><span style="font-size: small;">He
+participated in the first anniversary of Comrade Zia's death, which
+was organized at the regional level, and wrote a poem about Comrade
+Zia under the title &#8220;You're gone and the grass went away from the
+spring field.&#8221; which is included in the Persian part of party's
+website and publications.</span></span></p>
+<p align="justify" lang="en-GB" style="line-height: 100%; margin-bottom: 0.49cm; margin-top: 0.49cm;">
+<span style="font-family: Times New Roman, serif;"><span style="font-size: small;">Comrade
+Farhad was a capable poet, critic, and pundit and a good writer for
+the party's publications. He discussed the issues of the day from an
+ideological-political point of view in every meeting.</span></span></p>
+<p align="justify" lang="en-GB" style="line-height: 100%; margin-bottom: 0.49cm; margin-top: 0.49cm;">
+<span style="font-family: Times New Roman, serif;"><span style="font-size: small;">Unfortunately,
+death did not allow this valuable comrade, and was taken from us at
+the age of 65 due to a heart attack on Friday, January 27, 2023.</span></span></p>
+<p align="justify" lang="en-GB" style="line-height: 100%; margin-bottom: 0.49cm; margin-top: 0.49cm;">
+<span style="font-family: Times New Roman, serif;"><span style="font-size: small;"><b>Comrades</b>:</span></span></p>
+<p align="justify" lang="en-GB" style="line-height: 100%; margin-bottom: 0.49cm; margin-top: 0.49cm;">
+<span style="font-family: Times New Roman, serif;"><span style="font-size: small;">Let's
+turn the sadness caused by the death of Comrade "Farhad"
+into a struggling force and keep his memory as a Maoist revolutionary
+alive and lasting.</span></span></p>
+<p lang="en-GB" style="line-height: 100%; margin-bottom: 0.49cm; margin-top: 0.49cm;">
+<span style="font-family: Times New Roman, serif;"><span style="font-size: small;"><b>May
+his memory be blessed and may his path be bright and red!</b></span></span></p>
+<p align="center" lang="en-GB" style="line-height: 100%; margin-bottom: 0.49cm; margin-top: 0.49cm;">
+<span style="font-family: Times New Roman, serif;"><span style="font-size: small;"><b>Central
+Committee</b></span></span></p>
+<p align="center" lang="en-GB" style="line-height: 100%; margin-bottom: 0.49cm; margin-top: 0.49cm;">
+<span style="font-family: Times New Roman, serif;"><span style="font-size: small;"><b>Communist
+(Maoist) Party of Afghanistan</b></span></span></p>
+<p align="center" lang="en-GB" style="line-height: 100%; margin-bottom: 0.49cm; margin-top: 0.49cm;">
+<span style="font-family: Times New Roman, serif;"><span style="font-size: small;"><b>January
+27, 2023</b></span></span></p><br /><p align="justify" style="line-height: 100%; margin-bottom: 0.28cm;">
+<br />
+
+</p>
+<p>&nbsp;</p>
+<div style='clear: both;'></div>
+</div>
+<div class='post-footer'>
+<div class='post-footer-line post-footer-line-1'>
+<span class='post-author vcard'>
+Posted by
+<span class='fn' itemprop='author' itemscope='itemscope' itemtype='http://schema.org/Person'>
+<meta content='https://www.blogger.com/profile/13169436834046789147' itemprop='url'/>
+<a class='g-profile' href='https://www.blogger.com/profile/13169436834046789147' rel='author' title='author profile'>
+<span itemprop='name'>maoistroad</span>
+</a>
+</span>
+</span>
+<span class='post-timestamp'>
+at
+<meta content='https://maoistroad.blogspot.com/2023/02/announcement-on-occasion-of-death.html' itemprop='url'/>
+<a class='timestamp-link' href='https://maoistroad.blogspot.com/2023/02/announcement-on-occasion-of-death.html' rel='bookmark' title='permanent link'><abbr class='published' itemprop='datePublished' title='2023-02-02T23:46:00-08:00'>11:46&#8239;PM</abbr></a>
+</span>
+<span class='post-comment-link'>
+<a class='comment-link' href='https://maoistroad.blogspot.com/2023/02/announcement-on-occasion-of-death.html#comment-form' onclick=''>
+No comments:
+  </a>
+</span>
+<span class='post-icons'>
+<span class='item-control blog-admin pid-1628802168'>
+<a href='https://www.blogger.com/post-edit.g?blogID=7106337660494808516&postID=4021015706664238031&from=pencil' title='Edit Post'>
+<img alt='' class='icon-action' height='18' src='https://resources.blogblog.com/img/icon18_edit_allbkg.gif' width='18'/>
+</a>
+</span>
+</span>
+<div class='post-share-buttons goog-inline-block'>
+<a class='goog-inline-block share-button sb-email' href='https://www.blogger.com/share-post.g?blogID=7106337660494808516&postID=4021015706664238031&target=email' target='_blank' title='Email This'><span class='share-button-link-text'>Email This</span></a><a class='goog-inline-block share-button sb-blog' href='https://www.blogger.com/share-post.g?blogID=7106337660494808516&postID=4021015706664238031&target=blog' onclick='window.open(this.href, "_blank", "height=270,width=475"); return false;' target='_blank' title='BlogThis!'><span class='share-button-link-text'>BlogThis!</span></a><a class='goog-inline-block share-button sb-twitter' href='https://www.blogger.com/share-post.g?blogID=7106337660494808516&postID=4021015706664238031&target=twitter' target='_blank' title='Share to Twitter'><span class='share-button-link-text'>Share to Twitter</span></a><a class='goog-inline-block share-button sb-facebook' href='https://www.blogger.com/share-post.g?blogID=7106337660494808516&postID=4021015706664238031&target=facebook' onclick='window.open(this.href, "_blank", "height=430,width=640"); return false;' target='_blank' title='Share to Facebook'><span class='share-button-link-text'>Share to Facebook</span></a><a class='goog-inline-block share-button sb-pinterest' href='https://www.blogger.com/share-post.g?blogID=7106337660494808516&postID=4021015706664238031&target=pinterest' target='_blank' title='Share to Pinterest'><span class='share-button-link-text'>Share to Pinterest</span></a>
+</div>
+</div>
+<div class='post-footer-line post-footer-line-2'>
+<span class='post-labels'>
+</span>
+</div>
+<div class='post-footer-line post-footer-line-3'>
+<span class='post-location'>
+</span>
+</div>
+</div>
+</div>
+</div>
+<div class='post-outer'>
+<div class='post hentry uncustomized-post-template' itemprop='blogPost' itemscope='itemscope' itemtype='http://schema.org/BlogPosting'>
+<meta content='7106337660494808516' itemprop='blogId'/>
+<meta content='3639476414347134542' itemprop='postId'/>
+<a name='3639476414347134542'></a>
+<h3 class='post-title entry-title' itemprop='name'>
+<a href='https://maoistroad.blogspot.com/2023/02/proletari-comunistipcm-italy-long-live.html'> Proletari Comunisti/PCm Italy - Long Live Stalingrado! Mao on Stalingrado</a>
+</h3>
+<div class='post-header'>
+<div class='post-header-line-1'></div>
+</div>
+<div class='post-body entry-content' id='post-body-3639476414347134542' itemprop='description articleBody'>
+<h3 class="post-title entry-title" itemprop="name">
+<a href="https://proletaricomunisti.blogspot.com/2023/02/pc-2-febbraio-viva-stalingrado-il.html">pc 2 febbraio - Viva Stalingrado - il significato di Stalingrado  nelle parole di MaoTse Tung</a>
+</h3>
+<div class="post-header">
+<div class="post-header-line-1"></div>
+</div>
+<div class="post-body entry-content" id="post-body-4636796507269669455" itemprop="description articleBody">
+<p><span style="font-size: x-large;">&nbsp;<span style="color: black;"> "<b>A Stalingrado, </b>- scriveva Mao ancor prima della vittoria definitiva -<b>
+ i combattenti dell'Esercito rosso hanno compiuto un'impresa eroica, che
+ influirà sul destino dell'intera umanità. Essi sono i figli della 
+Rivoluzione d'Ottobre. La bandiera della Rivoluzione d'Ottobre è 
+invincibile, e tutte le forze fasciste sono condannate a perire." </b>(Mao, Opere scelte, vol. III, p.109, Ed. in lingue estere di Pechino)</span></span></p>
+<div style="clear: both;"></div>
+</div>
+<div class="post-footer">
+<div class="post-footer-line post-footer-line-1">
+<span class="post-author vcard"></span><br /></div>
+<div class="post-footer-line post-footer-line-2">
+<span class="post-labels">
+</span>
+</div>
+<div class="post-footer-line post-footer-line-3">
+<span class="post-location">
+</span>
+</div>
+</div>
+
+
+
+
+
+
+
+<div style='clear: both;'></div>
+</div>
+<div class='post-footer'>
+<div class='post-footer-line post-footer-line-1'>
+<span class='post-author vcard'>
+Posted by
+<span class='fn' itemprop='author' itemscope='itemscope' itemtype='http://schema.org/Person'>
+<meta content='https://www.blogger.com/profile/13169436834046789147' itemprop='url'/>
+<a class='g-profile' href='https://www.blogger.com/profile/13169436834046789147' rel='author' title='author profile'>
+<span itemprop='name'>maoistroad</span>
+</a>
+</span>
+</span>
+<span class='post-timestamp'>
+at
+<meta content='https://maoistroad.blogspot.com/2023/02/proletari-comunistipcm-italy-long-live.html' itemprop='url'/>
+<a class='timestamp-link' href='https://maoistroad.blogspot.com/2023/02/proletari-comunistipcm-italy-long-live.html' rel='bookmark' title='permanent link'><abbr class='published' itemprop='datePublished' title='2023-02-02T11:39:00-08:00'>11:39&#8239;AM</abbr></a>
+</span>
+<span class='post-comment-link'>
+<a class='comment-link' href='https://maoistroad.blogspot.com/2023/02/proletari-comunistipcm-italy-long-live.html#comment-form' onclick=''>
+No comments:
+  </a>
+</span>
+<span class='post-icons'>
+<span class='item-control blog-admin pid-1628802168'>
+<a href='https://www.blogger.com/post-edit.g?blogID=7106337660494808516&postID=3639476414347134542&from=pencil' title='Edit Post'>
+<img alt='' class='icon-action' height='18' src='https://resources.blogblog.com/img/icon18_edit_allbkg.gif' width='18'/>
+</a>
+</span>
+</span>
+<div class='post-share-buttons goog-inline-block'>
+<a class='goog-inline-block share-button sb-email' href='https://www.blogger.com/share-post.g?blogID=7106337660494808516&postID=3639476414347134542&target=email' target='_blank' title='Email This'><span class='share-button-link-text'>Email This</span></a><a class='goog-inline-block share-button sb-blog' href='https://www.blogger.com/share-post.g?blogID=7106337660494808516&postID=3639476414347134542&target=blog' onclick='window.open(this.href, "_blank", "height=270,width=475"); return false;' target='_blank' title='BlogThis!'><span class='share-button-link-text'>BlogThis!</span></a><a class='goog-inline-block share-button sb-twitter' href='https://www.blogger.com/share-post.g?blogID=7106337660494808516&postID=3639476414347134542&target=twitter' target='_blank' title='Share to Twitter'><span class='share-button-link-text'>Share to Twitter</span></a><a class='goog-inline-block share-button sb-facebook' href='https://www.blogger.com/share-post.g?blogID=7106337660494808516&postID=3639476414347134542&target=facebook' onclick='window.open(this.href, "_blank", "height=430,width=640"); return false;' target='_blank' title='Share to Facebook'><span class='share-button-link-text'>Share to Facebook</span></a><a class='goog-inline-block share-button sb-pinterest' href='https://www.blogger.com/share-post.g?blogID=7106337660494808516&postID=3639476414347134542&target=pinterest' target='_blank' title='Share to Pinterest'><span class='share-button-link-text'>Share to Pinterest</span></a>
+</div>
+</div>
+<div class='post-footer-line post-footer-line-2'>
+<span class='post-labels'>
+</span>
+</div>
+<div class='post-footer-line post-footer-line-3'>
+<span class='post-location'>
+</span>
+</div>
+</div>
+</div>
+</div>
+
+          </div></div>
+        
+
+          <div class="date-outer">
+        
+<h2 class='date-header'><span>Wednesday, February 1, 2023</span></h2>
+
+          <div class="date-posts">
+        
+<div class='post-outer'>
+<div class='post hentry uncustomized-post-template' itemprop='blogPost' itemscope='itemscope' itemtype='http://schema.org/BlogPosting'>
+<meta content='https://www.revolucionobrera.com/wp-content/uploads/2023/01/India-copia.jpg' itemprop='image_url'/>
+<meta content='7106337660494808516' itemprop='blogId'/>
+<meta content='3225130398375630957' itemprop='postId'/>
+<a name='3225130398375630957'></a>
+<h3 class='post-title entry-title' itemprop='name'>
+<a href='https://maoistroad.blogspot.com/2023/02/pcimaoist-contra-la-corporatizacion.html'>PCI(Maoist) - CONTRA LA CORPORATIZACIÓN, MILITARIZACIÓN E HINDUIZACIÓN  - l'appel y el supporte de ICSPWI</a>
+</h3>
+<div class='post-header'>
+<div class='post-header-line-1'></div>
+</div>
+<div class='post-body entry-content' id='post-body-3225130398375630957' itemprop='description articleBody'>
+<div class="wp-block-image">
+<figure class="aligncenter size-full"><b>I<a href="https://www.revolucionobrera.com/wp-content/uploads/2023/01/India-copia.jpg">CSPWI ' es el momento más favorable para desarrollar y consolidar el movimiento de solidaridad revolucionario indio en apoyo de la guerra popular en todo el mundo'</a></b></figure><figure class="aligncenter size-full"><b>10/100/1000 acciones de supporte!</b></figure><figure class="aligncenter size-full"><b>23/24/25 febrero jornadas de luchas contra la guerra imperialista<span class="Y2IQFc" lang="es"> - traer en estos días y en todas las</span><span class="Y2IQFc" lang="es"> acciones contra la guerra la importancia del apoyo a la guerra popular en la India y en el mundo! '</span></b></figure><figure class="aligncenter size-full"></figure><figure class="aligncenter size-full"><img alt="India: Condenar los ataques fascistas sin precedentes con aviones no tripulados y helicópteros de combate del gobierno central y del estado de Chhattisgad 1" class="wp-image-16201" height="221" src="https://www.revolucionobrera.com/wp-content/uploads/2023/01/India-copia.jpg" width="400" /><figcaption><b>Combatientes del Ejército Guerrillero Popular de Liberación </b></figcaption></figure></div>
+
+
+<p></p>
+
+
+
+<p>Tomado de&nbsp;<i><a href="https://dazibaorojo08.blogspot.com/2023/01/indiacondemn-center-and-chhattisgad.html" rel="noreferrer noopener nofollow" target="_blank">Dazibao Rojo</a></i>, 24 de enero 2023</p>
+
+
+
+<h4 class="has-text-align-center fittexted_for_content_h4" style="font-size: 27px;">CONTRA LA CORPORATIZACIÓN, MILITARIZACIÓN E HINDUIZACIÓN </h4>
+
+
+
+<h5 class="has-text-align-center fittexted_for_content_h5" style="font-size: 22.5px;">(Asuntos Internacionales / Comité Central, Partido Comunista de la India (Maoísta))</h5>
+
+
+
+<p>Queridos camaradas, amigos y simpatizantes de la Revolución India, Rojos Saludos.</p>
+
+
+
+<p>El 11 de enero 2023 será recordado para siempre en la historia de la 
+Revolución India. En la historia revolucionaria india no había habido 
+antes disparos de helicópteros sobre nuestro pueblo y revolucionarios en
+ el Estado de Chhattisgad, en la selva de Bastar. Aunque nuestros 
+guerrilleros del PLGA [Ejército Guerrillero Popular de Liberación] 
+resistieron ferozmente e hirieron a 5 comandos Garuda y a un miembro del
+ personal técnico de la Fuerza Aérea India. Este es un gran logro en el 
+Año Nuevo. El mismo día, en otro lado del estado de Jharkhand, en la 
+Selva de Saaranda, las fuerzas CoBRA de las fuerzas paramilitares indias
+ iniciaron una gran campaña de operaciones de combate. Allí nuestros 
+guerrilleros del PLGA tomaron heroicamente represalias e hirieron 
+gravemente a 6 comandos. En esta valiente represalia perdimos a una de 
+nuestras queridas camaradas guerrilleras Gangi. Rindamos nuestros 
+fecundos homenajes revolucionarios a esa mártir. Nuestro CC, el Partido 
+Comunista de la India (Maoísta), hace un llamamiento para condenar estos
+ brutales ataques contra los pueblos indígenas de Bastar y Saaranda y 
+organizar concentraciones de protesta ante las embajadas indias en el 
+llamado Día de la República de la India, es decir, el 26 de enero en 
+todo el mundo.</p>
+
+
+
+<p>Desde el pasado octubre, las explotadoras clases dominantes indias, 
+en particular las fuerzas hindutva, se concentraron fuertemente en el 
+movimiento revolucionario indio. Bajo el liderazgo del Ministro del 
+Interior indio, el Sr. Amit Sha, se celebró una reunión especial en 
+Surajkund, Haryana. En esa reunión, el Primer Ministro indio se dirigió a
+ la policía y a los oficiales de inteligencia y les ordenó eliminar a 
+los maoístas, tanto a los que tienen armas como a los que tienen 
+bolígrafos. Desde hace unos años, las fuerzas Hindutva han introducido 
+una nueva expresión en India: naxal urbano. Ahora el Primer Ministro ha 
+vuelto a utilizar la misma frase, pero en su propio estilo de discurso 
+satírico, Kalamdhari (poseedor de bolígrafos). Por lo tanto, esto indica
+ que el Primer Ministro y el Ministro del Interior de la India están muy
+ ansiosos por eliminar el movimiento revolucionario indio para cumplir 
+sus sueños de Make in India.</p>
+
+
+
+<p>El 11 de diciembre, el Ministro del Interior indio celebró una 
+reunión crucial de alto nivel con oficiales de inteligencia indios en 
+Nueva Delhi y aclaró su plan en esa reunión. Dijo que las fuerzas 
+policiales están listas para entrar en la zona de Maad del distrito de 
+Narayanpur, Chhattisgad para tomarla bajo su control.</p>
+
+
+
+<p>El 7 de enero, el mismo ministro indio del Interior, Amit Sha, se 
+dirigió a una reunión pública en Korba, un centro industrial del estado 
+de Chhattisgad. En esa reunión declaró que su gobierno creará una India 
+libre de maoístas antes de las elecciones generales de 2024. Mientras 
+tanto, se llevaron a cabo varias reuniones a nivel local con los 
+oficiales de policía para una mejor coordinación de las fuerzas 
+estatales y centrales en las próximas operaciones militares.</p>
+
+
+
+<p>Por fin, comenzaron sus operaciones de erradicación maoísta en los 
+bosques fronterizos de los distritos de Sukma, Bijapur y Dantewada, que 
+es la zona colindante con el estado de Telangana. En esta gran operación
+ participaron la NSG (National Security Guards), Gray Hounds, CoBRA y 
+otras fuerzas armadas de la policía central, junto con los comandos 
+Garuda de la Fuerza Aérea India. Pero los guerrilleros del PLGA tomaron 
+represalias con el pleno apoyo del pueblo revolucionario local.</p>
+
+
+
+<p>Las clases dominantes indias y sus gobiernos centrales y estatales se
+ apresuraron a eliminar el Movimiento Revolucionario Indio. Porque, es 
+el principal obstáculo en su saqueo y expoliación de los ricos recursos 
+del país. Por otro lado, los pueblos indígenas de la India están 
+luchando por sus justas reivindicaciones. Luchan por sus derechos 
+legales sobre sus bosques. Están en contra de la explotación de los 
+bosques. En este contexto, los gobiernos más reaccionarios del centro y 
+del estado, que trabajan en beneficio de las grandes corporaciones, 
+están lanzando nuevas y mayores formas de ataque contra el pueblo. Por 
+ello, nuestro CC [Comité Central] hace un nuevo llamamiento para que 
+condenéis estos ataques y alcéis vuestras voces contra las fuerzas 
+fascistas Hindutva.</p>
+
+
+
+<p>En nuestro país, los intelectuales democráticos y revolucionarios, 
+los patriotas, los activistas por los derechos, los estudiantes, los 
+jóvenes, los laicistas, los escritores, los artistas, los abogados, los 
+defensores de los pueblos indígenas, las fuerzas antiimperialistas 
+amantes de la paz y los ecologistas se oponen firmemente a la 
+corporatización, la militarización de los bosques y, en particular, a la
+ hinduización del país. Por lo tanto, es el momento más favorable para 
+desarrollar y consolidar el movimiento de solidaridad revolucionario 
+indio en apoyo de la guerra popular en todo el mundo.</p>
+
+
+
+Amrut I/C Asuntos Internacionales,&nbsp;<br />CC, PCI (Maoísta)<p>&nbsp;</p>
+<div style='clear: both;'></div>
+</div>
+<div class='post-footer'>
+<div class='post-footer-line post-footer-line-1'>
+<span class='post-author vcard'>
+Posted by
+<span class='fn' itemprop='author' itemscope='itemscope' itemtype='http://schema.org/Person'>
+<meta content='https://www.blogger.com/profile/13169436834046789147' itemprop='url'/>
+<a class='g-profile' href='https://www.blogger.com/profile/13169436834046789147' rel='author' title='author profile'>
+<span itemprop='name'>maoistroad</span>
+</a>
+</span>
+</span>
+<span class='post-timestamp'>
+at
+<meta content='https://maoistroad.blogspot.com/2023/02/pcimaoist-contra-la-corporatizacion.html' itemprop='url'/>
+<a class='timestamp-link' href='https://maoistroad.blogspot.com/2023/02/pcimaoist-contra-la-corporatizacion.html' rel='bookmark' title='permanent link'><abbr class='published' itemprop='datePublished' title='2023-02-01T00:15:00-08:00'>12:15&#8239;AM</abbr></a>
+</span>
+<span class='post-comment-link'>
+<a class='comment-link' href='https://maoistroad.blogspot.com/2023/02/pcimaoist-contra-la-corporatizacion.html#comment-form' onclick=''>
+No comments:
+  </a>
+</span>
+<span class='post-icons'>
+<span class='item-control blog-admin pid-1628802168'>
+<a href='https://www.blogger.com/post-edit.g?blogID=7106337660494808516&postID=3225130398375630957&from=pencil' title='Edit Post'>
+<img alt='' class='icon-action' height='18' src='https://resources.blogblog.com/img/icon18_edit_allbkg.gif' width='18'/>
+</a>
+</span>
+</span>
+<div class='post-share-buttons goog-inline-block'>
+<a class='goog-inline-block share-button sb-email' href='https://www.blogger.com/share-post.g?blogID=7106337660494808516&postID=3225130398375630957&target=email' target='_blank' title='Email This'><span class='share-button-link-text'>Email This</span></a><a class='goog-inline-block share-button sb-blog' href='https://www.blogger.com/share-post.g?blogID=7106337660494808516&postID=3225130398375630957&target=blog' onclick='window.open(this.href, "_blank", "height=270,width=475"); return false;' target='_blank' title='BlogThis!'><span class='share-button-link-text'>BlogThis!</span></a><a class='goog-inline-block share-button sb-twitter' href='https://www.blogger.com/share-post.g?blogID=7106337660494808516&postID=3225130398375630957&target=twitter' target='_blank' title='Share to Twitter'><span class='share-button-link-text'>Share to Twitter</span></a><a class='goog-inline-block share-button sb-facebook' href='https://www.blogger.com/share-post.g?blogID=7106337660494808516&postID=3225130398375630957&target=facebook' onclick='window.open(this.href, "_blank", "height=430,width=640"); return false;' target='_blank' title='Share to Facebook'><span class='share-button-link-text'>Share to Facebook</span></a><a class='goog-inline-block share-button sb-pinterest' href='https://www.blogger.com/share-post.g?blogID=7106337660494808516&postID=3225130398375630957&target=pinterest' target='_blank' title='Share to Pinterest'><span class='share-button-link-text'>Share to Pinterest</span></a>
+</div>
+</div>
+<div class='post-footer-line post-footer-line-2'>
+<span class='post-labels'>
+</span>
+</div>
+<div class='post-footer-line post-footer-line-3'>
+<span class='post-location'>
+</span>
+</div>
+</div>
+</div>
+</div>
+<div class='post-outer'>
+<div class='post hentry uncustomized-post-template' itemprop='blogPost' itemscope='itemscope' itemtype='http://schema.org/BlogPosting'>
+<meta content='https://anovademocracia.com.br/images/sidor1.jpg' itemprop='image_url'/>
+<meta content='7106337660494808516' itemprop='blogId'/>
+<meta content='6967760417214591812' itemprop='postId'/>
+<a name='6967760417214591812'></a>
+<h3 class='post-title entry-title' itemprop='name'>
+<a href='https://maoistroad.blogspot.com/2023/02/organizar-supportar-las-luchas-obreras.html'>organizar supportar las luchas obreras en todo el mundo es la primera tarea de los marxista-leninistas maoistas en el mundo - MaoistRoad - Brasil</a>
+</h3>
+<div class='post-header'>
+<div class='post-header-line-1'></div>
+</div>
+<div class='post-body entry-content' id='post-body-6967760417214591812' itemprop='description articleBody'>
+<dl class="article-info"><dd class="published">AND<time data-original-title="Data de Publicação" data-toggle="tooltip" datetime="2023-01-30T17:19:32-03:00" itemprop="datePublished" title="">30 Janeiro 2023	</time>
+</dd></dl>
+<h2 itemprop="name">
+SP: Metalúrgicos em greve exigem pagamento atrasado com protestos em frente à fábrica </h2>
+
+<div itemprop="articleBody">
+<p><span style="font-weight: 400;"><img height="240" src="https://anovademocracia.com.br/images/sidor1.jpg" width="400" /></span></p>
+<p><span class="legenda" style="font-weight: 400;">Operários da Sidor realizam protesto após sete dias de greve. Foto: Divulgação</span></p>
+<p><span style="font-weight: 400;">No dia 30 de janeiro, os operários da
+ Sidor realizaram um protesto em frente às instalações da fábrica. A 
+mobilização é parte da greve que iniciou no dia 23/01 para exigir 
+pagamento de salários. Os operários da produção estão com os 
+vale-salários atrasados desde o dia 20/01, enquanto os trabalhadores da 
+administração estão com os salários referentes a dezembro atrasados 
+desde o dia 05/01. Por conta da mobilização, os patrões foram também 
+obrigados a depositar o décimo terceiro, que estava atrasado.</span></p>
+<p><span style="font-weight: 400;">Não é a primeira vez que os operários
+ da Sidor se mobilizam pelo atraso de salários. Em julho e outubro do 
+ano passado, os operários da empresa realizaram uma série de greves&nbsp; 
+pelos mesmos motivos. Depois das mobilizações, os salários foram 
+conquistados. A Sidor tem cerca de 50 trabalhadores e produz autopeças e
+ acessórios automobilísticos.</span></p>
+<p><span style="font-weight: 400;">Também em Sorocaba, metalúrgicos da 
+empresa Dana realizaram uma paralisação de duas horas no dia 26/01 para 
+protestar contra falta de transparência e divergências referente às 
+metas e valores da segunda parcela do Programa de Participação nos 
+Resultados (PPR) de 2022.</span></p>
+<p><span style="font-weight: 400;"><img height="240" src="https://anovademocracia.com.br/images/dana1.jpg" width="400" /></span></p>
+<p><span class="legenda" style="font-weight: 400;">Metalúrgicos da Dana paralisam produção por duas horas. Foto: Foguinho/Imprensa SMetal</span></p>
+<p><span style="font-weight: 400;">Nos últimos anos, diversas 
+mobilizações operárias ocorreram em São Paulo contra a perda de direitos
+ e por melhores condições de trabalho. Em novembro do ano passado, 
+operários conquistaram seus direitos após realizarem ao menos dez greves
+ durante uma intensa campanha de aumento salarial real e contra 
+demissões em massa. </span></p> </div><p>&nbsp;</p>
+<div style='clear: both;'></div>
+</div>
+<div class='post-footer'>
+<div class='post-footer-line post-footer-line-1'>
+<span class='post-author vcard'>
+Posted by
+<span class='fn' itemprop='author' itemscope='itemscope' itemtype='http://schema.org/Person'>
+<meta content='https://www.blogger.com/profile/13169436834046789147' itemprop='url'/>
+<a class='g-profile' href='https://www.blogger.com/profile/13169436834046789147' rel='author' title='author profile'>
+<span itemprop='name'>maoistroad</span>
+</a>
+</span>
+</span>
+<span class='post-timestamp'>
+at
+<meta content='https://maoistroad.blogspot.com/2023/02/organizar-supportar-las-luchas-obreras.html' itemprop='url'/>
+<a class='timestamp-link' href='https://maoistroad.blogspot.com/2023/02/organizar-supportar-las-luchas-obreras.html' rel='bookmark' title='permanent link'><abbr class='published' itemprop='datePublished' title='2023-02-01T00:00:00-08:00'>12:00&#8239;AM</abbr></a>
+</span>
+<span class='post-comment-link'>
+<a class='comment-link' href='https://maoistroad.blogspot.com/2023/02/organizar-supportar-las-luchas-obreras.html#comment-form' onclick=''>
+No comments:
+  </a>
+</span>
+<span class='post-icons'>
+<span class='item-control blog-admin pid-1628802168'>
+<a href='https://www.blogger.com/post-edit.g?blogID=7106337660494808516&postID=6967760417214591812&from=pencil' title='Edit Post'>
+<img alt='' class='icon-action' height='18' src='https://resources.blogblog.com/img/icon18_edit_allbkg.gif' width='18'/>
+</a>
+</span>
+</span>
+<div class='post-share-buttons goog-inline-block'>
+<a class='goog-inline-block share-button sb-email' href='https://www.blogger.com/share-post.g?blogID=7106337660494808516&postID=6967760417214591812&target=email' target='_blank' title='Email This'><span class='share-button-link-text'>Email This</span></a><a class='goog-inline-block share-button sb-blog' href='https://www.blogger.com/share-post.g?blogID=7106337660494808516&postID=6967760417214591812&target=blog' onclick='window.open(this.href, "_blank", "height=270,width=475"); return false;' target='_blank' title='BlogThis!'><span class='share-button-link-text'>BlogThis!</span></a><a class='goog-inline-block share-button sb-twitter' href='https://www.blogger.com/share-post.g?blogID=7106337660494808516&postID=6967760417214591812&target=twitter' target='_blank' title='Share to Twitter'><span class='share-button-link-text'>Share to Twitter</span></a><a class='goog-inline-block share-button sb-facebook' href='https://www.blogger.com/share-post.g?blogID=7106337660494808516&postID=6967760417214591812&target=facebook' onclick='window.open(this.href, "_blank", "height=430,width=640"); return false;' target='_blank' title='Share to Facebook'><span class='share-button-link-text'>Share to Facebook</span></a><a class='goog-inline-block share-button sb-pinterest' href='https://www.blogger.com/share-post.g?blogID=7106337660494808516&postID=6967760417214591812&target=pinterest' target='_blank' title='Share to Pinterest'><span class='share-button-link-text'>Share to Pinterest</span></a>
+</div>
+</div>
+<div class='post-footer-line post-footer-line-2'>
+<span class='post-labels'>
+</span>
+</div>
+<div class='post-footer-line post-footer-line-3'>
+<span class='post-location'>
+</span>
+</div>
+</div>
+</div>
+</div>
+
+        </div></div>
+      
+</div>
+<div class='blog-pager' id='blog-pager'>
+<span id='blog-pager-older-link'>
+<a class='blog-pager-older-link' href='https://maoistroad.blogspot.com/search?updated-max=2023-02-01T00:00:00-08:00&amp;max-results=7' id='Blog1_blog-pager-older-link' title='Older Posts'>Older Posts</a>
+</span>
+<a class='home-link' href='https://maoistroad.blogspot.com/'>Home</a>
+</div>
+<div class='clear'></div>
+<div class='blog-feeds'>
+<div class='feed-links'>
+Subscribe to:
+<a class='feed-link' href='https://maoistroad.blogspot.com/feeds/posts/default' target='_blank' type='application/atom+xml'>Posts (Atom)</a>
+</div>
+</div>
+</div></div>
+</div>
+</div>
+<div class='column-left-outer'>
+<div class='column-left-inner'>
+<aside>
+</aside>
+</div>
+</div>
+<div class='column-right-outer'>
+<div class='column-right-inner'>
+<aside>
+<div class='sidebar section' id='sidebar-right-1'><div class='widget Image' data-version='1' id='Image14'>
+<h2>Long Live Red May Day</h2>
+<div class='widget-content'>
+<a href='https://docs.google.com/document/d/1cV2XNOvdtvcx-ytnG3ZcHOh8XUr_PZQI/edit?usp=sharing&ouid=108883585156779695421&rtpof=true&sd=true'>
+<img alt='Long Live Red May Day' height='424' id='Image14_img' src='https://blogger.googleusercontent.com/img/a/AVvXsEh89kE5IcNtkgYa3x_f2BA_rmzgUW2IoXOD4MNnlcp_isI5PzxTUo4QxU9dWmwBgvAWSUbz8aHCgd27fcuNPBjyPmvCWZc8MRurSZEXK23mGMrnOZEG0hwz1OyHvLY-Ftlw_e8ESXsdc0ZPOImDoVcji6zoUtLacOxJCTtimkTYxI0zsT9aj6J6_rOX=s424' width='300'/>
+</a>
+<br/>
+<span class='caption'>Download the joint declaration</span>
+</div>
+<div class='clear'></div>
+</div><div class='widget Image' data-version='1' id='Image1'>
+<h2>Special Issue</h2>
+<div class='widget-content'>
+<img alt='Special Issue' height='372' id='Image1_img' src='//3.bp.blogspot.com/-RkQWZwwUaTQ/XtGb_KuLDOI/AAAAAAAAF8o/BkfDk5LXYdUkXoYf-NOPl73Swx4tgZUFACK4BGAYYCw/s1600/MEEn_page-0001web.jpg' width='250'/>
+<br/>
+<span class='caption'>request it to: maoistroad@gmail.com</span>
+</div>
+<div class='clear'></div>
+</div><div class='widget Image' data-version='1' id='Image4'>
+<h2>Final Document and Call passed by the Special Meeting of MLM Parties and organizations of the RIM</h2>
+<div class='widget-content'>
+<img alt='Final Document and Call passed by the Special Meeting of MLM Parties and organizations of the RIM' height='219' id='Image4_img' src='//1.bp.blogspot.com/-q-X7zZTWx4U/T6JYX8itBAI/AAAAAAAAASQ/YsIYrOjUyfY/s1600/logoSM.jpg' width='200'/>
+<br/>
+</div>
+<div class='clear'></div>
+</div><div class='widget Text' data-version='1' id='Text1'>
+<div class='widget-content'>
+<a href="http://digilander.libero.it/fl194/Reso1.EN.Fnl.doc">Download the 1st Resolution</a><br/><a href="http://digilander.libero.it/fl194/Reso2.EN.fnl.doc">Download the 2nd Resolution</a><br/>
+</div>
+<div class='clear'></div>
+</div><div class='widget Image' data-version='1' id='Image7'>
+<div class='widget-content'>
+<img alt='' height='354' id='Image7_img' src='//4.bp.blogspot.com/-J3qgGHcVwrE/XMlrjWZz05I/AAAAAAAAFdg/Ud2FWJ0CjcItO8D2VH03tkDnEab0_yYcwCK4BGAYYCw/s1600/Meet8.12.18-EN.jpg' width='250'/>
+<br/>
+</div>
+<div class='clear'></div>
+</div><div class='widget Image' data-version='1' id='Image12'>
+<h2>Official Pamphlet of the International Meeting for the 10th anniversary of the CPI (Maoist)</h2>
+<div class='widget-content'>
+<a href='https://icspwindia.files.wordpress.com/2014/11/icmeetingpamphlet-en.pdf'>
+<img alt='Official Pamphlet of the International Meeting for the 10th anniversary of the CPI (Maoist)' height='354' id='Image12_img' src='//1.bp.blogspot.com/-iRWtnwrqbV8/VGOjuNu7ZSI/AAAAAAAACLk/zC2HGuKODTY/s1600/Pamphlet-EN-Cover-Blog.jpg' width='250'/>
+</a>
+<br/>
+<span class='caption'>Download in pdf format</span>
+</div>
+<div class='clear'></div>
+</div><div class='widget Image' data-version='1' id='Image11'>
+<h2>International Committee to Support People's War in india</h2>
+<div class='widget-content'>
+<a href='https://icspwindia.wordpress.com'>
+<img alt='International Committee to Support People&#39;s War in india' height='100' id='Image11_img' src='//1.bp.blogspot.com/-o_Pqq-GxQQQ/VCw4CpS4MUI/AAAAAAAACAs/zSPL_Itfm-Y/s1600/3337.the-rebel-2.jpg' width='150'/>
+</a>
+<br/>
+</div>
+<div class='clear'></div>
+</div><div class='widget BlogArchive' data-version='1' id='BlogArchive1'>
+<h2>Blog Archive</h2>
+<div class='widget-content'>
+<div id='ArchiveList'>
+<div id='BlogArchive1_ArchiveList'>
+<ul class='hierarchy'>
+<li class='archivedate expanded'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy toggle-open'>
+
+        &#9660;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2023/'>
+2023
+</a>
+<span class='post-count' dir='ltr'>(46)</span>
+<ul class='hierarchy'>
+<li class='archivedate expanded'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy toggle-open'>
+
+        &#9660;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2023/02/'>
+February
+</a>
+<span class='post-count' dir='ltr'>(7)</span>
+<ul class='posts'>
+<li><a href='https://maoistroad.blogspot.com/2023/02/turkey-urgent-call-for-help-we-stand.html'>Turkey -  URGENT CALL FOR HELP!  WE STAND WITH OUR...</a></li>
+<li><a href='https://maoistroad.blogspot.com/2023/02/celebrate-50th-anniversary-of.html'>Celebrate the 50th anniversary of the foundation o...</a></li>
+<li><a href='https://maoistroad.blogspot.com/2023/02/brasil-denuncia-urgente-pm-executa.html'>BRASIL: DENUNCIA URGENTE: PM executa chacina contr...</a></li>
+<li><a href='https://maoistroad.blogspot.com/2023/02/announcement-on-occasion-of-death.html'>Announcement on the occasion of the death comrade ...</a></li>
+<li><a href='https://maoistroad.blogspot.com/2023/02/proletari-comunistipcm-italy-long-live.html'>Proletari Comunisti/PCm Italy - Long Live Stalingr...</a></li>
+<li><a href='https://maoistroad.blogspot.com/2023/02/pcimaoist-contra-la-corporatizacion.html'>PCI(Maoist) - CONTRA LA CORPORATIZACIÓN, MILITARIZ...</a></li>
+<li><a href='https://maoistroad.blogspot.com/2023/02/organizar-supportar-las-luchas-obreras.html'>organizar supportar las luchas obreras en todo el ...</a></li>
+</ul>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2023/01/'>
+January
+</a>
+<span class='post-count' dir='ltr'>(39)</span>
+</li>
+</ul>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2022/'>
+2022
+</a>
+<span class='post-count' dir='ltr'>(626)</span>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2022/12/'>
+December
+</a>
+<span class='post-count' dir='ltr'>(28)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2022/11/'>
+November
+</a>
+<span class='post-count' dir='ltr'>(47)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2022/10/'>
+October
+</a>
+<span class='post-count' dir='ltr'>(39)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2022/09/'>
+September
+</a>
+<span class='post-count' dir='ltr'>(60)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2022/08/'>
+August
+</a>
+<span class='post-count' dir='ltr'>(60)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2022/07/'>
+July
+</a>
+<span class='post-count' dir='ltr'>(67)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2022/06/'>
+June
+</a>
+<span class='post-count' dir='ltr'>(52)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2022/05/'>
+May
+</a>
+<span class='post-count' dir='ltr'>(65)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2022/04/'>
+April
+</a>
+<span class='post-count' dir='ltr'>(53)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2022/03/'>
+March
+</a>
+<span class='post-count' dir='ltr'>(57)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2022/02/'>
+February
+</a>
+<span class='post-count' dir='ltr'>(54)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2022/01/'>
+January
+</a>
+<span class='post-count' dir='ltr'>(44)</span>
+</li>
+</ul>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2021/'>
+2021
+</a>
+<span class='post-count' dir='ltr'>(645)</span>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2021/12/'>
+December
+</a>
+<span class='post-count' dir='ltr'>(47)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2021/11/'>
+November
+</a>
+<span class='post-count' dir='ltr'>(105)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2021/10/'>
+October
+</a>
+<span class='post-count' dir='ltr'>(46)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2021/09/'>
+September
+</a>
+<span class='post-count' dir='ltr'>(71)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2021/08/'>
+August
+</a>
+<span class='post-count' dir='ltr'>(19)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2021/07/'>
+July
+</a>
+<span class='post-count' dir='ltr'>(31)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2021/06/'>
+June
+</a>
+<span class='post-count' dir='ltr'>(47)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2021/05/'>
+May
+</a>
+<span class='post-count' dir='ltr'>(71)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2021/04/'>
+April
+</a>
+<span class='post-count' dir='ltr'>(54)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2021/03/'>
+March
+</a>
+<span class='post-count' dir='ltr'>(70)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2021/02/'>
+February
+</a>
+<span class='post-count' dir='ltr'>(45)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2021/01/'>
+January
+</a>
+<span class='post-count' dir='ltr'>(39)</span>
+</li>
+</ul>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2020/'>
+2020
+</a>
+<span class='post-count' dir='ltr'>(904)</span>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2020/12/'>
+December
+</a>
+<span class='post-count' dir='ltr'>(53)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2020/11/'>
+November
+</a>
+<span class='post-count' dir='ltr'>(65)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2020/10/'>
+October
+</a>
+<span class='post-count' dir='ltr'>(82)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2020/09/'>
+September
+</a>
+<span class='post-count' dir='ltr'>(81)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2020/08/'>
+August
+</a>
+<span class='post-count' dir='ltr'>(75)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2020/07/'>
+July
+</a>
+<span class='post-count' dir='ltr'>(60)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2020/06/'>
+June
+</a>
+<span class='post-count' dir='ltr'>(77)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2020/05/'>
+May
+</a>
+<span class='post-count' dir='ltr'>(95)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2020/04/'>
+April
+</a>
+<span class='post-count' dir='ltr'>(88)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2020/03/'>
+March
+</a>
+<span class='post-count' dir='ltr'>(65)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2020/02/'>
+February
+</a>
+<span class='post-count' dir='ltr'>(99)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2020/01/'>
+January
+</a>
+<span class='post-count' dir='ltr'>(64)</span>
+</li>
+</ul>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2019/'>
+2019
+</a>
+<span class='post-count' dir='ltr'>(1445)</span>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2019/12/'>
+December
+</a>
+<span class='post-count' dir='ltr'>(86)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2019/11/'>
+November
+</a>
+<span class='post-count' dir='ltr'>(99)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2019/10/'>
+October
+</a>
+<span class='post-count' dir='ltr'>(133)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2019/09/'>
+September
+</a>
+<span class='post-count' dir='ltr'>(70)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2019/08/'>
+August
+</a>
+<span class='post-count' dir='ltr'>(130)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2019/07/'>
+July
+</a>
+<span class='post-count' dir='ltr'>(142)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2019/06/'>
+June
+</a>
+<span class='post-count' dir='ltr'>(120)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2019/05/'>
+May
+</a>
+<span class='post-count' dir='ltr'>(198)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2019/04/'>
+April
+</a>
+<span class='post-count' dir='ltr'>(119)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2019/03/'>
+March
+</a>
+<span class='post-count' dir='ltr'>(105)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2019/02/'>
+February
+</a>
+<span class='post-count' dir='ltr'>(118)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2019/01/'>
+January
+</a>
+<span class='post-count' dir='ltr'>(125)</span>
+</li>
+</ul>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2018/'>
+2018
+</a>
+<span class='post-count' dir='ltr'>(1803)</span>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2018/12/'>
+December
+</a>
+<span class='post-count' dir='ltr'>(131)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2018/11/'>
+November
+</a>
+<span class='post-count' dir='ltr'>(162)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2018/10/'>
+October
+</a>
+<span class='post-count' dir='ltr'>(203)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2018/09/'>
+September
+</a>
+<span class='post-count' dir='ltr'>(148)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2018/08/'>
+August
+</a>
+<span class='post-count' dir='ltr'>(95)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2018/07/'>
+July
+</a>
+<span class='post-count' dir='ltr'>(206)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2018/06/'>
+June
+</a>
+<span class='post-count' dir='ltr'>(94)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2018/05/'>
+May
+</a>
+<span class='post-count' dir='ltr'>(165)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2018/04/'>
+April
+</a>
+<span class='post-count' dir='ltr'>(160)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2018/03/'>
+March
+</a>
+<span class='post-count' dir='ltr'>(183)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2018/02/'>
+February
+</a>
+<span class='post-count' dir='ltr'>(134)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2018/01/'>
+January
+</a>
+<span class='post-count' dir='ltr'>(122)</span>
+</li>
+</ul>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2017/'>
+2017
+</a>
+<span class='post-count' dir='ltr'>(1999)</span>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2017/12/'>
+December
+</a>
+<span class='post-count' dir='ltr'>(184)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2017/11/'>
+November
+</a>
+<span class='post-count' dir='ltr'>(132)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2017/10/'>
+October
+</a>
+<span class='post-count' dir='ltr'>(128)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2017/09/'>
+September
+</a>
+<span class='post-count' dir='ltr'>(170)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2017/08/'>
+August
+</a>
+<span class='post-count' dir='ltr'>(130)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2017/07/'>
+July
+</a>
+<span class='post-count' dir='ltr'>(127)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2017/06/'>
+June
+</a>
+<span class='post-count' dir='ltr'>(180)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2017/05/'>
+May
+</a>
+<span class='post-count' dir='ltr'>(253)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2017/04/'>
+April
+</a>
+<span class='post-count' dir='ltr'>(204)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2017/03/'>
+March
+</a>
+<span class='post-count' dir='ltr'>(209)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2017/02/'>
+February
+</a>
+<span class='post-count' dir='ltr'>(173)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2017/01/'>
+January
+</a>
+<span class='post-count' dir='ltr'>(109)</span>
+</li>
+</ul>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2016/'>
+2016
+</a>
+<span class='post-count' dir='ltr'>(2022)</span>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2016/12/'>
+December
+</a>
+<span class='post-count' dir='ltr'>(97)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2016/11/'>
+November
+</a>
+<span class='post-count' dir='ltr'>(228)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2016/10/'>
+October
+</a>
+<span class='post-count' dir='ltr'>(180)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2016/09/'>
+September
+</a>
+<span class='post-count' dir='ltr'>(132)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2016/08/'>
+August
+</a>
+<span class='post-count' dir='ltr'>(67)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2016/07/'>
+July
+</a>
+<span class='post-count' dir='ltr'>(168)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2016/06/'>
+June
+</a>
+<span class='post-count' dir='ltr'>(168)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2016/05/'>
+May
+</a>
+<span class='post-count' dir='ltr'>(197)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2016/04/'>
+April
+</a>
+<span class='post-count' dir='ltr'>(212)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2016/03/'>
+March
+</a>
+<span class='post-count' dir='ltr'>(222)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2016/02/'>
+February
+</a>
+<span class='post-count' dir='ltr'>(184)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2016/01/'>
+January
+</a>
+<span class='post-count' dir='ltr'>(167)</span>
+</li>
+</ul>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2015/'>
+2015
+</a>
+<span class='post-count' dir='ltr'>(2280)</span>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2015/12/'>
+December
+</a>
+<span class='post-count' dir='ltr'>(216)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2015/11/'>
+November
+</a>
+<span class='post-count' dir='ltr'>(148)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2015/10/'>
+October
+</a>
+<span class='post-count' dir='ltr'>(201)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2015/09/'>
+September
+</a>
+<span class='post-count' dir='ltr'>(139)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2015/08/'>
+August
+</a>
+<span class='post-count' dir='ltr'>(123)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2015/07/'>
+July
+</a>
+<span class='post-count' dir='ltr'>(200)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2015/06/'>
+June
+</a>
+<span class='post-count' dir='ltr'>(201)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2015/05/'>
+May
+</a>
+<span class='post-count' dir='ltr'>(278)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2015/04/'>
+April
+</a>
+<span class='post-count' dir='ltr'>(197)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2015/03/'>
+March
+</a>
+<span class='post-count' dir='ltr'>(250)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2015/02/'>
+February
+</a>
+<span class='post-count' dir='ltr'>(149)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2015/01/'>
+January
+</a>
+<span class='post-count' dir='ltr'>(178)</span>
+</li>
+</ul>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2014/'>
+2014
+</a>
+<span class='post-count' dir='ltr'>(1686)</span>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2014/12/'>
+December
+</a>
+<span class='post-count' dir='ltr'>(187)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2014/11/'>
+November
+</a>
+<span class='post-count' dir='ltr'>(130)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2014/10/'>
+October
+</a>
+<span class='post-count' dir='ltr'>(178)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2014/09/'>
+September
+</a>
+<span class='post-count' dir='ltr'>(83)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2014/08/'>
+August
+</a>
+<span class='post-count' dir='ltr'>(72)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2014/07/'>
+July
+</a>
+<span class='post-count' dir='ltr'>(113)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2014/06/'>
+June
+</a>
+<span class='post-count' dir='ltr'>(103)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2014/05/'>
+May
+</a>
+<span class='post-count' dir='ltr'>(198)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2014/04/'>
+April
+</a>
+<span class='post-count' dir='ltr'>(150)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2014/03/'>
+March
+</a>
+<span class='post-count' dir='ltr'>(183)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2014/02/'>
+February
+</a>
+<span class='post-count' dir='ltr'>(121)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2014/01/'>
+January
+</a>
+<span class='post-count' dir='ltr'>(168)</span>
+</li>
+</ul>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2013/'>
+2013
+</a>
+<span class='post-count' dir='ltr'>(1278)</span>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2013/12/'>
+December
+</a>
+<span class='post-count' dir='ltr'>(105)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2013/11/'>
+November
+</a>
+<span class='post-count' dir='ltr'>(115)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2013/10/'>
+October
+</a>
+<span class='post-count' dir='ltr'>(137)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2013/09/'>
+September
+</a>
+<span class='post-count' dir='ltr'>(116)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2013/08/'>
+August
+</a>
+<span class='post-count' dir='ltr'>(76)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2013/07/'>
+July
+</a>
+<span class='post-count' dir='ltr'>(160)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2013/06/'>
+June
+</a>
+<span class='post-count' dir='ltr'>(173)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2013/05/'>
+May
+</a>
+<span class='post-count' dir='ltr'>(138)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2013/04/'>
+April
+</a>
+<span class='post-count' dir='ltr'>(52)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2013/03/'>
+March
+</a>
+<span class='post-count' dir='ltr'>(54)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2013/02/'>
+February
+</a>
+<span class='post-count' dir='ltr'>(88)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2013/01/'>
+January
+</a>
+<span class='post-count' dir='ltr'>(64)</span>
+</li>
+</ul>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2012/'>
+2012
+</a>
+<span class='post-count' dir='ltr'>(788)</span>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2012/12/'>
+December
+</a>
+<span class='post-count' dir='ltr'>(67)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2012/11/'>
+November
+</a>
+<span class='post-count' dir='ltr'>(64)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2012/10/'>
+October
+</a>
+<span class='post-count' dir='ltr'>(55)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2012/09/'>
+September
+</a>
+<span class='post-count' dir='ltr'>(43)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2012/08/'>
+August
+</a>
+<span class='post-count' dir='ltr'>(11)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2012/07/'>
+July
+</a>
+<span class='post-count' dir='ltr'>(76)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2012/06/'>
+June
+</a>
+<span class='post-count' dir='ltr'>(60)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2012/05/'>
+May
+</a>
+<span class='post-count' dir='ltr'>(82)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2012/04/'>
+April
+</a>
+<span class='post-count' dir='ltr'>(55)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2012/03/'>
+March
+</a>
+<span class='post-count' dir='ltr'>(85)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2012/02/'>
+February
+</a>
+<span class='post-count' dir='ltr'>(78)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2012/01/'>
+January
+</a>
+<span class='post-count' dir='ltr'>(112)</span>
+</li>
+</ul>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2011/'>
+2011
+</a>
+<span class='post-count' dir='ltr'>(247)</span>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2011/12/'>
+December
+</a>
+<span class='post-count' dir='ltr'>(63)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2011/11/'>
+November
+</a>
+<span class='post-count' dir='ltr'>(59)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2011/10/'>
+October
+</a>
+<span class='post-count' dir='ltr'>(58)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='https://maoistroad.blogspot.com/2011/09/'>
+September
+</a>
+<span class='post-count' dir='ltr'>(67)</span>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class='clear'></div>
+</div>
+</div></div>
+<table border='0' cellpadding='0' cellspacing='0' class='section-columns columns-2'>
+<tbody>
+<tr>
+<td class='first columns-cell'>
+<div class='sidebar no-items section' id='sidebar-right-2-1'></div>
+</td>
+<td class='columns-cell'>
+<div class='sidebar no-items section' id='sidebar-right-2-2'></div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class='sidebar no-items section' id='sidebar-right-3'></div>
+</aside>
+</div>
+</div>
+</div>
+<div style='clear: both'></div>
+<!-- columns -->
+</div>
+<!-- main -->
+</div>
+</div>
+<div class='main-cap-bottom cap-bottom'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+</div>
+<footer>
+<div class='footer-outer'>
+<div class='footer-cap-top cap-top'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+<div class='fauxborder-left footer-fauxborder-left'>
+<div class='fauxborder-right footer-fauxborder-right'></div>
+<div class='region-inner footer-inner'>
+<div class='foot no-items section' id='footer-1'></div>
+<!-- outside of the include in order to lock Attribution widget -->
+<div class='foot section' id='footer-3' name='Footer'><div class='widget Attribution' data-version='1' id='Attribution1'>
+<div class='widget-content' style='text-align: center;'>
+Picture Window theme. Powered by <a href='https://www.blogger.com' target='_blank'>Blogger</a>.
+</div>
+<div class='clear'></div>
+</div></div>
+</div>
+</div>
+<div class='footer-cap-bottom cap-bottom'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+</div>
+</footer>
+<!-- content -->
+</div>
+</div>
+<div class='content-cap-bottom cap-bottom'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+</div>
+</div>
+<script type='text/javascript'>
+    window.setTimeout(function() {
+        document.body.className = document.body.className.replace('loading', '');
+      }, 10);
+  </script>
+
+<script type="text/javascript" src="https://www.blogger.com/static/v1/widgets/3801814646-widgets.js"></script>
+<script type='text/javascript'>
+window['__wavt'] = 'AOuZoY7vtTuq5HNE4fKW3vvkpI1LZp8AYg:1675784040877';_WidgetManager._Init('//www.blogger.com/rearrange?blogID\x3d7106337660494808516','//maoistroad.blogspot.com/','7106337660494808516');
+_WidgetManager._SetDataContext([{'name': 'blog', 'data': {'blogId': '7106337660494808516', 'title': 'maoistroad', 'url': 'https://maoistroad.blogspot.com/', 'canonicalUrl': 'https://maoistroad.blogspot.com/', 'homepageUrl': 'https://maoistroad.blogspot.com/', 'searchUrl': 'https://maoistroad.blogspot.com/search', 'canonicalHomepageUrl': 'https://maoistroad.blogspot.com/', 'blogspotFaviconUrl': 'https://maoistroad.blogspot.com/favicon.ico', 'bloggerUrl': 'https://www.blogger.com', 'hasCustomDomain': false, 'httpsEnabled': true, 'enabledCommentProfileImages': true, 'gPlusViewType': 'FILTERED_POSTMOD', 'adultContent': false, 'analyticsAccountNumber': '', 'encoding': 'UTF-8', 'locale': 'en', 'localeUnderscoreDelimited': 'en', 'languageDirection': 'ltr', 'isPrivate': false, 'isMobile': false, 'isMobileRequest': false, 'mobileClass': '', 'isPrivateBlog': false, 'isDynamicViewsAvailable': true, 'feedLinks': '\x3clink rel\x3d\x22alternate\x22 type\x3d\x22application/atom+xml\x22 title\x3d\x22maoistroad - Atom\x22 href\x3d\x22https://maoistroad.blogspot.com/feeds/posts/default\x22 /\x3e\n\x3clink rel\x3d\x22alternate\x22 type\x3d\x22application/rss+xml\x22 title\x3d\x22maoistroad - RSS\x22 href\x3d\x22https://maoistroad.blogspot.com/feeds/posts/default?alt\x3drss\x22 /\x3e\n\x3clink rel\x3d\x22service.post\x22 type\x3d\x22application/atom+xml\x22 title\x3d\x22maoistroad - Atom\x22 href\x3d\x22https://www.blogger.com/feeds/7106337660494808516/posts/default\x22 /\x3e\n', 'meTag': '', 'adsenseHostId': 'ca-host-pub-1556223355139109', 'adsenseHasAds': false, 'adsenseAutoAds': false, 'boqCommentIframeForm': true, 'loginRedirectParam': '', 'view': '', 'dynamicViewsCommentsSrc': '//www.blogblog.com/dynamicviews/4224c15c4e7c9321/js/comments.js', 'dynamicViewsScriptSrc': '//www.blogblog.com/dynamicviews/76686ac05d281910', 'plusOneApiSrc': 'https://apis.google.com/js/platform.js', 'disableGComments': true, 'sharing': {'platforms': [{'name': 'Get link', 'key': 'link', 'shareMessage': 'Get link', 'target': ''}, {'name': 'Facebook', 'key': 'facebook', 'shareMessage': 'Share to Facebook', 'target': 'facebook'}, {'name': 'BlogThis!', 'key': 'blogThis', 'shareMessage': 'BlogThis!', 'target': 'blog'}, {'name': 'Twitter', 'key': 'twitter', 'shareMessage': 'Share to Twitter', 'target': 'twitter'}, {'name': 'Pinterest', 'key': 'pinterest', 'shareMessage': 'Share to Pinterest', 'target': 'pinterest'}, {'name': 'Email', 'key': 'email', 'shareMessage': 'Email', 'target': 'email'}], 'disableGooglePlus': true, 'googlePlusShareButtonWidth': 0, 'googlePlusBootstrap': '\x3cscript type\x3d\x22text/javascript\x22\x3ewindow.___gcfg \x3d {\x27lang\x27: \x27en\x27};\x3c/script\x3e'}, 'hasCustomJumpLinkMessage': false, 'jumpLinkMessage': 'Read more', 'pageType': 'index', 'pageName': '', 'pageTitle': 'maoistroad'}}, {'name': 'features', 'data': {'sharing_get_link_dialog': 'true', 'sharing_native': 'false'}}, {'name': 'messages', 'data': {'edit': 'Edit', 'linkCopiedToClipboard': 'Link copied to clipboard!', 'ok': 'Ok', 'postLink': 'Post Link'}}, {'name': 'template', 'data': {'name': 'Picture Window', 'localizedName': 'Picture Window', 'isResponsive': false, 'isAlternateRendering': false, 'isCustom': false, 'variant': 'open', 'variantId': 'open'}}, {'name': 'view', 'data': {'classic': {'name': 'classic', 'url': '?view\x3dclassic'}, 'flipcard': {'name': 'flipcard', 'url': '?view\x3dflipcard'}, 'magazine': {'name': 'magazine', 'url': '?view\x3dmagazine'}, 'mosaic': {'name': 'mosaic', 'url': '?view\x3dmosaic'}, 'sidebar': {'name': 'sidebar', 'url': '?view\x3dsidebar'}, 'snapshot': {'name': 'snapshot', 'url': '?view\x3dsnapshot'}, 'timeslide': {'name': 'timeslide', 'url': '?view\x3dtimeslide'}, 'isMobile': false, 'title': 'maoistroad', 'description': '', 'url': 'https://maoistroad.blogspot.com/', 'type': 'feed', 'isSingleItem': false, 'isMultipleItems': true, 'isError': false, 'isPage': false, 'isPost': false, 'isHomepage': true, 'isArchive': false, 'isLabelSearch': false}}]);
+_WidgetManager._RegisterWidget('_NavbarView', new _WidgetInfo('Navbar1', 'navbar', document.getElementById('Navbar1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HeaderView', new _WidgetInfo('Header1', 'header', document.getElementById('Header1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_BlogView', new _WidgetInfo('Blog1', 'main', document.getElementById('Blog1'), {'cmtInteractionsEnabled': false, 'lightboxEnabled': true, 'lightboxModuleUrl': 'https://www.blogger.com/static/v1/jsbin/3933162793-lbx.js', 'lightboxCssUrl': 'https://www.blogger.com/static/v1/v-css/2678123480-lightbox_bundle.css'}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_ImageView', new _WidgetInfo('Image14', 'sidebar-right-1', document.getElementById('Image14'), {'resize': true}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_ImageView', new _WidgetInfo('Image1', 'sidebar-right-1', document.getElementById('Image1'), {'resize': false}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_ImageView', new _WidgetInfo('Image4', 'sidebar-right-1', document.getElementById('Image4'), {'resize': false}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_TextView', new _WidgetInfo('Text1', 'sidebar-right-1', document.getElementById('Text1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_ImageView', new _WidgetInfo('Image7', 'sidebar-right-1', document.getElementById('Image7'), {'resize': false}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_ImageView', new _WidgetInfo('Image12', 'sidebar-right-1', document.getElementById('Image12'), {'resize': false}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_ImageView', new _WidgetInfo('Image11', 'sidebar-right-1', document.getElementById('Image11'), {'resize': true}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_BlogArchiveView', new _WidgetInfo('BlogArchive1', 'sidebar-right-1', document.getElementById('BlogArchive1'), {'languageDirection': 'ltr', 'loadingMessage': 'Loading\x26hellip;'}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_AttributionView', new _WidgetInfo('Attribution1', 'footer-3', document.getElementById('Attribution1'), {}, 'displayModeFull'));
+</script>
+</body>
+</html>

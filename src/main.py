@@ -94,6 +94,7 @@ if os.path.exists(pds):
                         if v[:-11]==b[:-10]:
                             os.remove('%s/%s'%(z[0],v))
 aft=['chinese','english']
+lans={'chinese':'中文','english':'English'}
 if not os.path.exists('index.htm'):
     ht=''
     n=0
@@ -112,7 +113,7 @@ if not os.path.exists('index.htm'):
             n+=1
     ht=ht.replace('src="../Images','src="Images')
     ht=ht.replace('src="../ConvertedIMGs','src="ConvertedIMGs')
-    f=open('index.htm','w+');f.write('<html><head><style>%s</style></head><body><img src="Head_Image.jpg" /><h1>Marxism-Leninism-Maoism News</h1><h1>马列毛主义新闻</h1><p><a href="index.pdf">[This lan. PDF]</a><a href="index.odt">[This lan. ODT]</a></p><p>Please select your language 请选择你的语言:</p><p><a href="index.htm">Origin</a> | %s</p>%s</body></html>'%('img{height: auto; width: auto\9; width:100%;}',' | '.join(['<a href="index_%s.htm">%s</a>'%(a,a.title())for a in aft]),ht));f.close()
+    f=open('index.htm','w+');f.write('<html><head><style>%s</style></head><body><img src="Head_Image.jpg" /><h1>Marxism-Leninism-Maoism News</h1><h1>马列毛主义新闻</h1><p><a href="index.pdf">[This lan. PDF]</a><a href="index.odt">[This lan. ODT]</a><a href="index.md">[This lan. MD]</a><a href="index.txt">[This lan. TXT]</a><a href="index_list.txt">[This lan. TXT LIST]</a></p><p>Please select your language 请选择你的语言:</p><p><a href="index.htm">Origin</a> | %s</p>%s</body></html>'%('img{height: auto; width: auto\9; width:100%;}',' | '.join(['<a href="index_%s.htm">%s</a>'%(a,lans[a])for a in aft]),ht));f.close()
 if not os.path.exists('index.md'):
     ht=''
     n=0
@@ -135,6 +136,17 @@ if not os.path.exists('index.odt'):
     markdown2odt.run('index.md','Origin')
 if not os.path.exists('index.pdf'):
     os.system('soffice --headless --convert-to pdf index.odt')
+if not os.path.exists('index.txt'):
+    os.system('soffice --headless --convert-to txt index.odt')
+if not os.path.exists('index_list.txt'):
+    f=open('index.md','r');t=f.read().split('<!--NEWS-->');f.close()
+    t2=['马列毛主义新闻 Marxism-Leninism-Maoism News\n\nhttps://ciangcing14.github.io/\n=====每日中英多语马列毛主义新闻文本部分翻译可以访问网址=====\n=====Daily translations of Chinese-English multilingual Marxist-Leninist-Maoist news texts can be accessed at the website=====\n']
+    for a in t:
+        a.split('<!--MEATDATA-->')
+        t2.append('%s\n%s'%(a[0].split('\n')[0].split('# ')[1],a[1].split('\n')[-1].split('Source: ')[1]))
+    t2.append('\nhttps://ciangcing14.github.io/\n=====每日中英多语马列毛主义新闻文本部分翻译可以访问网址=====\n=====Daily translations of Chinese-English multilingual Marxist-Leninist-Maoist news texts can be accessed at the website=====')
+    t='\n'.join(t2)
+    f=open('index_list.txt','w+');f.write(t);f.close()
 def trans_cycle(t,de,sr):
     time.sleep(1)
     return trans(t,de,sr)
@@ -145,7 +157,6 @@ def trans(t,de='zh',sr='auto'):
     except IndexError:print(t);return t
     else:return trans_cycle(t,de,sr)
 des=['zh','en']
-lans={'chinese':'中文','english':'English'}
 fa=['jpg','png','bmp','gif','webp','jpeg']
 fa.extend([e.upper()for e in fa])
 fa=['.%s'%e for e in fa]
@@ -261,11 +272,22 @@ News Source: %s'''%(a['title'],
         f=open('index_%s.md'%aft[y],'w+');f.write(re.sub('\\n[ ]+([#]+)[ ]+','\\n\\1 ',fmd.replace('这是给予的(','](').replace('! ','!')));f.close()
     if not os.path.exists('index_%s.htm'%aft[y]):
         f=open('index_%s.md'%aft[y],'r');fmd=f.read();f.close()
-        f=open('index_%s.htm'%aft[y],'w+');f.write('<html><head><style>%s</style></head><body><img src="Head_Image.jpg" /><h1>Marxism-Leninism-Maoism News</h1><h1>马列毛主义新闻</h1><p><a href="index_%s.pdf">[This lan. PDF]</a><a href="index_%s.odt">[This lan. ODT]</a></p><p>Please select your language 请选择你的语言:</p><p><a href="index.htm">Origin</a> | %s</p>%s</body></html>'%('img{height: auto; width: auto\9; width:100%;}',aft[y],aft[y],' | '.join(['<a href="index_%s.htm">%s</a>'%(a,a.title())for a in aft]),markdown.markdown(fmd)));f.close()
+        f=open('index_%s.htm'%aft[y],'w+');f.write('<html><head><style>%s</style></head><body><img src="Head_Image.jpg" /><h1>Marxism-Leninism-Maoism News</h1><h1>马列毛主义新闻</h1><p><a href="index_%s.pdf">[This lan. PDF]</a><a href="index_%s.odt">[This lan. ODT]</a><a href="index_%s.md">[This lan. MD]</a><a href="index_%s.txt">[This lan. TXT]</a><a href="index_list_%s.txt">[This lan. TXT LIST]</a></p><p>Please select your language 请选择你的语言:</p><p><a href="index.htm">Origin</a> | %s</p>%s</body></html>'%('img{height: auto; width: auto\9; width:100%;}',aft[y],aft[y],aft[y],aft[y],aft[y],' | '.join(['<a href="index_%s.htm">%s</a>'%(a,lans[a])for a in aft]),markdown.markdown(fmd)));f.close()
     if not os.path.exists('index_%s.odt'%aft[y]):
         markdown2odt.run('index_%s.md'%aft[y],lans[aft[y]])
     if not os.path.exists('index_%s.pdf'%aft[y]):
         os.system('soffice --headless --convert-to pdf %s'%('index_%s.odt'%aft[y]))
+    if not os.path.exists('index_%s.txt'%aft[y]):
+        os.system('soffice --headless --convert-to txt index_%s.odt'%aft[y])
+    if not os.path.exists('index_list_%s.txt'%aft[y]):
+        f=open('index_%s.md'%aft[y],'r');t=f.read().split('<!--NEWS-->');f.close()
+        t2=['马列毛主义新闻 Marxism-Leninism-Maoism News\n\nhttps://ciangcing14.github.io/\n=====每日中英多语马列毛主义新闻文本部分翻译可以访问网址=====\n=====Daily translations of Chinese-English multilingual Marxist-Leninist-Maoist news texts can be accessed at the website=====\n']
+        for a in t:
+            a.split('<!--MEATDATA-->')
+            t2.append('%s\n%s'%(a[0].split('\n')[0].split('# ')[1],a[1].split('\n')[-1].split('Source: ')[1]))
+        t2.append('\nhttps://ciangcing14.github.io/\n=====每日中英多语马列毛主义新闻文本部分翻译可以访问网址=====\n=====Daily translations of Chinese-English multilingual Marxist-Leninist-Maoist news texts can be accessed at the website=====')
+        t='\n'.join(t2)
+        f=open('index_list_%s.txt'%aft[y],'w+');f.write(t);f.close()
 l=['HTMs','MDs','__pycache__','src','ConvertedIMGs','Images','index.md','index.htm','index.odt','index.pdf']
 l2=['Head_Image.jpg']
 if not os.path.exists(ds):
