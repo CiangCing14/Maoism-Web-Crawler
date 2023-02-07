@@ -266,7 +266,6 @@ News Source: %s'''%(a['title'],
         markdown2odt.run('index_%s.md'%aft[y],lans[aft[y]])
     if not os.path.exists('index_%s.pdf'%aft[y]):
         os.system('soffice --headless --convert-to pdf %s'%('index_%s.odt'%aft[y]))
-quit()
 l=['HTMs','MDs','__pycache__','src','ConvertedIMGs','Images','index.md','index.htm','index.odt','index.pdf']
 l2=['Head_Image.jpg']
 if not os.path.exists(ds):
