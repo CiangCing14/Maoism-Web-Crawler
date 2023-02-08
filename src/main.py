@@ -140,11 +140,11 @@ if not os.path.exists('index.txt'):
     os.system('soffice --headless --convert-to txt index.odt')
 if not os.path.exists('index_list.txt'):
     f=open('index.md','r');t=f.read().split('<!--NEWS-->');f.close()
-    t2=['马列毛主义新闻 Marxism-Leninism-Maoism News %s\n\nhttps://ciangcing14.github.io/\n=====每日中英多语马列毛主义新闻文本部分翻译可以访问网址=====\n=====Daily translations of Chinese-English multilingual Marxist-Leninist-Maoist news texts can be accessed at the website=====\n'%(str(datetime.datetime.today()).split(' ')[0])]
+    t2=['马列毛主义新闻 Marxism-Leninism-Maoism News %s\n\n=====每日中英多语马列毛主义新闻文本部分翻译可以访问网址=====\nhttps://ciangcing14.github.io/\n=====Daily translations of Chinese-English multilingual Marxist-Leninist-Maoist news texts can be accessed at the website=====\n'%(str(datetime.datetime.today()).split(' ')[0])]
     for a in t:
         a=a.split('<!--METADATA-->')
         t2.append('%s\n%s'%([v for v in a[0].split('\n')if v][0].split('# ')[1],[v for v in a[1].split('\n')if v][-1].split('Source: ')[1].split('(')[1].split(')')[0]))
-    t2.append('\nhttps://ciangcing14.github.io/\n=====每日中英多语马列毛主义新闻文本部分翻译可以访问网址=====\n=====Daily translations of Chinese-English multilingual Marxist-Leninist-Maoist news texts can be accessed at the website=====')
+    t2.append('\n=====每日中英多语马列毛主义新闻文本部分翻译可以访问网址=====\nhttps://ciangcing14.github.io/\n=====Daily translations of Chinese-English multilingual Marxist-Leninist-Maoist news texts can be accessed at the website=====')
     t='\n'.join(t2)
     f=open('index_list.txt','w+');f.write(t);f.close()
 def trans_cycle(t,de,sr):
@@ -281,11 +281,11 @@ News Source: %s'''%(a['title'],
         os.system('soffice --headless --convert-to txt index_%s.odt'%aft[y])
     if not os.path.exists('index_list_%s.txt'%aft[y]):
         f=open('index_%s.md'%aft[y],'r');t=f.read().split('<!--NEWS-->');f.close()
-        t2=['马列毛主义新闻 Marxism-Leninism-Maoism News %s\n\nhttps://ciangcing14.github.io/\n=====每日中英多语马列毛主义新闻文本部分翻译可以访问网址=====\n=====Daily translations of Chinese-English multilingual Marxist-Leninist-Maoist news texts can be accessed at the website=====\n'%(str(datetime.datetime.today()).split(' ')[0])]
+        t2=['马列毛主义新闻 Marxism-Leninism-Maoism News %s\n\n=====每日中英多语马列毛主义新闻文本部分翻译可以访问网址=====\nhttps://ciangcing14.github.io/\n=====Daily translations of Chinese-English multilingual Marxist-Leninist-Maoist news texts can be accessed at the website=====\n'%(str(datetime.datetime.today()).split(' ')[0])]
         for a in t:
             a=a.split('<!--METADATA-->')
             t2.append('%s\n%s'%([v for v in a[0].split('\n')if v][0].split('# ')[1],[v for v in a[1].split('\n')if v][-1].split('Source: ')[1].split('(')[1].split(')')[0]))
-        t2.append('\nhttps://ciangcing14.github.io/\n=====每日中英多语马列毛主义新闻文本部分翻译可以访问网址=====\n=====Daily translations of Chinese-English multilingual Marxist-Leninist-Maoist news texts can be accessed at the website=====')
+        t2.append('\n=====每日中英多语马列毛主义新闻文本部分翻译可以访问网址=====\nhttps://ciangcing14.github.io/\n=====Daily translations of Chinese-English multilingual Marxist-Leninist-Maoist news texts can be accessed at the website=====')
         t='\n'.join(t2)
         f=open('index_list_%s.txt'%aft[y],'w+');f.write(t);f.close()
 l=['HTMs','MDs','__pycache__','src','ConvertedIMGs','Images','index.md','index.htm','index.odt','index.pdf','index.txt','index_list.txt']
