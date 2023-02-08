@@ -202,7 +202,7 @@ for y in range(len(des)):
             while True:
                 if n>=nll:break
                 ft[-1]=nl[n]if n==0 else'%s\n%s'%(ft[-1],nl[n])
-                if len(ft[-1])>5000:
+                if len(ft[-1])>2500:
                     ft[-1]='\n'.join(ft[-1].split('\n')[:-1])
                     ft.append('')
                 n+=1
