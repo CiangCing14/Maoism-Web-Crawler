@@ -82,7 +82,7 @@ if len(dr)==0:
            'description':h.split(sp)[1].split('"')[0].strip()if(sp:='<meta property="og:description" content="')in h else None,
            'type':h.split('<meta property="og:type" content="')[1].split('"')[0].strip(),
            'publish time':h.split('<meta property="article:published_time" content="')[1].split('"')[0],
-           'modified time':h.split('<meta property="article:modified_time" content="')[1].split('"')[0],
+           'modified time':h.split(sp)[1].split('"')[0]if(sp:='<meta property="article:modified_time" content="')in h else'None',
            'author':h.split('<meta name="author" content="')[1].split('"')[0],
            'images':[html.unescape(b.split('src="')[1].split('"')[0].split('?')[0]).strip()for b in h2.split('<img')[1:]],
            'text':hp.handle(h2),
