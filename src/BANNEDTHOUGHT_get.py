@@ -20,7 +20,7 @@ l2='https://www.bannedthought.net'
 d=str(datetime.today()-timedelta(days=1)).split(' ')[0]
 hp=html2text.HTML2Text()
 hl=[]
-if not os.path.exists(pa:='RecentPostings.md'):
+if not os.path.exists(pa:='RecentPostings.md.bin'):
     h=rg.rget(l,60)
     h.encoding='utf-8'
     h=h.text

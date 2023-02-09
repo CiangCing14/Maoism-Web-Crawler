@@ -23,7 +23,7 @@ for a in ps:
         for b in os.walk(sys.path[0]):
             for c in b[2]:
                 if b[0]==sys.path[0]:
-                    if c[-5:]=='.list'or c=='RecentPostings.md'or c=='test.htm'or c=='test.txt':
+                    if c[-5:]=='.list'or c=='RecentPostings.md.bin'or c=='test.htm'or c=='test.txt':
                         l.append(c)
         fo=['JSON-src','Images','ConvertedIMGs','MDs','HTMs','__pycache__']
         fol=[b for b in fo if os.path.exists(b)]
@@ -113,8 +113,8 @@ if not os.path.exists('index.htm'):
             n+=1
     ht=ht.replace('src="../Images','src="Images')
     ht=ht.replace('src="../ConvertedIMGs','src="ConvertedIMGs')
-    f=open('index.htm','w+');f.write('<html><head><style>%s</style></head><body><img src="Head_Image.jpg" /><h1>Marxism-Leninism-Maoism News</h1><h1>马列毛主义新闻</h1><p><a href="index.pdf">[This lan. PDF]</a><a href="index.odt">[This lan. ODT]</a><a href="index.md">[This lan. MD]</a><a href="index.txt">[This lan. TXT]</a><a href="index_list.txt">[This lan. TXT LIST]</a></p><p>Please select your language 请选择你的语言:</p><p><a href="index.htm">Origin</a> | %s</p>%s</body></html>'%('img{height: auto; width: auto\9; width:100%;}',' | '.join(['<a href="index_%s.htm">%s</a>'%(a,lans[a])for a in aft]),ht));f.close()
-if not os.path.exists('index.md'):
+    f=open('index.htm','w+');f.write('<html><head><style>%s</style></head><body><img src="Head_Image.jpg" /><h1>Marxism-Leninism-Maoism News</h1><h1>马列毛主义新闻</h1><p><a href="index.pdf">[This lan. PDF]</a><a href="index.odt">[This lan. ODT]</a><a href="index.md.bin">[This lan. MD]</a><a href="index.txt">[This lan. TXT]</a><a href="index_list.txt">[This lan. TXT LIST]</a></p><p>Please select your language 请选择你的语言:</p><p><a href="index.htm">Origin</a> | %s</p>%s</body></html>'%('img{height: auto; width: auto\9; width:100%;}',' | '.join(['<a href="index_%s.htm">%s</a>'%(a,lans[a])for a in aft]),ht));f.close()
+if not os.path.exists('index.md.bin'):
     ht=''
     n=0
     for a in os.walk('MDs'):
@@ -131,15 +131,15 @@ if not os.path.exists('index.md'):
             ht='%s%s%s'%(ht,'\n\n<!--NEWS-->\n\n'if n!=0 else'',t)
             n+=1
     ht=ht.replace('(../Images/','(Images/').replace('(../ConvertedIMGs/','(ConvertedIMGs/')
-    f=open('index.md','w+');f.write(ht);f.close()
+    f=open('index.md.bin','w+');f.write(ht);f.close()
 if not os.path.exists('index.odt'):
-    markdown2odt.run('index.md','Origin')
+    markdown2odt.run('index.md.bin','Origin')
 if not os.path.exists('index.pdf'):
     os.system('soffice --headless --convert-to pdf index.odt')
 if not os.path.exists('index.txt'):
     os.system('soffice --headless --convert-to txt index.odt')
 if not os.path.exists('index_list.txt'):
-    f=open('index.md','r');t=f.read().split('<!--NEWS-->');f.close()
+    f=open('index.md.bin','r');t=f.read().split('<!--NEWS-->');f.close()
     t2=['马列毛主义新闻 Marxism-Leninism-Maoism News %s\n\n=====每日中英多语马列毛主义新闻文本部分翻译可以访问网址=====\nhttps://ciangcing14.github.io/\n=====Daily translations of Chinese-English multilingual Marxist-Leninist-Maoist news texts can be accessed at the website=====\n'%(str(datetime.datetime.today()).split(' ')[0])]
     for a in t:
         a=a.split('<!--METADATA-->')
@@ -161,8 +161,8 @@ fa=['jpg','png','bmp','gif','webp','jpeg']
 fa.extend([e.upper()for e in fa])
 fa=['.%s'%e for e in fa]
 for y in range(len(des)):
-    if not os.path.exists('index_%s.md'%aft[y]):
-        f=open('index.md','r');t=f.read();f.close()
+    if not os.path.exists('index_%s.md.bin'%aft[y]):
+        f=open('index.md.bin','r');t=f.read();f.close()
         t=t.split('<!--NEWS-->')
         tl=len(t)
         print('讀入%d個新聞。'%tl)
@@ -269,18 +269,18 @@ News Source: %s'''%(a['title'],
                     a['source'])
             mds.append(md)
         fmd='\n\n<!--NEWS-->\n\n'.join(mds)
-        f=open('index_%s.md'%aft[y],'w+');f.write(re.sub('\\n[ ]+([#]+)[ ]+','\\n\\1 ',fmd.replace('这是给予的(','](').replace('! ','!')));f.close()
+        f=open('index_%s.md.bin'%aft[y],'w+');f.write(re.sub('\\n[ ]+([#]+)[ ]+','\\n\\1 ',fmd.replace('这是给予的(','](').replace('! ','!')));f.close()
     if not os.path.exists('index_%s.htm'%aft[y]):
-        f=open('index_%s.md'%aft[y],'r');fmd=f.read();f.close()
-        f=open('index_%s.htm'%aft[y],'w+');f.write('<html><head><style>%s</style></head><body><img src="Head_Image.jpg" /><h1>Marxism-Leninism-Maoism News</h1><h1>马列毛主义新闻</h1><p><a href="index_%s.pdf">[This lan. PDF]</a><a href="index_%s.odt">[This lan. ODT]</a><a href="index_%s.md">[This lan. MD]</a><a href="index_%s.txt">[This lan. TXT]</a><a href="index_list_%s.txt">[This lan. TXT LIST]</a></p><p>Please select your language 请选择你的语言:</p><p><a href="index.htm">Origin</a> | %s</p>%s</body></html>'%('img{height: auto; width: auto\9; width:100%;}',aft[y],aft[y],aft[y],aft[y],aft[y],' | '.join(['<a href="index_%s.htm">%s</a>'%(a,lans[a])for a in aft]),markdown.markdown(fmd)));f.close()
+        f=open('index_%s.md.bin'%aft[y],'r');fmd=f.read();f.close()
+        f=open('index_%s.htm'%aft[y],'w+');f.write('<html><head><style>%s</style></head><body><img src="Head_Image.jpg" /><h1>Marxism-Leninism-Maoism News</h1><h1>马列毛主义新闻</h1><p><a href="index_%s.pdf">[This lan. PDF]</a><a href="index_%s.odt">[This lan. ODT]</a><a href="index_%s.md.bin">[This lan. MD]</a><a href="index_%s.txt">[This lan. TXT]</a><a href="index_list_%s.txt">[This lan. TXT LIST]</a></p><p>Please select your language 请选择你的语言:</p><p><a href="index.htm">Origin</a> | %s</p>%s</body></html>'%('img{height: auto; width: auto\9; width:100%;}',aft[y],aft[y],aft[y],aft[y],aft[y],' | '.join(['<a href="index_%s.htm">%s</a>'%(a,lans[a])for a in aft]),markdown.markdown(fmd)));f.close()
     if not os.path.exists('index_%s.odt'%aft[y]):
-        markdown2odt.run('index_%s.md'%aft[y],lans[aft[y]])
+        markdown2odt.run('index_%s.md.bin'%aft[y],lans[aft[y]])
     if not os.path.exists('index_%s.pdf'%aft[y]):
         os.system('soffice --headless --convert-to pdf %s'%('index_%s.odt'%aft[y]))
     if not os.path.exists('index_%s.txt'%aft[y]):
         os.system('soffice --headless --convert-to txt index_%s.odt'%aft[y])
     if not os.path.exists('index_list_%s.txt'%aft[y]):
-        f=open('index_%s.md'%aft[y],'r');t=f.read().split('<!--NEWS-->');f.close()
+        f=open('index_%s.md.bin'%aft[y],'r');t=f.read().split('<!--NEWS-->');f.close()
         t2=['马列毛主义新闻 Marxism-Leninism-Maoism News %s\n\n=====每日中英多语马列毛主义新闻文本部分翻译可以访问网址=====\nhttps://ciangcing14.github.io/\n=====Daily translations of Chinese-English multilingual Marxist-Leninist-Maoist news texts can be accessed at the website=====\n'%(str(datetime.datetime.today()).split(' ')[0])]
         for a in t:
             a=a.split('<!--METADATA-->')
@@ -288,11 +288,11 @@ News Source: %s'''%(a['title'],
         t2.append('\n=====每日中英多语马列毛主义新闻文本部分翻译可以访问网址=====\nhttps://ciangcing14.github.io/\n=====Daily translations of Chinese-English multilingual Marxist-Leninist-Maoist news texts can be accessed at the website=====')
         t='\n'.join(t2)
         f=open('index_list_%s.txt'%aft[y],'w+');f.write(t);f.close()
-l=['HTMs','MDs','__pycache__','src','ConvertedIMGs','Images','index.md','index.htm','index.odt','index.pdf','index.txt','index_list.txt']
+l=['HTMs','MDs','__pycache__','src','ConvertedIMGs','Images','index.md.bin','index.htm','index.odt','index.pdf','index.txt','index_list.txt']
 l2=['Head_Image.jpg']
 if not os.path.exists(ds):
     os.makedirs(ds)
-    l.extend(['index_%s.md'%a for a in aft])
+    l.extend(['index_%s.md.bin'%a for a in aft])
     l.extend(['index_%s.htm'%a for a in aft])
     l.extend(['index_%s.odt'%a for a in aft])
     l.extend(['index_%s.pdf'%a for a in aft])

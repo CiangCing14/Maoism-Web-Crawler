@@ -72,6 +72,9 @@ if len(dr)==0:
                     url=t4[z].split(')')[0];hc=True
                 else:
                     url=t4[z];hc=False
+                if not url:
+                    t2='%s(%s%s%s'%(t2,url,')'if hc else'',')'.join(t4[z].split(')')[1:]))
+                    continue
                 t2='%s(%s%s%s'%(t2,'%s%s'%(l2,url)if(url[0]in['/','.'])and('http'not in url)else url,')'if hc else'',')'.join(t4[z].split(')')[1:]))
         h['text']=t2
         dd=h['time']
