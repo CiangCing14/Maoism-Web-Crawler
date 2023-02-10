@@ -3,6 +3,8 @@ import os,sys,html2text,cv2,re
 import urllib.parse,json,markdown
 import rg
 
+n=0
+
 def english2time(a):
     d=re.findall('\d+',a)
     return'%s-%s-%sT%s:%s:00'%(d[0].rjust(4).replace(' ','0'),d[1].rjust(2).replace(' ','0'),d[2].rjust(2).replace(' ','0'),d[3].rjust(2).replace(' ','0'),d[4].rjust(2).replace(' ','0'))

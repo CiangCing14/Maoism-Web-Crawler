@@ -3,6 +3,8 @@ import os,sys,html2text,cv2
 import urllib.parse,time,html,markdown,re
 import rg
 
+n=0
+
 l='https://struggle-sessions.com/page/'
 l2='https://struggle-sessions.com'
 d=str(datetime.today()-timedelta(days=1)).split(' ')[0]
@@ -65,16 +67,17 @@ if len(dr)==0:
             print(h)
             f=open(pa,'w+');f.write(repr(h));f.close()
         else:
-            if h['text']!=up:
-                while True:
-                    h['publish time']='%sT%s:%s'%(h['publish time'].split('T')[0],
-                                                  str(int(h['publish time'].split('T')[1].split(':')[0])+1),
-                                                  ':'.join(h['publish time'].split('T')[1].split(':')[1:]))
-                    if not os.path.exists(pa:='JSON-src/%s.json'%h['publish time']):
-                        break
-                print(h)
-                f=open(pa,'w+');f.write(repr(h));f.close()
-            else:print(h['publish time'],'已經完成下載。')
+            if'up'in locals():
+                if h['text']!=up:
+                    while True:
+                        h['publish time']='%sT%s:%s'%(h['publish time'].split('T')[0],
+                                                      str(int(h['publish time'].split('T')[1].split(':')[0])+1),
+                                                      ':'.join(h['publish time'].split('T')[1].split(':')[1:]))
+                        if not os.path.exists(pa:='JSON-src/%s.json'%h['publish time']):
+                            break
+                    print(h)
+                    f=open(pa,'w+');f.write(repr(h));f.close()
+                else:print(h['publish time'],'已經完成下載。')
         n+=1
         up=h['text']
 if not os.path.exists('Images'):os.mkdir('Images')

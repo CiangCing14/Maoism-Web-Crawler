@@ -4,6 +4,8 @@ import urllib.parse
 import html,re,time,markdown
 import rg
 
+n=0
+
 l='http://elpueblo.cl/page/'
 l2='http://elpueblo.cl'
 d=str(datetime.today()-timedelta(days=1)).split(' ')[0]
@@ -66,7 +68,20 @@ if len(dr)==0:
         if not os.path.exists(pa:='JSON-src/%s.json'%h['publish time']):
             print(h)
             f=open(pa,'w+');f.write(repr(h));f.close()
-        else:print(h['publish time'],'已經完成下載。')
+        else:
+            if'up'in locals():
+                if h['text']!=up:
+                    while True:
+                        h['publish time']='%sT%s:%s'%(h['publish time'].split('T')[0],
+                                                      str(int(h['publish time'].split('T')[1].split(':')[0])+1),
+                                                      ':'.join(h['publish time'].split('T')[1].split(':')[1:]))
+                        if not os.path.exists(pa:='JSON-src/%s.json'%h['publish time']):
+                            break
+                    print(h)
+                    f=open(pa,'w+');f.write(repr(h));f.close()
+                else:print(h['publish time'],'已經完成下載。')
+        n+=1
+        up=h['text']
         n+=1
 if not os.path.exists('Images'):os.mkdir('Images')
 imgs=[]
