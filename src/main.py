@@ -1,4 +1,4 @@
-import os,sys,importlib,shutil,time,markdown,re,datetime,hashlib,markdown2odt,pyttsx3,requests,datetime
+import os,sys,importlib,shutil,time,markdown,re,datetime,hashlib,markdown2odt,pyttsx3,requests,datetime,html
 import urllib.parse
 import translators.server as tss
 
@@ -241,10 +241,14 @@ for y in range(len(des)):
             n['text']=re.sub('([^\\n])(####\s*)(\w)','\\1\\n\\2 \\3',n['text'])
             n['text']=re.sub('([^\\n#])(###\s*)(\w)','\\1\\n\\2 \\3',n['text'])
             n['text']=re.sub('([^\\n#])([^\\n#])(##\s*)(\w)','\\1\\2\\n\\3 \\4',n['text'])
+            n['text']=n['text'].replace('＆','&').replace('＃','#')
+            n['text']=html.unescape(n['text'])
             n['source']=ne[a]['source']
             n['title']=ne[a]['title']
             print('翻譯標題。')
             n['title']=trans(n['title'],de=des[y],sr=src)
+            n['title']=n['title'].replace('＆','&').replace('＃','#')
+            n['title']=html.unescape(n['title'])
             n['meta']=ne[a]['meta']
             if'description'in n['meta']:print('翻譯簡介。');n['meta']['description']=trans(n['meta']['description'],de=des[y],sr=src)
             if'head description'in n['meta']:print('翻譯頭部簡介。');n['meta']['head description']=trans(n['meta']['head description'],de=des[y],sr=src)

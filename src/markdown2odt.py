@@ -9,7 +9,7 @@ def run(mdf,lan):
     f=open(mdf,'r');t=f.read();f.close()
     t=markdown.markdown(t)
     t=html.unescape(t)
-    t=t.replace('<https','&lt;https')
+    t=t.replace('<http','&lt;http')
     t=t.replace('<h1>','<text:h text:style-name="P9" text:outline-level="1"><text:span text:style-name="T3">').replace('</h1>','</text:span></text:h>')
     t=t.replace('<h2>','<text:h text:style-name="P10" text:outline-level="2"><text:span text:style-name="T3">').replace('</h2>','</text:span></text:h>')
     t=t.replace('<h3>','<text:h text:style-name="P11" text:outline-level="3"><text:span text:style-name="T3">').replace('</h3>','</text:span></text:h>')
