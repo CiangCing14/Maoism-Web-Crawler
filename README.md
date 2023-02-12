@@ -32,12 +32,12 @@ And because Python is too simple, it will also cause public outrage.
 
 M$WIN only needs to run the Python installation package and then install the PIP package step by step to run these programs, but Tjen-Folket also needs a PlayWright to be installed on M$WIN.
 
-# 中文簡介
+# 中文简介
 
-現在只要每天對你感興趣的網站運行一次代碼，就會爬取原文為HTML，便於二次傳播。前提是你會安裝Python 3.11，那麼就可以運行這些代碼。Python似乎不好編譯，直到現在，我仍未編譯出一個Python程序，或許以後會轉C語言，這也是為了我的人身安全著想。
+现在只要每天对你感兴趣的网站运行一次代码，就会爬取原文为HTML，便于二次传播。前提是你会安装Python 3.11，那么就可以运行这些代码。 Python似乎不好编译，直到现在，我仍未编译出一个Python程序，或许以后会转C语言，这也是为了我的人身安全着想。
 
-Python的許可證並不完全安全。
+Python的许可证并不完全安全。
 
-並且因為Python過於簡易，還會引起民憤。
+并且因为Python过于简易，还会引起民愤。
 
-M$WIN僅需運行Python安裝包後逐步安裝PIP包即可運行這些程序，但是Tjen-Folket還需要一個PlayWright安裝到M$WIN上。
+M$WIN仅需运行Python安装包后逐步安装PIP包即可运行这些程序，但是Tjen-Folket还需要一个PlayWright安装到M$WIN上。
