@@ -62,7 +62,7 @@ if len(dr)==0:
         if not os.path.exists(pa:='JSON-src/%s.json'%h['time']):
             print(h)
             f=open(pa,'w+');f.write(repr(h));f.close()
-        else:print(h['time'],'已經完成整理。')
+        else:print(h['time'],'已经完成整理。')
 if not os.path.exists('MDs'):os.mkdir('MDs')
 if not os.path.exists('HTMs'):os.mkdir('HTMs')
 n=0
@@ -81,9 +81,9 @@ Source: %s'''%(h['time'],
                '[%s](%s)'%(h['source'],h['source']))
         if not os.path.exists(pa1:='MDs/%s.md'%b.split('.json')[0]):
             f=open(pa1,'w+');f.write(t);f.close()
-            print(h['time'],'轉換為MD完畢。')
-        else:print(h['time'],'已經轉換為MD。')
+            print(h['time'],'转换为MD完毕。')
+        else:print(h['time'],'已经转换为MD。')
         if not os.path.exists(pa:='HTMs/%s.htm'%b.split('.json')[0]):
             f=open(pa,'w+');f.write(markdown.markdown(t));f.close()
-            print(h['time'],'轉換為HTM完畢。')
-        else:print(h['time'],'已經轉換為HTM。')
+            print(h['time'],'转换为HTM完毕。')
+        else:print(h['time'],'已经转换为HTM。')

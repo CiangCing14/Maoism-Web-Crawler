@@ -94,7 +94,7 @@ with sync_playwright()as playwright:
                 f=open('temp.pdf','wb+');f.write(h);f.close()
                 try:rd=(pd:=PdfReader('temp.pdf')).pages
                 except:
-                    print(hl[a],'錯誤。')
+                    print(hl[a],'错误。')
                     continue
                 lrd=len(rd)
                 for a2 in range(lrd):
@@ -149,7 +149,7 @@ with sync_playwright()as playwright:
                 af='.docx'if hl[a][-5:]=='.docx'else hl[a][-4:]
                 h=rg.rget(hl[a],1000,True).content
                 if not h:
-                    print(hl[a],'錯誤。')
+                    print(hl[a],'错误。')
                     continue
                 f=open('temp%s'%af,'wb+');f.write(h);f.close()
                 if af=='.docx':
@@ -194,7 +194,7 @@ with sync_playwright()as playwright:
                                 break
                         print(h)
                         f=open(pa,'w+');f.write(repr(h));f.close()
-                    else:print(h['time'],'已經完成下載。')
+                    else:print(h['time'],'已经完成下载。')
             n+=1
             up=h['text']
     if not os.path.exists('Images'):os.mkdir('Images')
@@ -211,8 +211,8 @@ with sync_playwright()as playwright:
                 try:im=rg.rget(z,st=True).content
                 except:continue
                 f=open(pa,'wb+');f.write(im);f.close()
-                print(pa,'下載完畢。')
-            else:print(pa,'已經完成下載。')
+                print(pa,'下载完毕。')
+            else:print(pa,'已经完成下载。')
     if not os.path.exists('ConvertedIMGs'):os.mkdir('ConvertedIMGs')
     for a in os.walk('Images'):
         for b in a[2]:
@@ -222,9 +222,9 @@ with sync_playwright()as playwright:
                         os.makedirs(pa2)
                     im=cv2.imread('%s/%s'%(a[0],b))
                     cv2.imwrite(pa,im)
-                    print(pa,'轉換完畢。')
+                    print(pa,'转换完毕。')
                 else:
-                    print(pa,'已經完成轉換。')
+                    print(pa,'已经完成转换。')
     if not os.path.exists('MDs'):os.mkdir('MDs')
     if not os.path.exists('HTMs'):os.mkdir('HTMs')
     for a in os.walk('JSON-src'):
@@ -266,9 +266,9 @@ Source: %s'''%(h['title'].replace('\n',' '),
                    '[%s](%s)'%(h['source'],h['source']))
             if not os.path.exists(pa1:='MDs/%s.md'%b.split('.json')[0]):
                 f=open(pa1,'w+');f.write(t);f.close()
-                print(h['time'],'轉換為MD完畢。')
-            else:print(h['time'],'已經轉換為MD。')
+                print(h['time'],'转换为MD完毕。')
+            else:print(h['time'],'已经转换为MD。')
             if not os.path.exists(pa:='HTMs/%s.htm'%b.split('.json')[0]):
                 f=open(pa,'w+');f.write(markdown.markdown(t));f.close()
-                print(h['time'],'轉換為HTM完畢。')
-            else:print(h['time'],'已經轉換為HTM。')
+                print(h['time'],'转换为HTM完毕。')
+            else:print(h['time'],'已经转换为HTM。')

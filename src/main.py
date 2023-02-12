@@ -11,13 +11,13 @@ for a in os.walk(sys.path[0]):
     for b in a[2]:
         if(fn:='.'.join(b.split('.')[:-1]))[-3:]=='get':
             ps.append(fn)
-print('預計要運行的模組：%s'%repr(ps))
+print('预计要运行的模组：%s'%repr(ps))
 for a in ps:
     if not os.path.exists(p:='src/%s'%a.replace('_',' ')[:-4]):
-        print('運行模組：%s'%a)
+        print('运行模组：%s'%a)
         try:importlib.import_module(a)
         except RuntimeError:
-            print('模組“%s”，網絡條件差。'%a)
+            print('模组“%s”，网络条件差。'%a)
             pass
         l=[]
         for b in os.walk(sys.path[0]):
@@ -48,7 +48,7 @@ for a in os.walk(sys.path[0]):
         if a[0]=='%s/MDs'%sys.path[0]:
             n2n=int(b.split('-')[-1].split('.')[0])
             if n2n>n2:n2=n1n
-print('繼續進程HTMs%d，MDs%d。'%(n1,n2))
+print('继续进程HTMs%d，MDs%d。'%(n1,n2))
 for a in os.walk('src'):
     for b in a[2]:
         pa='%s/%s'%(a[0],b)
@@ -87,7 +87,7 @@ if os.path.exists(pds):
             f=open(pa:='%s/%s'%(a[0],b),'rb');t=f.read();f.close()
             t=hashlib.md5(t).hexdigest()
             if t in md5s:
-                print('清除已經抓取過的新聞：%s。'%b[:-3])
+                print('清除已经抓取过的新闻：%s。'%b[:-3])
                 os.remove(pa)
                 for z in os.walk('HTMs'):
                     for v in z[2]:
@@ -165,7 +165,7 @@ for y in range(len(des)):
         f=open('index.md.bin','r');t=f.read();f.close()
         t=t.split('<!--NEWS-->')
         tl=len(t)
-        print('讀入%d個新聞。'%tl)
+        print('读入%d个新闻。'%tl)
         ne=[]
         for a in t:
             a=a.strip()
@@ -179,7 +179,7 @@ for y in range(len(des)):
                 n['meta'][b.split(': ')[0].lower()]=': '.join(b.split(': ')[1:])
             ne.append(n)
         mt={}
-        print('翻譯元數據標識。')
+        print('翻译元数据标识。')
         ks=[]
         for a in ne:
             for b in list(a['meta'].keys()):
@@ -212,7 +212,7 @@ for y in range(len(des)):
                 ft[b]=[c.split(')')for c in ft[b].split('(')]
             for b in range(ftl):
                 if b==0:
-                    print('第%d個新聞開始翻譯。'%(a+1))
+                    print('第%d个新闻开始翻译。'%(a+1))
                 ftbl=len(ft[b])
                 for c in range(ftbl):
                     ftbcl=len(ft[b][c])
@@ -245,13 +245,13 @@ for y in range(len(des)):
             n['text']=html.unescape(n['text'])
             n['source']=ne[a]['source']
             n['title']=ne[a]['title']
-            print('翻譯標題。')
+            print('翻译标题。')
             n['title']=trans(n['title'],de=des[y],sr=src)
             n['title']=n['title'].replace('＆','&').replace('＃','#')
             n['title']=html.unescape(n['title'])
             n['meta']=ne[a]['meta']
-            if'description'in n['meta']:print('翻譯簡介。');n['meta']['description']=trans(n['meta']['description'],de=des[y],sr=src)
-            if'head description'in n['meta']:print('翻譯頭部簡介。');n['meta']['head description']=trans(n['meta']['head description'],de=des[y],sr=src)
+            if'description'in n['meta']:print('翻译简介。');n['meta']['description']=trans(n['meta']['description'],de=des[y],sr=src)
+            if'head description'in n['meta']:print('翻译头部简介。');n['meta']['head description']=trans(n['meta']['head description'],de=des[y],sr=src)
             nk=list(n['meta'].keys())
             for b in nk:
                 n['meta'][mt[b].title()]=n['meta'][b]
