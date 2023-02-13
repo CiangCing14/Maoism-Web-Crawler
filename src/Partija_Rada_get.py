@@ -40,7 +40,7 @@ if len(dr)==0:
            'time':h.split('<header class="entry-header">')[1].split('<time class="entry-date published updated" datetime="')[1].split('"')[0],
            'author':h.split('<header class="entry-header">')[1].split('<span class="author vcard">')[1].split('<a')[1].split('>')[1].split('<')[0],
            'images':[b.split('src="')[1].split('"')[0].split('?')[0]for b in h.split('<img ')[1:]],
-           'text':')'.join(hp.handle(h.split('<div class="pf-content">')[1].split('<!--.entry-content-->')[0]).strip().split('![Print Friendly, PDF &\nEmail]')[1].split(')')[1:]),
+           'text':hp.handle(h.split('<div class="pf-content">')[1].split('<!--.entry-content-->')[0]).strip().split('![Print Friendly, PDF &\nEmail]')[0],
            'source':hl[a]
           }
         h['text']='\n\n'.join([z.replace('\n','').strip()for z in h['text'].split('\n\n')if z])
