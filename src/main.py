@@ -226,8 +226,9 @@ for y in range(len(des)):
                         con=False
                         for e in fa:
                             if e in ft[b][c][d]:
-                                if ft[b][c][d].find(e)!=-1:
+                                if ft[b][c][d].find(e)!=-1 or re.search('\d{4}-\d{2}-\d{2}T\d{2}-\d{2}-\d{2}-\d{2}-\d{2}',ft[b][c][d]):
                                     con=True
+                                    break
                         if con:continue
                         if not re.search('\w',ft[b][c][d]):continue
                         ft[b][c][d]=trans(ft[b][c][d],de=des[y],sr=src)
