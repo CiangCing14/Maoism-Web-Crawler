@@ -40,6 +40,8 @@ if not os.path.exists('000000.list'):
             while True:
                 n+=1
                 h=rg.rget(li:='%s%s/page/%d'%(l,b,n)).text
+                if'Fatal error'in h:
+                    ab=True;break
                 if'Ooops, página não encontrada'in h:
                     break
                 h=h.split('<div class="grid-container grid-container__alternate full" >')[1].split('<!-- .column-content-wrapper -->')[0]
@@ -47,7 +49,8 @@ if not os.path.exists('000000.list'):
                 f=open('%s.list'%(str(a).rjust(6).replace(' ','0')),'w+');f.write(repr(h));f.close()
                 hl.extend(h)
                 a+=1
-                if a==5:break;break;break
+                if a==5:ab=True;break
+        if ab:break
         dt=datetime.strptime('%s/01 00:00:00'%b, '20%y/%m/%d %H:%M:%S')
         ft=dt-relativedelta(months=1)
         tl.append('/'.join(str(ft).split('-')[:2]))

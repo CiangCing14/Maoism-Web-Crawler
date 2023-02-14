@@ -43,7 +43,7 @@ if len(dr)==0:
            'time':h.split('<time class="published" datetime="')[1].split('"')[0],
            'author':h.split('<span class="vcard author">')[1].split('rel="author">')[1].split('<')[0],
            'images':[html.unescape(b.split('src="')[1].split('"')[0].split('?')[0])for b in h.split('<img')[1:]],
-           'text':hp.handle(h.split('<time class="published" datetime="')[1].split('</time>')[1].split('<p class="post-tags">')[0]),
+           'text':hp.handle('</time>'.join('</time>'.join(h.split('<time class="published"')[1].split('</time>')[1:]).split('<time class="updated"')[1].split('</time>')[1:]).split('<p class="post-tags">')[0]),
            'tags':[y.split('<')[0].strip()for y in h.split(sp)[1].split('</p>')[0].split('rel="tag">')[1:]]if(sp:='<p class="post-tags">')in h else None,
            'categories':h2,
            'source':hl[a]
