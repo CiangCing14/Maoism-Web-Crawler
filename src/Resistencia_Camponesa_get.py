@@ -8,6 +8,18 @@ import rg
 
 n=0
 
+def portuguese2date(a):
+    d=re.findall('\d+',a)
+    dd=d[0]
+    y=d[1]
+    mo=a.split(' ')[2].title()
+    m=['janeiro','fevereiro','marchar','abril','poderia','junho','julho','agosto','setembro','outubro','novembro','dezembro']
+    m=[b.title()for b in m]
+    for b in range(len(m)):
+        if mo==m[b]:
+            mo=b+1
+    return'-'.join([y,str(mo).rjust(2).replace(' ','0'),dd.rjust(2).replace(' ','0')])
+
 d=str(datetime.today()-timedelta(days=1)).split(' ')[0]
 td=str(datetime.today()).split(' ')[0]
 y1=int(td.split('-')[0])
@@ -40,6 +52,7 @@ if not os.path.exists('000000.list'):
             while True:
                 n+=1
                 h=rg.rget(li:='%s%s/page/%d'%(l,b,n)).text
+                ab=False
                 if'Fatal error'in h:
                     ab=True;break
                 if'Ooops, página não encontrada'in h:
@@ -71,22 +84,40 @@ if not os.path.exists('JSON-src'):os.mkdir('JSON-src')
 dr=os.listdir('JSON-src')
 if len(dr)==0:
     hp=html2text.HTML2Text()
+    n=0
+    ed=''
     for a in range(len(hl)):
         h=rg.rget(hl[a]).text
         if not os.path.exists('test.txt'):f=open('test.txt','w+');f.write(h);f.close()
         h2='<'.join('.pdf"'.join(h.split('<div class="post-entry tc-content-inner">')[1].split('<div class="pdfprnt-buttons pdfprnt-buttons-post pdfprnt-bottom-right">')[0].split('.pdf"')[:-1]).split('<')[:-1])
-        h={'title':h.split('<meta property="og:title" content="')[1].split('"')[0].strip(),
-           'type':h.split('<meta property="og:type" content="')[1].split('"')[0],
-           'description':h.split('<meta property="og:description" content="')[1].split('"')[0],
-           'publish time':h.split('<meta property="article:published_time" content="')[1].split('"')[0],
-           'modified time':h.split(sp)[1].split('"')[0]if(sp:='<meta property="article:modified_time" content="')in h else None,
-           'author':h.split('<meta name="author" content="')[1].split('"')[0],
-           'images':[html.unescape(b.split('src="')[1].split('"')[0].split('?')[0])for b in h2.split('<img')[1:]],
-           'text':hp.handle(h2),
-           'tags':[b.split('</li>')[0].split('<span>')[1].split('</span>')[0]for b in h.split(sp)[1].split('</footer>')[0].split('<ul class="tags">')[1].split('</ul>')[0].split('<li>')[1:]]if(sp:='<footer class="post-footer clearfix">')in h else None,
-           'category':h.split(sp)[1].split('</div>')[0].split('<span>')[1].split('</span>')[0]if(sp:='<div class="tax__container post-info entry-meta">')in h else None,
-           'source':hl[a]
-          }
+        if'<meta property="og:title" content="'in h:
+            h={'title':h.split('<meta property="og:title" content="')[1].split('"')[0].strip(),
+               'type':h.split('<meta property="og:type" content="')[1].split('"')[0],
+               'description':h.split('<meta property="og:description" content="')[1].split('"')[0],
+               'publish time':h.split('<meta property="article:published_time" content="')[1].split('"')[0],
+               'modified time':h.split(sp)[1].split('"')[0]if(sp:='<meta property="article:modified_time" content="')in h else None,
+               'author':h.split('<meta name="author" content="')[1].split('"')[0],
+               'images':[html.unescape(b.split('src="')[1].split('"')[0].split('?')[0])for b in h2.split('<img')[1:]],
+               'text':hp.handle(h2),
+               'tags':[b.split('</li>')[0].split('<span>')[1].split('</span>')[0]for b in h.split(sp)[1].split('</footer>')[0].split('<ul class="tags">')[1].split('</ul>')[0].split('<li>')[1:]]if(sp:='<footer class="post-footer clearfix">')in h else None,
+               'category':h.split(sp)[1].split('</div>')[0].split('<span>')[1].split('</span>')[0]if(sp:='<div class="tax__container post-info entry-meta">')in h else None,
+               'source':hl[a]
+              }
+        else:
+            h={'title':h.split('<title>')[1].split('</title>')[0],
+               'publish time':portuguese2date(h.split('<time class="entry-date published updated" datetime="')[1].split('"')[0]),
+               'author':h.split('<span class="author_name">')[1].split('</span>')[0].split('rel="author">')[1].split('<')[0],
+               'images':[html.unescape(b.split('src="')[1].split('"')[0].split('?')[0])for b in h2.split('<img')[1:]],
+               'text':hp.handle(h2),
+               'tags':[b.split('</li>')[0].split('<span>')[1].split('</span>')[0]for b in h.split(sp)[1].split('</footer>')[0].split('<ul class="tags">')[1].split('</ul>')[0].split('<li>')[1:]]if(sp:='<footer class="post-footer clearfix">')in h else None,
+               'category':h.split(sp)[1].split('</div>')[0].split('<span>')[1].split('</span>')[0]if(sp:='<div class="tax__container post-info entry-meta">')in h else None,
+               'source':hl[a]}
+            dd=h['publish time']
+            if ed:
+                if ed!=dd:
+                    n=0
+            h['publish time']='%sT%s:00:00-04:00'%(h['publish time'],str(99-n).rjust(2).replace(' ','0'))
+            ed=dd
         h['text']='\n\n'.join([z.replace('\n','').strip()for z in h['text'].split('\n\n')if z])
         t2=''
         t4=h['text'].split('(')
@@ -100,7 +131,7 @@ if len(dr)==0:
                     url=t4[z];hc=False
                 t2='%s(%s%s%s'%(t2,'%s%s'%(l2,url)if(url[0]in['/','.'])and('http'not in url)else url,')'if hc else'',')'.join(t4[z].split(')')[1:]))
         h['text']=t2
-        if h['publish time'].split('T')[0]<d:break
+        if dd<d:break
         if not os.path.exists(pa:='JSON-src/%s.json'%h['publish time']):
             print(h)
             f=open(pa,'w+');f.write(repr(h));f.close()
@@ -187,10 +218,10 @@ Category: %s
 Source: %s'''%(h['title'].replace('\n',' '),
                h['author'],
                h['publish time'],
-               h['modified time'],
-               h['description'],
+               h['modified time']if'modified time'in h else'None',
+               h['description']if'description'in h else'None',
                repr(['[%s](%s)'%(c.split('/')[-1].split('?')[0].replace('\n',''),c)for c in h['images']]),
-               h['type'],
+               h['type']if'type'in h else'None',
                repr(h['tags']),
                h['category'],
                t3,
