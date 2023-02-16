@@ -8,5 +8,5 @@
  <manifest:file-entry manifest:full-path="Thumbnails/thumbnail.png" manifest:media-type="image/png"/>
  <manifest:file-entry manifest:full-path="styles.xml" manifest:media-type="text/xml"/>
  <manifest:file-entry manifest:full-path="content.xml" manifest:media-type="text/xml"/>
- <manifest:file-entry manifest:full-path="Pictures/10000000000005A0000002F79576A7C020348E71.jpg" manifest:media-type="image/jpeg"/>
+ <manifest:file-entry manifest:full-path="Pictures/10000000000000D3000000D791D078788B6F6E3B.jpg" manifest:media-type="image/jpeg"/>
 </manifest:manifest>

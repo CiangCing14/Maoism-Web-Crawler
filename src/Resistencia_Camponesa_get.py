@@ -89,6 +89,7 @@ if len(dr)==0:
     for a in range(len(hl)):
         h=rg.rget(hl[a]).text
         if not os.path.exists('test.txt'):f=open('test.txt','w+');f.write(h);f.close()
+        if not h:continue
         h2='<'.join('.pdf"'.join(h.split('<div class="post-entry tc-content-inner">')[1].split('<div class="pdfprnt-buttons pdfprnt-buttons-post pdfprnt-bottom-right">')[0].split('.pdf"')[:-1]).split('<')[:-1])
         if'<meta property="og:title" content="'in h:
             h={'title':h.split('<meta property="og:title" content="')[1].split('"')[0].strip(),

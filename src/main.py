@@ -251,7 +251,8 @@ for y in range(len(des)):
             n['title']=n['title'].replace('＆','&').replace('＃','#')
             n['title']=html.unescape(n['title'])
             n['meta']=ne[a]['meta']
-            if'description'in n['meta']:print('翻译简介。');n['meta']['description']=trans(n['meta']['description'],de=des[y],sr=src)
+            if'description'in n['meta']:
+                if n['meta']['description']:print('翻译简介。');n['meta']['description']=trans(n['meta']['description'],de=des[y],sr=src)
             if'head description'in n['meta']:print('翻译头部简介。');n['meta']['head description']=trans(n['meta']['head description'],de=des[y],sr=src)
             nk=list(n['meta'].keys())
             for b in nk:
