@@ -75,8 +75,9 @@ with sync_playwright()as playwright:
                 if'up'in locals():
                     if h['text']!=up:
                         while True:
+                            n+=1
                             h['publish time']='%sT%s:%s'%(h['publish time'].split('T')[0],
-                                                          str(int(h['publish time'].split('T')[1].split(':')[0])+1),
+                                                          str(int(h['publish time'].split('T')[1].split(':')[0])-n),
                                                           ':'.join(h['publish time'].split('T')[1].split(':')[1:]))
                             if not os.path.exists(pa:='JSON-src/%s.json'%h['publish time']):
                                 break

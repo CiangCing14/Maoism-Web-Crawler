@@ -68,8 +68,9 @@ if len(dr)==0:
             if'up'in locals():
                 if h['text']!=up:
                     while True:
+                        n+=1
                         h['time']='%sT%s:%s'%(h['time'].split('T')[0],
-                                                      str(int(h['time'].split('T')[1].split(':')[0])+1),
+                                                      str(int(h['time'].split('T')[1].split(':')[0])-n),
                                                       ':'.join(h['time'].split('T')[1].split(':')[1:]))
                         if not os.path.exists(pa:='JSON-src/%s.json'%h['time']):
                             break
