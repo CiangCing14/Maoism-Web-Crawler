@@ -130,7 +130,7 @@ if not os.path.exists('index.md.bin'):
             t='\n\n'.join(tn).strip()
             ht='%s%s%s'%(ht,'\n\n<!--NEWS-->\n\n'if n!=0 else'',t)
             n+=1
-    ht=ht.replace('(../Images/','(Images/').replace('(../ConvertedIMGs/','(ConvertedIMGs/')
+    ht=ht.replace('(../Images/','(Images/').replace('(../ConvertedIMGs/','(ConvertedIMGs/').replace('\n* [','\n[')
     f=open('index.md.bin','w+');f.write(ht);f.close()
 if not os.path.exists('index.odt'):
     markdown2odt.run('index.md.bin','Origin')
@@ -275,7 +275,7 @@ News Source: %s'''%(a['title'],
                     a['source'])
             mds.append(md)
         fmd='\n\n<!--NEWS-->\n\n'.join(mds)
-        f=open('index_%s.md.bin'%aft[y],'w+');f.write(re.sub('\\n[ ]+([#]+)[ ]+','\\n\\1 ',fmd.replace('这是给予的(','](').replace('! ','!')));f.close()
+        f=open('index_%s.md.bin'%aft[y],'w+');f.write(re.sub('\\n[ ]+([#]+)[ ]+','\\n\\1 ',fmd.replace('这是给予的(','](').replace('! ','!')).replace('\n* [','\n['));f.close()
     if not os.path.exists('index_%s.htm'%aft[y]):
         f=open('index_%s.md.bin'%aft[y],'r');fmd=f.read();f.close()
         f=open('index_%s.htm'%aft[y],'w+');f.write('<html><head><style>%s</style></head><body><img src="Head_Image.jpg" /><h1>Marxism-Leninism-Maoism News</h1><h1>马列毛主义新闻</h1><p><a href="index_%s.pdf">[This lan. PDF]</a><a href="index_%s.odt">[This lan. ODT]</a><a href="index_%s.md.bin">[This lan. MD]</a><a href="index_%s.txt">[This lan. TXT]</a><a href="index_list_%s.txt">[This lan. TXT LIST]</a></p><p>Please select your language 请选择你的语言:</p><p><a href="index.htm">Origin</a> | %s</p>%s</body></html>'%('img{height: auto; width: auto\9; width:100%;}',aft[y],aft[y],aft[y],aft[y],aft[y],' | '.join(['<a href="index_%s.htm">%s</a>'%(a,lans[a])for a in aft]),markdown.markdown(fmd)));f.close()
