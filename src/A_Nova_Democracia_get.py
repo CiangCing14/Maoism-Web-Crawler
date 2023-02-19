@@ -50,8 +50,8 @@ if len(dr)==0:
             h4=h.split(sp)[1].split(sp2)[1].split('</figcaption>')[0]if((sp)and((sp2:='<figcaption class="fox-figcaption">'))in h)else None
             h={'author':h.split('<a class="url fn" itemprop="url" rel="author"')[1].split('>')[1].split('<')[0],
                'publish time':h.split('<meta property="article:published_time" content="')[1].split('"')[0],
-               'modified time':h.split('<meta property="article:modified_time" content="')[1].split('"')[0],
-               'updated time':h.split('<meta property="og:updated_time" content="')[1].split('"')[0],
+               'modified time':h.split(sp)[1].split('"')[0]if(sp:='<meta property="article:modified_time" content="')in h else'None',
+               'updated time':h.split(sp)[1].split('"')[0]if(sp:='<meta property="og:updated_time" content="')in h else'None',
                'title':h.split('<meta property="og:title" content="')[1].split('"')[0].strip(),
                'type':h.split('<meta property="og:type" content="')[1].split('"')[0].strip(),
                'description':h.split('<meta property="og:description" content="')[1].split('"')[0].strip(),

@@ -1,5 +1,5 @@
 from datetime import datetime, timedelta
-import os,sys,html2text,cv2,re
+import os,sys,html2text,cv2,re,html,base64
 import urllib.parse,markdown
 import rg
 
@@ -15,7 +15,7 @@ if not os.path.exists('000000.list'):
         ps=rg.rget(ul).text
         f=open('test.txt','w+');f.write(ps);f.close()
         h=ps.split("<div class='blog-posts hfeed'>")[1].split("<div class='blog-pager' id='blog-pager'>")[0]
-        h=['%s%s'%(l,b.split("<a href='https://proletaricomunisti.blogspot.com/")[1].split("'")[0])for b in h.split("<div class='post-outer'>")[1:]]
+        h=['%s%s'%(l,b.split("<a class='timestamp-link' href='https://proletaricomunisti.blogspot.com/")[1].split("'")[0])for b in h.split("<div class='post-outer'>")[1:]]
         hl.extend(h)
         f=open('%s.list'%(str(a).rjust(6).replace(' ','0')),'w+');f.write(repr(h));f.close()
         ul=ps.split("<a class='blog-pager-older-link' href='")[1].split("'")[0]
@@ -32,6 +32,10 @@ else:
         f=open(a,'r');h=eval(f.read());f.close()
         hl.extend(h)
 print('\n'.join(hl))
+def formal(a):
+    if'data'==a[:4]:
+        return[a,'temp.%s'%a.split(':')[1].split('/')[1].split(';')[0]]
+    else:return a
 if not os.path.exists('JSON-src'):os.mkdir('JSON-src')
 dr=os.listdir('JSON-src')
 if len(dr)==0:
@@ -39,15 +43,19 @@ if len(dr)==0:
     for a in range(len(hl)):
         h=rg.rget(hl[a]).text
         if not os.path.exists('test.txt'):f=open('test.txt','w+');f.write(h);f.close()
-        h=h.split("<div class='post-outer'>")[1].split("<div class='comments' id='comments'>")[0]
-        h={'time':h.split("<abbr class='published' itemprop='datePublished' title='")[1].split("'")[0],
-           'title':h.split("class='post-title")[1].split('>')[1].split('<')[0],
-           'author':h.split("<span class='fn' itemprop='author'")[1].split("<span itemprop='name'>")[1].split('</span>')[0],
-           'images':[b.split('src="'if'"'in b else"src='")[1].split('"'if'"'in b else"'")[0].split('?')[0]for b in h.split("<div class='post-header'>")[1].split("<div class='post-footer'>")[0].split('<img ')[1:]],
-           'text':hp.handle(h.split("<div class='post-header'>")[1].split("<div class='post-footer'>")[0]).strip(),
+        h2=h.split("<div class='post-outer'>")[1].split("<div class='comments' id='comments'>")[0]
+        h={'time':h2.split("<abbr class='published' itemprop='datePublished' title='")[1].split("'")[0],
+           'title':html.unescape(h.split("' property='og:title'/>")[0].split("'")[-1]).strip(),
+           'description':de if(de:=html.unescape(h.split("' property='og:description'/>")[0].split("'")[-1]).strip())else'None',
+           'author':h2.split("<span class='fn' itemprop='author'")[1].split("<span itemprop='name'>")[1].split('</span>')[0],
+           'images':[formal(b.split('src="'if'"'in b else"src='")[1].split('"'if'"'in b else"'")[0].split('?')[0])for b in h2.split("<div class='post-header'>")[1].split("<div class='post-footer'>")[0].split('<img ')[1:]],
+           'text':hp.handle(h2.split("<div class='post-header'>")[1].split("<div class='post-footer'>")[0]).strip(),
            'source':hl[a]
           }
         h['text']='\n\n'.join([z.replace('\n','').strip()for z in h['text'].split('\n\n')if z])
+        for z in h['images']:
+            if isinstance(z,list):
+                h['text']=h['text'].replace(z[0],z[1])
         if h['time'].split('T')[0]<d:break
         if not os.path.exists(pa:='JSON-src/%s.json'%h['time']):
             print(h)
@@ -71,14 +79,21 @@ if not os.path.exists('Images'):os.mkdir('Images')
 imgs=[]
 for a in os.walk('JSON-src'):
     for b in a[2]:
-        f=open('JSON-src/%s'%b,'r');h=eval(f.read());f.close()
+        f=open('JSON-src/%s'%b,'rb');h=eval(f.read().decode('utf-8',errors='ignore'));f.close()
         imgs.append([h['time'].replace(':','-').replace('+','-'),h['images']])
 for a in imgs:
     for z in a[1]:
-        if not os.path.exists(pa:='Images/%s/%s'%(a[0],urllib.parse.unquote(z).split('/')[-1].split('?')[0])):
+        if isinstance(z,list):
+            pa='Images/%s/temp.%s'%(a[0],z[0].split(':')[1].split('/')[1].split(';')[0])
+        else:
+            pa='Images/%s/%s'%(a[0],urllib.parse.unquote(z).split('/')[-1].split('?')[0])
+        if not os.path.exists(pa):
             if not os.path.exists(pa2:='/'.join(pa.split('/')[:-1])):
                 os.makedirs(pa2)
-            try:im=rg.rget(z,st=True).content
+            try:
+                if isinstance(z,list):
+                    im=base64.b64decode(','.join(';'.join(z[0].split('data:')[1].split(';')[1:]).split(',')[1:]))
+                else:im=rg.rget(z,st=True).content
             except:continue
             f=open(pa,'wb+');f.write(im);f.close()
             print(pa,'下载完毕。')
@@ -109,11 +124,15 @@ for a in os.walk('JSON-src'):
                 t2=ht[z]
             else:
                 url=ht[z].split(')')[0]
-                t2='%s%s%s)%s'%(t2,htc[z-1],url.replace('\n','').replace('/'.join(url.replace('\n','').split('/')[:-1]),('../Images/%s'%h['time'].replace(':','-').replace('+','-')if'.webp'not in url else'../ConvertedIMGs/%s'%h['time'].replace(':','-').replace('+','-')).split('?')[0]).replace('.webp','.png').split('?')[0],')'.join(ht[z].split(')')[1:]))
+                if'/'in url:
+                    t2='%s%s%s)%s'%(t2,htc[z-1],url.replace('\n','').replace('/'.join(url.replace('\n','').split('/')[:-1]),('../Images/%s'%h['time'].replace(':','-').replace('+','-')if'.webp'not in url else'../ConvertedIMGs/%s'%h['time'].replace(':','-').replace('+','-')).split('?')[0]).replace('.webp','.png').split('?')[0],')'.join(ht[z].split(')')[1:]))
+                else:t2='%s%s%s)%s'%(t2,htc[z-1],'%s/%s'%(('../Images/%s'%h['time'].replace(':','-').replace('+','-')if'.webp'not in url else'../ConvertedIMGs/%s'%h['time'].replace(':','-').replace('+','-')),url.replace('\n','')),')'.join(ht[z].split(')')[1:]))
         t3=t2
         t='''# %s
 
 Author: %s
+
+Description: %s
 
 Time: %s
 
@@ -125,8 +144,9 @@ Images: %s
 
 Source: %s'''%(h['title'].strip().replace('\n',' '),
                h['author'],
+               h['description'],
                h['time'],
-               repr(['[%s](%s)'%(c.split('/')[-1].split('?')[0].replace('\n',''),c)for c in h['images']]),
+               repr(['[%s](%s)'%(c.split('/')[-1].split('?')[0].replace('\n',''),c)for c in h['images']if not isinstance(c,list)]),
                t3,
                '[%s](%s)'%(h['source'],h['source']))
         if not os.path.exists(pa1:='MDs/%s.md'%b.split('.json')[0]):

@@ -15,7 +15,8 @@ print('预计要运行的模组：%s'%repr(ps))
 for a in ps:
     if not os.path.exists(p:='src/%s'%a.replace('_',' ')[:-4]):
         print('运行模组：%s'%a)
-        try:importlib.import_module(a)
+        try:
+            importlib.import_module(a)
         except RuntimeError:
             print('模组“%s”，网络条件差。'%a)
             pass
