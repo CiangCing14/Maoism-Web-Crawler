@@ -1,6 +1,7 @@
 import markdown,cv2,datetime,re,html
 from PIL import Image
 import urllib.parse,shutil,os
+from datetime import timedelta
 from xml.sax.saxutils import escape
 def run(mdf,lan):
     if os.path.exists('sample2'):shutil.rmtree('sample2')
