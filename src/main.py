@@ -1,4 +1,4 @@
-import os,sys,importlib,shutil,time,markdown,re,datetime,hashlib,markdown2odt,pyttsx3,requests,datetime,html
+import os,sys,importlib,shutil,time,markdown,re,datetime,hashlib,markdown2odt,pyttsx3,requests,datetime,html,jieba
 import urllib.parse
 import translators.server as tss
 
@@ -152,8 +152,53 @@ def trans_cycle(t,de,sr):
     time.sleep(1)
     return trans(t,de,sr)
 def trans(t,de='zh',sr='auto'):
+    if de==sr:return t
     if not t:return t
-    try:return tss.google(t,sr,de)
+    try:
+        tt=tss.google(t,sr,de)
+        '''
+        #ch=[jieba.lcut(a)for a in re.findall('[\\u4e00-\\u9fa5]+',tt)]
+        ch=[[a]for a in re.findall('[\\u4e00-\\u9fa5]+',tt)]
+        cs=[a.split(' ')for a in re.split('[\\u4e00-\\u9fa5]+',tt)]
+        cp=[]
+        lcs=len(cs)
+        for a in range(lcs):
+            cp.append(cs[a])
+            if a!=lcs-1:cp.append(ch[a])
+        cpl=[]
+        for a in cp:
+            for c in a:
+                cpl.append(c)
+        #ch2=[jieba.lcut(a)for a in re.findall('[\\u4e00-\\u9fa5]+',t)]
+        ch2=[[a]for a in re.findall('[\\u4e00-\\u9fa5]+',t)]
+        cs2=[a.split(' ')for a in re.split('[\\u4e00-\\u9fa5]+',t)]
+        cp2=[]
+        lcs=len(cs2)
+        for a in range(lcs):
+            cp2.append(cs2[a])
+            if a!=lcs-1:cp2.append(ch2[a])
+        cpl2=[]
+        for a in cp2:
+            for c in a:
+                cpl2.append(c)
+        cp,cp2=cpl,cpl2
+        cpl=[]
+        for a in cp2:
+            if a not in cpl:
+                cpl.append(a)
+        fn=len([a for a in cp if a])
+        nn=0
+        for a in cp:
+            for b in cpl:
+                if a:
+                    if b:
+                        if a==b:
+                            nn+=1
+        sn=nn/fn
+        if sn>0.1:
+            return trans_cycle(t,de,sr)
+        '''
+        return tt
     except tss.TranslatorError:return t
     except IndexError:print(t);return t
     else:return trans_cycle(t,de,sr)

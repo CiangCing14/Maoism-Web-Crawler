@@ -90,6 +90,7 @@ for a in os.walk('JSON-src'):
 for a in imgs:
     for z in a[1]:
         if not os.path.exists(pa:='Images/%s/%s'%(a[0],urllib.parse.unquote(z).split('/')[-1].split('?')[0])):
+            if'.'not in pa:continue
             if not os.path.exists(pa2:='/'.join(pa.split('/')[:-1])):
                 os.makedirs(pa2)
             try:im=rg.rget(z,st=True).content
