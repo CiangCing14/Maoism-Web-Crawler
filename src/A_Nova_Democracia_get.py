@@ -59,7 +59,7 @@ if len(dr)==0:
                'section':h.split('<meta property="article:section" content="')[1].split('"')[0],
                'thumb':h3,
                'thumb caption':h4,
-               'images':[('%s%s'%(l2,kl)if l2 not in(kl:=b.split('src="')[1].split('"')[0])else kl)for b in h2.split('<img')[1:]if('src="'in b)],
+               'images':[(('%s%s'%(l2,kl)if'data:image'not in kl else b.split('data-src="')[1].split('"')[0])if l2 not in(kl:=b.split('src="')[1].split('"')[0])else kl)for b in h2.split('<img')[1:]if('src="'in b)],
                'text':hp.handle(h2).strip(),
                'source':thl[a]
               }
