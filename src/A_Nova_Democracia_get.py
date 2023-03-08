@@ -70,9 +70,10 @@ if len(dr)==0:
                     h['text']=h['text'].replace(z[1],z[0])
                     h['images'][n]=h['images'][n][0]
                 n+=1
-            h['images']=[z for z in h['images']if'printfriendly-pdf-email-button-md.png'not in z]
-            h['text']='\n\n'.join([z for z in h['text'].split('\n\n')if('Print Friendly, PDF &Email'not in z)and('printfriendly-pdf-email-button-md.png'not in z)])
             if h3:h['images']=[h3]+h['images']
+            h['images']=[z for z in h['images']if'printfriendly-pdf-email-button-md.png'not in z]
+            if'printfriendly-pdf-email-button-md.png'in h['thumb']:h['thumb']=''
+            h['text']='\n\n'.join([z for z in h['text'].split('\n\n')if('Print Friendly, PDF &Email'not in z)and('printfriendly-pdf-email-button-md.png'not in z)])
             t2=''
             t4=h['text'].split('(')
             for z in range(len(t4)):
