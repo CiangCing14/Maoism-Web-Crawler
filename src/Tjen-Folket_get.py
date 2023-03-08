@@ -57,7 +57,7 @@ with sync_playwright()as playwright:
                'category':h2.split(sp)[1].split('rel="category tag" data-wpel-link="internal">')[1].split('<')[0]if(sp:='<div class="meta-category">')in h2 else None,
                'source':hl[a]
               }
-            h['text']='\n\n'.join([z.replace('\n','').strip()for z in h['text'].split('\n\n')if z])
+            h['text']='\n\n'.join([z.replace('\n','').strip()for z in h['text'].split('\n\n')if z]);h['text']=re.sub('#(\w)','\\#\\1',h['text'])
             t2=''
             t4=h['text'].split('(')
             for z in range(len(t4)):

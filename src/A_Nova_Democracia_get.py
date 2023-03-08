@@ -59,11 +59,19 @@ if len(dr)==0:
                'section':h.split('<meta property="article:section" content="')[1].split('"')[0],
                'thumb':h3,
                'thumb caption':h4,
-               'images':[(('%s%s'%(l2,kl)if'data:image'not in kl else b.split('data-src="')[1].split('"')[0])if l2 not in(kl:=b.split('src="')[1].split('"')[0])else kl)for b in h2.split('<img')[1:]if('src="'in b)],
+               'images':[(('%s%s'%(l2,kl)if'data:image'not in kl else[b.split('data-src="')[1].split('"')[0],b.split('src="')[1].split('"')[0]])if l2 not in(kl:=b.split('src="')[1].split('"')[0])else kl)for b in h2.split('<img')[1:]if('src="'in b)],
                'text':hp.handle(h2).strip(),
                'source':thl[a]
               }
-            h['text']='\n\n'.join([z.replace('\n','').strip()for z in h['text'].split('\n\n')if z])
+            h['text']='\n\n'.join([z.replace('\n','').strip()for z in h['text'].split('\n\n')if z]);h['text']=re.sub('#(\w)','\\#\\1',h['text'])
+            n=0
+            for z in h['images']:
+                if isinstance(z,list):
+                    h['text']=h['text'].replace(z[1],z[0])
+                    h['images'][n]=h['images'][n][0]
+                n+=1
+            h['images']=[z for z in h['images']if'printfriendly-pdf-email-button-md.png'not in z]
+            h['text']='\n\n'.join([z for z in h['text'].split('\n\n')if('Print Friendly, PDF &Email'not in z)and('printfriendly-pdf-email-button-md.png'not in z)])
             if h3:h['images']=[h3]+h['images']
             t2=''
             t4=h['text'].split('(')

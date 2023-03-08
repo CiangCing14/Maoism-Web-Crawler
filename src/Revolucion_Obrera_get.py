@@ -49,7 +49,7 @@ if len(dr)==0:
            'source':hl[a]
            }
         h['text']=hp.handle(('</time>'.join(h['text']).split(sp)[1].split('</time>')[1:]if(sp:='<time class="updated"')in h else h['text']).split('<p class="post-tags">')[0])
-        h['text']='\n\n'.join([z.replace('\n','').strip()for z in h['text'].split('\n\n')if z])
+        h['text']='\n\n'.join([z.replace('\n','').strip()for z in h['text'].split('\n\n')if z]);h['text']=re.sub('#(\w)','\\#\\1',h['text'])
         t2=''
         t4=h['text'].split('(')
         for z in range(len(t4)):

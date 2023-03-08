@@ -47,7 +47,7 @@ if len(dr)==0:
            'text':' — '.join(h.split(' — ')[1:]),
            'source':l
           }
-        h['text']='\n\n'.join([z.replace('\n','').strip()for z in h['text'].split('\n\n')if z])
+        h['text']='\n\n'.join([z.replace('\n','').strip()for z in h['text'].split('\n\n')if z]);h['text']=re.sub('#(\w)','\\#\\1',h['text'])
         ht=h['text']
         t2=ht.split('](')
         t3=''

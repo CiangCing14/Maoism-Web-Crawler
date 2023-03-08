@@ -47,7 +47,7 @@ if len(dr)==0:
            'category':h.split(sp)[1].split('</dd>')[0].split('>')[1].split('<')[0]if(sp:='<dd class="category-name">')in h else None,
            'source':hl[a][0]
           }
-        h['text']='\n\n'.join([z.replace('\n','').strip()for z in h['text'].split('\n\n')if z])
+        h['text']='\n\n'.join([z.replace('\n','').strip()for z in h['text'].split('\n\n')if z]);h['text']=re.sub('#(\w)','\\#\\1',h['text'])
         t2=''
         t4=h['text'].split('(')
         for z in range(len(t4)):

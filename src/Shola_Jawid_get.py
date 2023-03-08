@@ -111,7 +111,7 @@ with sync_playwright()as playwright:
                    'images':[],
                    'text':'\n'.join(h.split('\n')[1:]),
                    'source':hl[a]}
-                h['text']='\n\n'.join([z.replace('\n','').strip()for z in h['text'].split('\n\n')if z])
+                h['text']='\n\n'.join([z.replace('\n','').strip()for z in h['text'].split('\n\n')if z]);h['text']=re.sub('#(\w)','\\#\\1',h['text'])
                 os.remove('temp.pdf')
                 if h['time']=='None':
                     h['time']=str(n2).rjust(ll).replace(' ','0')
@@ -143,7 +143,7 @@ with sync_playwright()as playwright:
                    'text':'\n'.join(t.split('\n')[1:]).strip(),
                    'source':hl[a]
                   }
-                h['text']='\n\n'.join([z.replace('\n','').strip()for z in h['text'].split('\n\n')if z])
+                h['text']='\n\n'.join([z.replace('\n','').strip()for z in h['text'].split('\n\n')if z]);h['text']=re.sub('#(\w)','\\#\\1',h['text'])
                 n+=1
             elif hl[a][-5:]=='.docx'or hl[a][-4:]in('.doc','.dot'):
                 af='.docx'if hl[a][-5:]=='.docx'else hl[a][-4:]
@@ -165,7 +165,7 @@ with sync_playwright()as playwright:
                    'text':'\n'.join(t.split('\n')[1:]).strip(),
                    'source':hl[a]
                   }
-                h['text']='\n\n'.join([z.replace('\n','').strip()for z in h['text'].split('\n\n')if z])
+                h['text']='\n\n'.join([z.replace('\n','').strip()for z in h['text'].split('\n\n')if z]);h['text']=re.sub('#(\w)','\\#\\1',h['text'])
                 print(h)
                 os.remove('temp%s'%af)
                 os.remove('temp.htm')

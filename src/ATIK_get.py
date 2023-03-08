@@ -86,7 +86,7 @@ if len(dr)==0:
            'categories':[b.split('<')[0]for b in h.split(sp)[1].split('</span>')[0].split('rel="category tag">')[1:]]if(sp:='<span class="post-cats">')in h else None,
            'source':hl[a]
           }
-        h['text']='\n\n'.join([z.replace('\n','').strip()for z in h['text'].split('\n\n')if z])
+        h['text']='\n\n'.join([z.replace('\n','').strip()for z in h['text'].split('\n\n')if z]);h['text']=re.sub('#(\w)','\\#\\1',h['text'])
         t2=''
         t4=h['text'].split('(')
         for z in range(len(t4)):

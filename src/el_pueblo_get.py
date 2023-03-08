@@ -51,7 +51,7 @@ if len(dr)==0:
            'categories':[y.split('<a  href="')[1].split('>')[1].split('<')[0]for y in h2.split('<ul class="td-category">')[1].split('</ul>')[0].split('<li class="entry-category">')[1:]],
            'source':hl[a]
           }
-        h['text']='\n\n'.join([z.replace('\n','').strip()for z in h['text'].split('\n\n')if z])
+        h['text']='\n\n'.join([z.replace('\n','').strip()for z in h['text'].split('\n\n')if z]);h['text']=re.sub('#(\w)','\\#\\1',h['text'])
         t2=''
         t4=h['text'].split('(')
         for z in range(len(t4)):

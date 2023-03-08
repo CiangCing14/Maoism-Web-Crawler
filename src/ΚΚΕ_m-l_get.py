@@ -76,7 +76,7 @@ if len(dr)==0:
                'text':hp.handle(h2),
                'source':hl[a][0]
               }
-            h['text']='\n\n'.join([z.replace('\n','').strip()for z in h['text'].split('\n\n')if z])
+            h['text']='\n\n'.join([z.replace('\n','').strip()for z in h['text'].split('\n\n')if z]);h['text']=re.sub('#(\w)','\\#\\1',h['text'])
         elif'<img src="/Assets/24-news/images/ps_logo.jpg" alt="Προλεταριακή Σημαία Proletariaki Simea" style="width:100%" />'in h:
             h2=h.split('<div class=" mt-4">')[1].split('<div class="row">')[0]
             h={'title':h.split('<meta property="og:title" content="')[1].split('"')[0].strip(),
@@ -88,7 +88,7 @@ if len(dr)==0:
                'text':hp.handle(h2),
                'source':hl[a][0]
               }
-            h['text']='\n\n'.join([z.replace('\n','').strip()for z in h['text'].split('\n\n')if z])
+            h['text']='\n\n'.join([z.replace('\n','').strip()for z in h['text'].split('\n\n')if z]);h['text']=re.sub('#(\w)','\\#\\1',h['text'])
         else:raise TypeError
         t2=''
         t4=h['text'].split('(')
