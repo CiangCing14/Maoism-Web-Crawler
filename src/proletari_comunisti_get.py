@@ -7,7 +7,7 @@ n=0
 
 l='https://proletaricomunisti.blogspot.com/'
 l2='https://proletaricomunisti.blogspot.com'
-d=str(datetime.today()-timedelta(days=2)).split(' ')[0]
+d=str(datetime.today()-timedelta(days=1)).split(' ')[0]
 hl=[]
 ul=l
 if not os.path.exists('000000.list'):
@@ -53,9 +53,8 @@ if len(dr)==0:
            'source':hl[a]
           }
         h['text']='\n\n'.join([z.replace('\n','').strip()for z in h['text'].split('\n\n')if z]);h['text']=re.sub('#(\w)','\\#\\1',h['text'])
-        for z in h['images']:
-            if isinstance(z,list):
-                h['text']=h['text'].replace(z[0],z[1])
+        h['images']=[z for z in h['images']if'svg+xml'not in z]
+        h['text']='\n\n'.join([z for z in h['text'].split('\n\n')if not'svg+xml'in z])
         if h['time'].split('T')[0]<d:break
         if not os.path.exists(pa:='JSON-src/%s.json'%h['time']):
             print(h)
@@ -84,7 +83,7 @@ for a in os.walk('JSON-src'):
 for a in imgs:
     for z in a[1]:
         if isinstance(z,list):
-            pa='Images/%s/temp.%s'%(a[0],z[0].split(':')[1].split('/')[1].split(';')[0].split('+')[0])
+            pa='Images/%s/temp.%s'%(a[0],z[0].split(':')[1].split('/')[1].split(';')[0])
         else:
             pa='Images/%s/%s'%(a[0],urllib.parse.unquote(z).split('/')[-1].split('?')[0])
         if not os.path.exists(pa):
