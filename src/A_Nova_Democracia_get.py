@@ -46,7 +46,7 @@ if len(dr)==0:
             h=rg.rget(thl[a]).text
             if not os.path.exists('test.txt'):f=open('test.txt','w+');f.write(h);f.close()
             h2=h.split('<div class="single-body single-section">')[1].split('<span class="share-label">')[0]
-            h3=h.split(sp)[1].split('data-src="')[1].split('"')[0]if((sp:='<div class="thumbnail-container">')in h)else None
+            h3=h.split(sp)[1].split('data-src="')[1].split('"')[0]if((sp:='<div class="thumbnail-container">')in h)and('data-src="'in h)else None
             h4=h.split(sp)[1].split(sp2)[1].split('</figcaption>')[0]if((sp)and((sp2:='<figcaption class="fox-figcaption">'))in h)else None
             h={'author':h.split('<a class="url fn" itemprop="url" rel="author"')[1].split('>')[1].split('<')[0],
                'publish time':h.split('<meta property="article:published_time" content="')[1].split('"')[0],
@@ -72,7 +72,8 @@ if len(dr)==0:
                 n+=1
             if h3:h['images']=[h3]+h['images']
             h['images']=[z for z in h['images']if'printfriendly-pdf-email-button-md.png'not in z]
-            if'printfriendly-pdf-email-button-md.png'in h['thumb']:h['thumb']=''
+            if h['thumb']:
+                if'printfriendly-pdf-email-button-md.png'in h['thumb']:h['thumb']=''
             h['text']='\n\n'.join([z for z in h['text'].split('\n\n')if('Print Friendly, PDF &Email'not in z)and('printfriendly-pdf-email-button-md.png'not in z)])
             t2=''
             t4=h['text'].split('(')
@@ -149,7 +150,7 @@ for a in os.walk('JSON-src'):
                 url=ht[z].split(')')[0]
                 t2='%s%s%s)%s'%(t2,htc[z-1],url.replace('\n','').replace('/'.join(url.replace('\n','').split('/')[:-1]),('../Images/%s'%h['publish time'].replace(':','-').replace('+','-')if'.webp'not in url else'../ConvertedIMGs/%s'%h['publish time'].replace(':','-').replace('+','-')).split('?')[0]).replace('.webp','.png').split('?')[0],')'.join(ht[z].split(')')[1:]))
         t3=t2
-        ht=h['thumb'].split('/')[-1].split('?')[0].split('#')[0]
+        if h['thumb']:ht=h['thumb'].split('/')[-1].split('?')[0].split('#')[0]
         t='''# %s
 
 Author: %s

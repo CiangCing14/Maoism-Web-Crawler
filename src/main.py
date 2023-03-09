@@ -340,7 +340,6 @@ News Source: %s'''%(a['title'],
         t2.append('\n=====每日中英多语马列毛主义新闻文本部分翻译可以访问网址=====\nhttps://ciangcing14.github.io/\n=====Daily translations of Chinese-English multilingual Marxist-Leninist-Maoist news texts can be accessed at the website=====')
         t='\n'.join(t2)
         f=open('index_list_%s.txt'%aft[y],'w+');f.write(t);f.close()
-quit()
 l=['HTMs','MDs','__pycache__','src','ConvertedIMGs','Images','index.md.bin','index.htm','index.odt','index.pdf','index.txt','index_list.txt']
 l2=['Head_Image.jpg']
 if not os.path.exists(ds):
