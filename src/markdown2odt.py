@@ -74,7 +74,7 @@ def run(mdf,lan):
     t=t.replace('>','>\n').strip()
     t='%s\n%s\n%s'%(te.split('<text:h text:style-name="P10" text:outline-level="1" text:is-list-header="true"><text:span text:style-name="T6">#</text:span><text:span text:style-name="T3">新闻标题</text:span></text:h>')[0],t,'</office:text></office:body>%s'%te.split('</office:text></office:body>')[1])
     t=t.replace('%LAN%',lan)
-    dt=str(datetime.date.today()).split('T')[0].split(' ')[0].split('-')
+    dt=str(datetime.date.today()+datetime.timedelta(days=-1)).split('T')[0].split(' ')[0].split('-')
     t=t.replace('%YY%',dt[0])
     t=t.replace('%MO%',dt[1].rjust(2).replace(' ','0'))
     t=t.replace('%DA%',dt[2].rjust(2).replace(' ','0'))

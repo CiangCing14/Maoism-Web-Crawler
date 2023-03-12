@@ -119,6 +119,7 @@ if len(dr)==0:
                     n=0
             h['publish time']='%sT%s:00:00-04:00'%(h['publish time'],str(99-n).rjust(2).replace(' ','0'))
             ed=dd
+        dd=h['publish time']
         h['text']='\n\n'.join([z.replace('\n','').strip()for z in h['text'].split('\n\n')if z]);h['text']=re.sub('#(\w)','\\#\\1',h['text'])
         t2=''
         t4=h['text'].split('(')
