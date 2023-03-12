@@ -2,8 +2,8 @@ import os,sys,importlib,shutil,time,markdown,re,datetime,hashlib,markdown2odt,py
 import urllib.parse
 import translators.server as tss
 
-ds='/home/a/CiangCing14.github.io/Maoism-Datasets/%s'%str(datetime.date.today()+datetime.timedelta(days=-1))
-pds='/home/a/CiangCing14.github.io/Maoism-Datasets/%s'%str(datetime.date.today()+datetime.timedelta(days=-2))
+ds='/home/a/CiangCing14.github.io/Maoism-Datasets/%s'%str(datetime.date.today())
+pds='/home/a/CiangCing14.github.io/Maoism-Datasets/%s'%str(datetime.date.today()+datetime.timedelta(days=-1))
 ud='/home/a/CiangCing14.github.io'
 
 ps=[]
@@ -141,7 +141,7 @@ if not os.path.exists('index.txt'):
     os.system('soffice --headless --convert-to txt index.odt')
 if not os.path.exists('index_list.txt'):
     f=open('index.md.bin','r');t=f.read().split('<!--NEWS-->');f.close()
-    t2=['马列毛主义新闻 Marxism-Leninism-Maoism News %s\n\n=====每日中英多语马列毛主义新闻文本部分翻译可以访问网址=====\nhttps://ciangcing14.github.io/\n=====Daily translations of Chinese-English multilingual Marxist-Leninist-Maoist news texts can be accessed at the website=====\n'%(str(datetime.datetime.today()+datetime.timedelta(days=-1)).split(' ')[0])]
+    t2=['马列毛主义新闻 Marxism-Leninism-Maoism News %s\n\n=====每日中英多语马列毛主义新闻文本部分翻译可以访问网址=====\nhttps://ciangcing14.github.io/\n=====Daily translations of Chinese-English multilingual Marxist-Leninist-Maoist news texts can be accessed at the website=====\n'%(str(datetime.datetime.today()).split(' ')[0])]
     for a in t:
         a=a.split('<!--METADATA-->')
         t2.append('%s\n%s'%([v for v in a[0].split('\n')if v][0].split('# ')[1],[v for v in a[1].split('\n')if v][-1].split('Source: ')[1].split('(')[1].split(')')[0]))
@@ -333,7 +333,7 @@ News Source: %s'''%(a['title'],
         os.system('soffice --headless --convert-to txt index_%s.odt'%aft[y])
     if not os.path.exists('index_list_%s.txt'%aft[y]):
         f=open('index_%s.md.bin'%aft[y],'r');t=f.read().split('<!--NEWS-->');f.close()
-        t2=['马列毛主义新闻 Marxism-Leninism-Maoism News %s\n\n=====每日中英多语马列毛主义新闻文本部分翻译可以访问网址=====\nhttps://ciangcing14.github.io/\n=====Daily translations of Chinese-English multilingual Marxist-Leninist-Maoist news texts can be accessed at the website=====\n'%(str(datetime.datetime.today()+datetime.timedelta(days=-1)).split(' ')[0])]
+        t2=['马列毛主义新闻 Marxism-Leninism-Maoism News %s\n\n=====每日中英多语马列毛主义新闻文本部分翻译可以访问网址=====\nhttps://ciangcing14.github.io/\n=====Daily translations of Chinese-English multilingual Marxist-Leninist-Maoist news texts can be accessed at the website=====\n'%(str(datetime.datetime.today()).split(' ')[0])]
         for a in t:
             a=a.split('<!--METADATA-->')
             t2.append('%s\n%s'%([v for v in a[0].split('\n')if v][0].split('# ')[1],[v for v in a[1].split('\n')if v][-1].split('Source: ')[1].split('(')[1].split(')')[0]))
